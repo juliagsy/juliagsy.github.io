@@ -1,0 +1,15 @@
+{
+    "name": "Julia Goh",
+    "about": "Final year MEng Computer Science student at University College London. Experienced Python full- stack developer with expertise in Cloud/Web and Machine Learning (Generative AI). Fluent in English, Chinese and Malay. Limited proficiency in Korean and Japanese. Achieved “Top in the World” in Cambridge GCE A-Level Mathematics 2019.",
+    "nav": [
+        ["Home", "/"],
+        ["Projects", "/projects"],
+        ["Awards", "/awards"],
+        ["Contact", "/contact"]
+    ],
+    "link": [
+        ["Email", "fa-solid fa-envelope", "mailto:juliagsy@gmail.com"],
+        ["GitHub", "fa-brands fa-github-alt", "https://github.com/juliagsy"],
+        ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/julia-goh-3750b11b9/"]
+    ]
+}
