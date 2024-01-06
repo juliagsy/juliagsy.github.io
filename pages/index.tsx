@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Photo from "../components/profile/photo";
-import Profile from "../components/profile/profile";
-import NavBar from "../components/navbar/bar";
+import Photo from "@/components/profile/photo";
+import Profile from "@/components/profile/profile";
+import NavBar from "@/components/navbar/bar";
 import Footer from "@/components/footer/footer";
 import data from "@/components/data.json";
 

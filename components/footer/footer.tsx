@@ -1,4 +1,4 @@
-import FooterItem from "./item";
+import FooterItem from "@/components/footer/item";
 import data from "@/components/data.json";
 
 export default function Footer() {

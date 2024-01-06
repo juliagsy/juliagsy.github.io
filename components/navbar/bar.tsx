@@ -1,4 +1,4 @@
-import NavBarItem from "./item";
+import NavBarItem from "@/components/navbar/item";
 import data from "@/components/data.json";
 
 export default function NavBar() {
