@@ -3,10 +3,10 @@ import data from "@/components/data.json";
 
 export default function Link() {
     return (
-        <div className="flex flex-row px-[2%]">
+        <div className="grid grid-cols-3 gap-2 px-[2%]">
             {
-                data.link.map(([name, css, url]) => (
-                    <LinkItem key={name} css={css} url={url} />
+                data.contacts.map((item) => (
+                    <LinkItem key={item[0]} item={item} />
                 ))
             }
         </div>
