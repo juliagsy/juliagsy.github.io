@@ -1,5 +1,5 @@
 import data from "@/components/data.json";
-import Link from "@/components/link/link";
+import Link from "@/components/about/link";
 
 export default function Profile() {
     return (

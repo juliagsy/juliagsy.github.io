@@ -14,28 +14,32 @@
         ["GitHub", "fa-brands fa-github-alt", "https://github.com/juliagsy"],
         ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/julia-goh-3750b11b9/"]
     ],
+    "tech": [
+        ["os", ["apple", "linux", "ubuntu", "debian"], []],
+        ["framework", ["python", "java"], ["c"]],
+        ["cloud/web", ["aws", "google", "sass", "js", "node", "react", "npm", "yarn"], []],
+        ["others", ["git", "docker", "figma", "trello"], []]
+    ],
     "languages": [
         ["English", "Fluent"],
         ["Chinese", "Fluent"],
         ["Malay", "Fluent"],
-        ["Hokkien", "Fluent"],
-        ["Cantonese", "Intermediate"],
         ["Korean", "Beginner"],
         ["Japanese", "Beginner"]
     ],
     "certifications": [
-        ["Microsoft AI-102: Azure AI Engineer Associate", "url", "2021"],
+        ["Microsoft AI-102: Azure AI Engineer Associate", "https://learn.microsoft.com/en-us/users/jg-0605/credentials/4dc1ca3b61178430", "2021"],
         ["Microsoft AI-900: Azure AI Fundamentals", "https://www.credly.com/badges/bbec52cd-bab5-400a-b613-818e34b35edd", "2021"],
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
-    "tech": [
-        ["os", ["apple", "linux", "ubuntu", "debian"]],
-        ["cloud", ["aws", "google"]],
-        ["languages", ["python", "java", "js", "node", "react"]]
+    "experiences": [
+        ["June 2022 - February 2024", "Machine Learning Engineer", "Unify", "https://unify.ai"],
+        ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com"],
+        ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com"]
     ],
     "educations": [
-        ["September 2020 - June 2024", "MEng Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems"], "https://www.ucl.ac.uk"],
-        ["March 2019 - June 2020", "GCSE A-Levels", "Taylor's College Malaysia", ["Mathematics: A*", "Further Mathematics: A*", "Physics: A", "Chemistry: A"], "https://university.taylors.edu.my/en.html"],
+        ["September 2020 - June 2024", "MEng Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
+        ["March 2019 - June 2020", "GCSE A-Levels", "Taylor's College Malaysia", ["Mathematics: A*, Further Mathematics: A*, Physics: A, Chemistry: A", "Awarded Cambridge GCSE Top in the World Mathematics", "Received Taylor's Excellence Award"], "https://university.taylors.edu.my/en.html"],
         ["January 2014 - December 2018", "Malaysian Secondary Education", "SMK Infant Jesus Convent (IJC) Melaka", ["SPM (Form 5): 6A+ 3A", "PT3 (Form 3): 7A"], "https://en.wikipedia.org/wiki/Infant_Jesus_Convent,_Malacca"]
     ],
     "awards": [

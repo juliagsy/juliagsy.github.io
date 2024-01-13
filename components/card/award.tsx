@@ -9,7 +9,7 @@ export default function Award({ item }) {
 
             <div className='grid grid-cols-1'>
                 <p><FontAwesomeIcon icon="fa-solid fa-calendar-days" /> {item[0]}</p>
-                <p><FontAwesomeIcon icon="fa-solid fa-award" /> <a className='underline hover:text-gray-300' href={item[4]} target="_blank">{item[2]}</a></p>
+                <p><FontAwesomeIcon icon="fa-solid fa-award" /> <a className='underline hover:text-indigo-300' href={item[4]} target="_blank">{item[2]}</a></p>
             </div>
             
             <div className='h-[2px] my-[1%] bg-gradient-to-r from-purple-400'></div>
