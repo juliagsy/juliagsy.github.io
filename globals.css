@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* theme */
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,7 +17,14 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+
+  .card-desc a:hover {
+    @apply text-indigo-300;
+  }
 }
+
+
+/* global */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +34,57 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+    margin: 9% 0;
+}
+
+.card-desc a {
+  @apply underline;
+}
+
+
+
+/* custom */
+
+.main-title {
+  @apply text-5xl;
+}
+
+.content {
+  @apply px-[2%];
+}
+
+.main-gallery {
+  @apply grid grid-cols-1 gap-5 px-[3%] py-[2%];
+}
+
+.item-anchor {
+  display: block;
+  position: relative;
+  top: -120px; 
+  visibility: hidden;
+}
+
+.component-title {
+  @apply text-4xl;
+}
+
+.component-gallery {
+  @apply grid grid-cols-1 gap-5 py-[3%];
+}
+
+.card {
+  @apply border-solid border-[3px] rounded-lg p-[2%];
+}
+
+.card-title {
+  @apply relative text-3xl;
+}
+
+.card-desc {
+  @apply grid grid-cols-1;
+}
+
+.card-partition {
+  @apply h-[2px] my-[1%] bg-gradient-to-r from-purple-400;
 }
