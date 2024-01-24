@@ -38,19 +38,30 @@
         ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com"]
     ],
     "educations": [
-        ["September 2020 - June 2024", "MEng Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
-        ["March 2019 - June 2020", "GCSE A-Levels", "Taylor's College Malaysia", ["Mathematics: A*, Further Mathematics: A*, Physics: A, Chemistry: A", "Awarded Cambridge GCSE Top in the World Mathematics", "Received Taylor's Excellence Award"], "https://university.taylors.edu.my/en.html"],
+        ["September 2020 - June 2024", "Master of Engineering in Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems", "Integrated Masters - Direct continuation from Bachelor's Degree", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
+        ["March 2019 - June 2020", "Cambridge GCSE A-Levels", "Taylor's College Malaysia", ["Mathematics: A*, Further Mathematics: A*, Physics: A, Chemistry: A", "Awarded Cambridge GCSE Top in the World Mathematics", "Received Taylor's Excellence Award"], "https://university.taylors.edu.my/en.html"],
         ["January 2014 - December 2018", "Malaysian Secondary Education", "SMK Infant Jesus Convent (IJC) Melaka", ["SPM (Form 5): 6A+ 3A", "PT3 (Form 3): 7A"], "https://en.wikipedia.org/wiki/Infant_Jesus_Convent,_Malacca"]
     ],
     "awards": [
-        ["2020", "Top in the World Mathematics", "Cambridge GCSE A-Levels", ["Cambridge Outstanding Learner Award", "Achieved a percentile of 100% in the November 2019 AS papers"], "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/"],
-        ["2019", "Taylor's Excellence Award", "Taylor's College Malaysia", ["Partial tuition fee waiver for the GCSE A-Levels programme"], "https://university.taylors.edu.my/en.html"],
-        ["2019", "SPM High Achiever Award 2018", "Malaysia Ministry of Education", ["Achieved All-As (6A+ 3A) in the Malaysian Certificate of Education (SPM)"], "https://www.moe.gov.my/en/"],
-        ["2018", "Bronze Medalist - Kangaroo Mathematics Competition", "Kangaroo Mathematics Malaysia", ["Achieved a result of Top 10% among all participants"], "https://www.kangaroomath.com.my"],
-        ["2018", "Credit Award - UNSW ICAS English 2018", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) English", "Achieved Top 25% among all participants"], "https://www.icasassessments.com/products-icas/subjects/english/"],
-        ["2018", "Distinction Award - National Chemistry Quiz 2018", "Malaysian Institute of Chemistry", ["Achieved a result of Top 10% among all participants"], "https://ikm.org.my/about-ikm/introduction/"],
-        ["2017", "Distinction Award - UNSW ICAS Mathematics 2017", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 5% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
-        ["2015", "Distinction Award - UNSW ICAS Mathematics 2015", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 8% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
-        ["2014", "Distinction Award - UNSW ICAS Mathematics 2014", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 9% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"]
+        ["2020", [
+            ["2020", "Top in the World Mathematics", "Cambridge GCSE A-Levels", ["Cambridge Outstanding Learner Award", "Achieved a percentile of 100% in the November 2019 AS papers"], "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/"]
+        ]],
+        ["2019", [
+            ["2019", "Taylor's Excellence Award", "Taylor's College Malaysia", ["Partial tuition fee waiver for the GCSE A-Levels programme"], "https://university.taylors.edu.my/en.html"],
+            ["2019", "SPM High Achiever Award 2018", "Malaysia Ministry of Education", ["Achieved All-As (6A+ 3A) in the Malaysian Certificate of Education (SPM)"], "https://www.moe.gov.my/en/"]
+        ]],
+        ["2018", [
+            ["2018", "Bronze Medalist - Kangaroo Mathematics Competition", "Kangaroo Mathematics Malaysia", ["Achieved a result of Top 10% among all participants"], "https://www.kangaroomath.com.my"],
+            ["2018", "Credit Award - UNSW ICAS English 2018", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) English", "Achieved Top 25% among all participants"], "https://www.icasassessments.com/products-icas/subjects/english/"],
+            ["2018", "Distinction Award - National Chemistry Quiz 2018", "Malaysian Institute of Chemistry", ["Achieved a result of Top 10% among all participants"], "https://ikm.org.my/about-ikm/introduction/"]
+        ]],
+        ["2017 and earlier", [
+            ["2017", "Distinction Award - UNSW ICAS Mathematics 2017", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 5% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
+            ["2015", "Distinction Award - UNSW ICAS Mathematics 2015", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 8% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
+            ["2014", "Distinction Award - UNSW ICAS Mathematics 2014", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 9% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"]
+        ]]
+    ],
+    "projects": [
+        ["https://asciinema.org/a/456644"]
     ]
 }

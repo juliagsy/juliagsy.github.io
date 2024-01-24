@@ -8,8 +8,8 @@ import Cert from "@/components/about/cert";
 
 export default function About() {
     return (
-        <div className="my-[8%]">
-            <div className="text-5xl px-[3%] pt-[2%]">About</div>
+        <div className="content">
+            <div className="main-title">About</div>
             <Head>
                 <title>{`${data.name} - About`}</title>
             </Head>

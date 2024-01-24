@@ -4,15 +4,15 @@ import data from "@/components/data.json";
 
 export default function Awards() {
     return (
-        <div className="my-[8%]">
-            <div className="text-5xl px-[3%] pt-[2%]">Awards</div>
+        <div className="content">
+            <div className="main-title">Awards</div>
             <Head>
                 <title>{`${data.name} - Awards`}</title>
             </Head>
-            <div className="grid grid-cols-1 gap-5 px-[10%] py-[3%]">
+            <div className="main-gallery">
                 {
                     data.awards.map((item) => (
-                        <Award key={item[1]} item={item} />
+                        <Award key={item[0]} item={item} />
                     ))
                 }
             </div>

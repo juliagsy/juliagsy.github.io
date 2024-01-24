@@ -5,7 +5,7 @@ import data from "@/components/data.json";
 
 export default function Home() {
   return (
-    <div className="my-[8%]">
+    <div className="content">
       <Head>
         <title>{`${data.name} - Home`}</title>
       </Head>
