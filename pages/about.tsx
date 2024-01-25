@@ -5,6 +5,7 @@ import data from "@/components/data.json";
 import Tech from "@/components/about/tech";
 import Language from "@/components/about/language";
 import Cert from "@/components/about/cert";
+import styles from '@/components/about/about.module.css';
 
 export default function About() {
     return (
@@ -13,22 +14,24 @@ export default function About() {
             <Head>
                 <title>{`${data.name} - About`}</title>
             </Head>
-            <div className="grid grid-cols-4 p-[2%]">
-                <div className="col-span-1"><Photo /></div>
-                <div className="col-span-3"><Profile /></div>
-            </div>
-            <div className="grid grid-cols-3 px-[2%]">
-                <div className="px-[2%]">
-                    <p className="text-2xl py-[1%] font-bold">Tech Stack</p>
-                    <Tech />
+            <div className="px-[2%]">
+                <div className="grid grid-cols-4 py-[3%]">
+                    <div className="col-span-1"><Photo /></div>
+                    <div className="col-span-3"><Profile /></div>
                 </div>
-                <div className="px-[2%]">
-                    <p className="text-2xl py-[1%] font-bold">Languages</p>
-                    <Language />
-                </div>
-                <div className="px-[2%]">
-                    <p className="text-2xl py-[1%] font-bold">Certifications</p>
-                    <Cert />
+                <div className="grid grid-cols-3">
+                    <div>
+                        <p className={styles.title}>Tech Stack</p>
+                        <Tech />
+                    </div>
+                    <div>
+                        <p className={styles.title}>Languages</p>
+                        <Language />
+                    </div>
+                    <div>
+                        <p className={styles.title}>Certifications</p>
+                        <Cert />
+                    </div>
                 </div>
             </div>
         </div>

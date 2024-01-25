@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from "@/components/data.json";
+import styles from "@/components/about/about.module.css"
 
 
 function TechItem({ fw, fa_category }) {
     return (
-        <div className="text-xl">
+        <div className={styles.item}>
             <div><FontAwesomeIcon icon={`fa-${fa_category} fa-${fw}`} /></div>
         </div>
     )

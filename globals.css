@@ -3,26 +3,6 @@
 @tailwind utilities;
 
 
-/* theme */
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-
-  .card-desc a:hover {
-    @apply text-indigo-300;
-  }
-}
-
 
 /* global */
 
@@ -38,9 +18,27 @@ body {
     margin: 9% 0;
 }
 
-.card-desc a {
-  @apply underline;
+
+
+/* theme */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+
+  * {
+    @apply text-white;
+  }
+} */
 
 
 
@@ -71,20 +69,4 @@ body {
 
 .component-gallery {
   @apply grid grid-cols-1 gap-5 py-[3%];
-}
-
-.card {
-  @apply border-solid border-[3px] rounded-lg p-[2%];
-}
-
-.card-title {
-  @apply relative text-3xl;
-}
-
-.card-desc {
-  @apply grid grid-cols-1;
-}
-
-.card-partition {
-  @apply h-[2px] my-[1%] bg-gradient-to-r from-purple-400;
 }

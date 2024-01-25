@@ -1,0 +1,11 @@
+.title {
+    @apply text-2xl py-[1%] font-bold;
+}
+
+.item {
+    @apply text-lg underline;
+}
+
+.item a:hover {
+    @apply text-indigo-700;
+}

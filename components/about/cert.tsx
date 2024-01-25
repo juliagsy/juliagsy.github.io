@@ -1,9 +1,11 @@
 import data from "@/components/data.json";
+import styles from "@/components/about/about.module.css"
+
 
 function CertItem({ item }) {
     return (
-        <div className="text-lg">
-            <a className='underline hover:text-indigo-400' href={item[1]} target="_blank">{item[0]}</a>
+        <div className={styles.item}>
+            <a href={item[1]} target="_blank">{item[0]}</a>
         </div>
     )
 }
