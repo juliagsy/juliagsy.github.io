@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Award from "@/components/card/award";
 import data from "@/components/data.json";
+import { Key } from "react";
 
 export default function Awards() {
     return (
@@ -16,7 +17,7 @@ export default function Awards() {
             <div className="main-gallery">
                 {
                     data.awards.map((item) => (
-                        <Award key={item[0]} item={item} />
+                        <Award key={item[0] as Key} item={item} />
                     ))
                 }
             </div>
