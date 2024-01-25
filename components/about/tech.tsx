@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import data from "@/components/data.json";
 import styles from "@/components/about/about.module.css"
+import { Key } from 'react';
 
 
 function TechItem({ fw, fa_category }) {
     return (
         <div className={styles.item}>
-            <div><FontAwesomeIcon icon={`fa-${fa_category} fa-${fw}`} /></div>
+            <div><FontAwesomeIcon icon={`fa-${fa_category} fa-${fw}` as IconProp} /></div>
         </div>
     )
 }
@@ -38,7 +40,7 @@ export default function Tech() {
         <div className={`grid grid-cols-1 gap-2`}>
             {
                 data.tech.map((item) => (
-                    <TechStack key={item[0]} item={item} />
+                    <TechStack key={item[0] as Key} item={item} />
                 ))
             }
         </div>
