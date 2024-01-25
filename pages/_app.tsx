@@ -5,8 +5,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 // import { far } from '@fortawesome/free-regular-svg-icons';
 import Head from 'next/head';
 import data from "@/components/data.json";
-import NavBar from '@/components/navbar/bar';
-import Footer from '@/components/footer/footer';
+import NavBar from '@/components/bar/nav';
+import Footer from '@/components/bar/footer';
 
 const { library, config } = require('@fortawesome/fontawesome-svg-core');
 library.add(fas, fab);

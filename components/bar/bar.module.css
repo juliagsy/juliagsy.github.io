@@ -1,0 +1,7 @@
+.bar {
+    @apply fixed w-[100%] flex flex-row justify-center bg-white;
+}
+
+.item a:hover {
+    @apply text-indigo-700;
+}
