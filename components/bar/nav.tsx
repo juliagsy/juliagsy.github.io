@@ -4,8 +4,8 @@ import styles from "@/components/bar/bar.module.css";
 
 function NavBarItem({ item }) {
     return (
-        <div className="mx-[3%] my-[3%]">
-            <a className='' href={item[1]}>{item[0]}</a>
+        <div className={`${styles.item}`}>
+            <a href={item[1]}>{item[0]}</a>
         </div>
     )
 }

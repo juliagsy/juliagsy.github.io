@@ -1,42 +1,9 @@
-/* theme */
-
 .card {
-  @apply border-black;
-}
-  
-.cardDesc a:hover {
-  @apply text-indigo-700;
-}
-
-.cardPartition {
-  @apply h-[2px] my-[1%] bg-gradient-to-r from-purple-600;
-}  
-
-/* @media (prefers-color-scheme: dark) {
-
-  .card {
-    @apply border-white;
-  }
-
-  .card-desc a:hover {
-    @apply text-indigo-300;
-  }
-
-  .card-partition {
-    @apply h-[2px] my-[1%] bg-gradient-to-r from-purple-400;
-  }
-} */
-
-
-
-/* custom */
-
-.card {
-  @apply border-solid border-[3px] rounded-lg p-[2%];
+  @apply border-black border-solid border-[3px] rounded-lg p-[2%];
 }
 
 .cardTitle {
-  @apply relative text-3xl;
+  @apply text-3xl;
 }
 
 .cardDesc {
@@ -46,3 +13,11 @@
 .cardDesc a {
   @apply underline;
 }
+
+.cardDesc a:hover {
+  @apply text-indigo-700;
+}
+
+.cardPartition {
+  @apply h-[2px] my-[1%] bg-gradient-to-r from-purple-600;
+}  

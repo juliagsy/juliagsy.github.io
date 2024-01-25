@@ -5,7 +5,7 @@ import styles from "@/components/bar/bar.module.css";
 
 function FooterItem({ item }) {
     return (
-        <div className={`${styles.item} px-[1%]`}>
+        <div className={`${styles.item}`}>
             <a href={item[2]} target='_blank'><FontAwesomeIcon icon={item[1]} /> {item[0]}</a> 
         </div>
     )
@@ -13,7 +13,7 @@ function FooterItem({ item }) {
 
 export default function Footer() {
     return (
-        <div className={`${styles.bar} bottom-0 p-[2%] gap-2`}>
+        <div className={`${styles.bar} bottom-0 gap-2`}>
                 <p>Contacts:</p>
                 {
                     data.contacts.map((item) => (

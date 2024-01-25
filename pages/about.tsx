@@ -10,7 +10,11 @@ import styles from '@/components/about/about.module.css';
 export default function About() {
     return (
         <div className="content">
-            <div className="main-title">About</div>
+            <div className="grid grid-cols-3">
+                <div className="main-partition-left"></div>
+                <div className="main-title">About</div>
+                <div className="main-partition-right"></div>
+            </div>
             <Head>
                 <title>{`${data.name} - About`}</title>
             </Head>

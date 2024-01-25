@@ -5,7 +5,11 @@ import data from "@/components/data.json";
 export default function Awards() {
     return (
         <div className="content">
-            <div className="main-title">Awards</div>
+            <div className="grid grid-cols-3">
+                <div className="main-partition-left"></div>
+                <div className="main-title">Awards</div>
+                <div className="main-partition-right"></div>
+            </div>
             <Head>
                 <title>{`${data.name} - Awards`}</title>
             </Head>

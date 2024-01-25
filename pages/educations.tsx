@@ -5,7 +5,11 @@ import Education from "@/components/card/education";
 export default function Educations() {
     return (
         <div className="content">
-            <div className="main-title">Educations</div>
+            <div className="grid grid-cols-3">
+                <div className="main-partition-left"></div>
+                <div className="main-title">Educations</div>
+                <div className="main-partition-right"></div>
+            </div>
             <Head>
                 <title>{`${data.name} - Educations`}</title>
             </Head>
