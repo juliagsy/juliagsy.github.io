@@ -1,6 +1,7 @@
 import Head from "next/head";
-// import Card from "@/components/card";
 import data from "@/components/data.json";
+import Project from "@/components/card/project";
+import { Key } from "react";
 
 export default function Projects() {
     return (
@@ -14,9 +15,11 @@ export default function Projects() {
                 <title>{`${data.name} - Projects`}</title>
             </Head>
             <div className="main-gallery">
-                {/* <Card title="Test" desc="todo" url="/"></Card>
-                <Card title="Test" desc="todo" url="/"></Card>
-                <Card title="Test" desc="todo" url="/"></Card> */}
+                {
+                    data.projects.map((item) => (
+                        <Project key={item[0] as Key} item={item} />
+                    ))
+                }
             </div>
         </div>
     )

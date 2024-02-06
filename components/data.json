@@ -33,9 +33,9 @@
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
     "experiences": [
-        ["June 2022 - February 2024", "Machine Learning Engineer", "Unify", "https://unify.ai"],
-        ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com"],
-        ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com"]
+        ["June 2022 - February 2024", "Machine Learning Engineer", "Unify", "https://unify.ai", ["todo!"]],
+        ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com", ["todo!"]],
+        ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com", ["todo!"]]
     ],
     "educations": [
         ["September 2020 - June 2024", "Master of Engineering in Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems", "Integrated Masters - Direct continuation from Bachelor's Degree", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
@@ -62,6 +62,10 @@
         ]]
     ],
     "projects": [
-        ["https://asciinema.org/a/456644"]
+        ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", ["todo!"]],
+        ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["todo!"]],
+        ["Multi-Agent Reinforcement Learning in Portfolio Management", "January 2023 - April 2023", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/marl-portfolio/report.pdf", ["todo!"]],
+        ["QnA Chatbot for Medical Tabular Data", "October 2021 - April 2022", "Infosys", "https://www.infosys.com", "https://students.cs.ucl.ac.uk/2021/group2/", ["todo!"]],
+        ["Bash-like Shell in Java", "October 2021 - April 2022", "UCL", "https://www.ucl.ac.uk", "https://asciinema.org/a/456644", ["todo!"]]
     ]
 }

@@ -6,7 +6,7 @@
 /* global */
 
 body {
-  @apply bg-sky-50 my-[9%];
+  @apply bg-sky-50 my-[9%] font-serif;
 }
 
 

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import data from "@/components/data.json";
 import Experience from "@/components/card/experience";
+import { Key } from "react";
 
 export default function Experiences() {
     return (
@@ -16,7 +17,7 @@ export default function Experiences() {
             <div className="main-gallery">
                 {
                     data.experiences.map((item) => (
-                        <Experience key={item[0]} item={item} />
+                        <Experience key={item[0] as Key} item={item} />
                     ))
                 }
             </div>
