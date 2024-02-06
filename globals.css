@@ -6,24 +6,7 @@
 /* global */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-
-    margin: 9% 0;
-}
-
-
-/* theme */
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  @apply bg-sky-50 my-[9%];
 }
 
 
@@ -42,11 +25,11 @@ body {
 }
 
 .main-partition-left {
-  @apply align-middle my-auto h-[2px] bg-gradient-to-l from-purple-500;
+  @apply align-middle my-auto h-[2px] bg-gradient-to-l from-violet-700;
 }
 
 .main-partition-right {
-  @apply align-middle my-auto h-[2px] bg-gradient-to-r from-purple-500;
+  @apply align-middle my-auto h-[2px] bg-gradient-to-r from-violet-700;
 }
 
 .item-anchor {
