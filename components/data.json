@@ -3,10 +3,9 @@
     "about": "Final year MEng Computer Science student at University College London. Experienced Python full-stack developer with expertise in Cloud/Web and Machine Learning (Generative AI). Fluent in English, Chinese and Malay. Limited proficiency in Korean and Japanese. Achieved “Top in the World” in Cambridge GCE A-Level Mathematics 2019.",
     "nav": [
         ["Home", "/"],
-        ["About", "/about"],
-        ["Projects", "/projects"],
-        ["Experiences", "/experiences"],
         ["Educations", "/educations"],
+        ["Experiences", "/experiences"],
+        ["Projects", "/projects"],
         ["Awards", "/awards"]
     ],
     "contacts": [
@@ -33,9 +32,9 @@
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
     "experiences": [
-        ["June 2022 - February 2024", "Machine Learning Engineer", "Unify", "https://unify.ai", ["todo!"]],
-        ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com", ["todo!"]],
-        ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com", ["todo!"]]
+        ["June 2022 - February 2024", "Machine Learning Engineer", "Unify", "https://unify.ai", ["Console Application: Full Stack. Interface implementation and API gateway token authorisation.", "Model Hub: Cloud. RESTful endpoint protection for user/admin API key authentication.", "Ivy ML Models: Applied Lead. Expanded the collection from scratch to 15+ within 4 months.", "Ivy Transpiler: MLE. Collaborated in v0 development and introduced native compilation.", "Tech Stack: Python, C++, Nvidia CUDA, AMD RocM, Tailwind CSS, Node.js, React.js, Next.js, TypeScript, Fast API, Flask, Prisma, Alembic, SQL, Docker, GCP, AWS, Git, Transformers, Linux"]],
+        ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com", ["QnA Chatbot for Clinical Tabular Data: ML systems engineering. Full stack development.", "Developed TAPAS RESTful endpoints with database and interface for lab report analysis.", "Tech Stack: Python, TAPAS, Rasa NLU/NLP, Django, React.js, HTML, CSS, Git, Transformers"]],
+        ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com", ["Frontend development. Implemented the technology website and generalised a template.", "Tech Stack: React.js, HTML, Tailwind CSS, JavaScript, Django, Git"]]
     ],
     "educations": [
         ["September 2020 - June 2024", "Master of Engineering in Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems", "Integrated Masters - Direct continuation from Bachelor's Degree", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
@@ -62,10 +61,20 @@
         ]]
     ],
     "projects": [
-        ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", ["todo!"]],
-        ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["todo!"]],
-        ["Multi-Agent Reinforcement Learning in Portfolio Management", "January 2023 - April 2023", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/marl-portfolio/report.pdf", ["todo!"]],
-        ["QnA Chatbot for Medical Tabular Data", "October 2021 - April 2022", "Infosys", "https://www.infosys.com", "https://students.cs.ucl.ac.uk/2021/group2/", ["todo!"]],
-        ["Bash-like Shell in Java", "October 2021 - April 2022", "UCL", "https://www.ucl.ac.uk", "https://asciinema.org/a/456644", ["todo!"]]
+        ["2024", [
+            ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", ["Music-conditioned Image Generation", "Image-conditioned Music Generation", "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"]],
+            ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["Applied PageRank and HITS for analysing key driver in the evolution network.", "Analysed the community structure of the network with modularity.", "Tech Stack: Python, NetworkX, NumPy, Matplotlib, Git"]]
+        ]],
+        ["2023", [
+            ["Multi-Agent Reinforcement Learning in Portfolio Management", "January 2023 - April 2023", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/marl-portfolio/report.pdf", ["Explored the effect of different RL algorithms in competitive vs. cooperative MARL settings.", "Algorithms: Advantaged Actor-Critic (A2C), Deep Deterministic Policy Gradient (DDPG), Proximal Policy Optimisation (PPO)", "Tech Stack: Python, OpenAI Gym, Stable Baselines 3, Pandas, Git"]]
+        ]],
+        ["2022", [
+            ["Machine Learning for Football Prediction", "October 2022 - December 2022", "UCL", "https://ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/mlnn-football-pred/final_COMP0036.ipynb", ["Explored custom training features and hyperparameters tuning for boosting inference accuracy.", "Algorithms: Logistic Regression, Kernel Support Vector Machine (SVM), Neural Network, Gradient Boosting, Random Forest, Ridge Classifier", "Tech Stack: Python, Tensorflow, Scikit-Learn, Pandas, Git"]],
+            ["QnA Chatbot for Medical Tabular Data", "October 2021 - April 2022", "Infosys", "https://www.infosys.com", "https://students.cs.ucl.ac.uk/2021/group2/", ["Explored transformer-based Machine Learning models for tabular Natural Language Processing (NLP).", "Full-stack development on chatbot interface, backend processing and documentation website.", "Tech Stack: Python, TAPAS, Rasa NLU/NLP, Django, React.js, HTML, CSS, Git, Transformers"]],
+            ["Bash-like Shell in Java", "October 2021 - April 2022", "UCL", "https://www.ucl.ac.uk", "https://asciinema.org/a/456644", ["Features: echo, cat, ls, command aliasing, real-time syntax highlighting, arrow keys for viewing history and command traversing", "Containerised application with Docker.", "Tech Stack: Java, Maven, ANTLR, Docker, Git"]]
+        ]],
+        ["2021 and earlier", [
+            ["Vaccine Bioreactor Simulator", "October 2020 - December 2020", "UCL", "https://www.ucl.ac.uk", "", ["Sensor Object Lead. PID control and calibration, Pulse-Width Modulation and Arduino coding.", "Developed user interface for adjusting pH, temperature and stirring speed.", "Tech Stack: Python, Tkinter, Arduino, C"]]
+        ]]
     ]
 }

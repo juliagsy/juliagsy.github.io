@@ -4,11 +4,11 @@ import Link from "@/components/about/link";
 export default function Profile() {
     return (
         <div className="m-[5%]">
-            <p className="text-3xl">{data.name}</p>
+            <p className="text-4xl">{data.name}</p>
             <div className="flex flex-row">
                 <Link />
             </div>
-            <p className="text-base">{data.about}</p>
+            <p>{data.about}</p>
         </div>
     )
 }
