@@ -3,7 +3,7 @@
 }
 
 .item {
-    @apply text-lg underline;
+    @apply text-2xl underline;
 }
 
 .item a:hover {
