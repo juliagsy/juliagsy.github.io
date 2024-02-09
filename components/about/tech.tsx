@@ -7,7 +7,7 @@ import { Key } from 'react';
 
 function TechItem({ fw, fa_category }) {
     return (
-        <div className={styles.item}>
+        <div className={`${styles.item} text-2xl`}>
             <div><FontAwesomeIcon icon={`fa-${fa_category} fa-${fw}` as IconProp} /></div>
         </div>
     )
