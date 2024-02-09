@@ -63,7 +63,7 @@ export default function Home() {
 
       <div className="grid grid-cols-3">
           <div className="main-partition-left"></div>
-          <div className="main-title">Others</div>
+          <div className="main-title">Skills</div>
           <div className="main-partition-right"></div>
       </div>
 
