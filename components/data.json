@@ -20,11 +20,9 @@
         ["others", ["git", "docker", "figma", "trello"], []]
     ],
     "languages": [
-        ["English", "Fluent"],
-        ["Chinese", "Fluent"],
-        ["Malay", "Fluent"],
-        ["Korean", "Beginner"],
-        ["Japanese", "Beginner"]
+        ["Fluent", ["English", "Chinese", "Malay"]],
+        ["Dialects", ["Cantonese", "Hokkien"]],
+        ["Limited", ["Korean", "Japanese"]]
     ],
     "certifications": [
         ["Microsoft AI-102: Azure AI Engineer Associate", "https://learn.microsoft.com/en-us/users/jg-0605/credentials/4dc1ca3b61178430", "2021"],
@@ -74,6 +72,7 @@
             ["Bash-like Shell in Java", "October 2021 - April 2022", "UCL", "https://www.ucl.ac.uk", "https://asciinema.org/a/456644", ["Features: echo, cat, ls, command aliasing, real-time syntax highlighting, arrow keys for viewing history and command traversing", "Containerised application with Docker.", "Tech Stack: Java, Maven, ANTLR, Docker, Git"]]
         ]],
         ["2021 and earlier", [
+            ["Matrix Calculator Application", "January 2021 - March 2021", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/tree/main/scenarios-matrix-calculator/src", ["Implemented the feature of eigenvalues and eigenvectors computation.", "Other Features: Basic Mathematical Operations, Determinants, Inverse Matrix, Linear System of Equations, etc.", "Developed a minimal, user-friendly interface for straightforward usage.", "Tech Stack: Python, Tkinter, NumPy, Git"]],
             ["Vaccine Bioreactor Simulator", "October 2020 - December 2020", "UCL", "https://www.ucl.ac.uk", "", ["Sensor Object Lead. PID control and calibration, Pulse-Width Modulation and Arduino coding.", "Developed user interface for adjusting pH, temperature and stirring speed.", "Tech Stack: Python, Tkinter, Arduino, C"]]
         ]]
     ]

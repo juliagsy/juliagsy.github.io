@@ -15,8 +15,8 @@ function TechItem({ fw, fa_category }) {
 
 function TechStack({ item }) {
     return (
-        <div className="text-xl">
-            <p className='capitalize'>{item[0]}</p>
+        <div>
+            <p className='capitalize text-xl'>{item[0]}</p>
             <div className='flex flex-row gap-2'>
                 {
                     item[1].map((fw) => (
