@@ -23,8 +23,7 @@ export default function Recent({ item }) {
                 {
                     item[5].slice(0, item[5].length - 1).map((desc) => (
                         <li key={desc}><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {
-                            // Array.isArray(desc) ? <a href={desc[1]}>{desc[0]}</a> : desc
-                            desc
+                            Array.isArray(desc) ? <a href={desc[1]}>{desc[0]}</a> : desc
                         }</li>
                     ))
                 }
