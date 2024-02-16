@@ -25,9 +25,9 @@ export default function Home() {
           <div className="main-partition-right"></div>
       </div> */}
 
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-6">
         <div className="col-span-1"><Photo /></div>
-        <div className="col-span-3"><Profile /></div>
+        <div className="col-span-5"><Profile /></div>
       </div>
 
       <div className="grid grid-cols-3">
