@@ -7,7 +7,7 @@ import { Key } from 'react';
 
 function TechItem({ fw, fa_category }) {
     return (
-        <div className={`${styles.item} text-2xl`}>
+        <div className={`${styles.item} text-lg md:text-xl lg:text-2xl`}>
             <div><FontAwesomeIcon icon={`fa-${fa_category} fa-${fw}` as IconProp} /></div>
         </div>
     )
@@ -16,8 +16,8 @@ function TechItem({ fw, fa_category }) {
 function TechStack({ item }) {
     return (
         <div>
-            <p className='capitalize text-xl'>{item[0]}</p>
-            <div className='flex flex-row gap-2'>
+            <p className='capitalize text-base md:text-lg lg:text-xl'>{item[0]}</p>
+            <div className='flex flex-row flex-wrap gap-2'>
                 {
                     item[1].map((fw) => (
                         <TechItem key={fw} fw={fw} fa_category="brands" />

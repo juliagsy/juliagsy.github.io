@@ -7,9 +7,9 @@ export default function Educations() {
     return (
         <div className="content">
             <div className="grid grid-cols-3">
-                <div className="main-partition-left"></div>
+                <div className="main-partition-left mr-[7%] md:mr-[0%]"></div>
                 <div className="main-title">Educations</div>
-                <div className="main-partition-right"></div>
+                <div className="main-partition-right ml-[7%] md:ml-[0%]"></div>
             </div>
             <Head>
                 <title>{`${data.name} - Educations`}</title>

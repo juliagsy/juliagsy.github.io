@@ -1,5 +1,5 @@
 .title {
-    @apply text-2xl py-[1%] font-bold;
+    @apply text-lg md:text-xl lg:text-2xl py-[1%] font-bold;
 }
 
 .item {

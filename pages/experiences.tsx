@@ -7,9 +7,9 @@ export default function Experiences() {
     return (
         <div className="content">
             <div className="grid grid-cols-3">
-                <div className="main-partition-left"></div>
+                <div className="main-partition-left mr-[15%] md:mr-[0%]"></div>
                 <div className="main-title">Experiences</div>
-                <div className="main-partition-right"></div>
+                <div className="main-partition-right ml-[15%] md:ml-[0%]"></div>
             </div>
             <Head>
                 <title>{`${data.name} - Experiences`}</title>

@@ -14,21 +14,19 @@ import { Key } from "react";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 gap-10 content">
+    <div className="grid grid-cols-1 gap-5 lg:gap-10 content">
       <Head>
         <title>{`${data.name} - Home`}</title>
       </Head>
 
-      {/* <div className="grid grid-cols-3">
-          <div className="main-partition-left"></div>
-          <div className="main-title">Summary</div>
-          <div className="main-partition-right"></div>
-      </div> */}
-
-      <div className="grid grid-cols-6">
-        <div className="col-span-1"><Photo /></div>
-        <div className="col-span-5"><Profile /></div>
+      <div className="grid grid-cols-4 md:grid-cols-6">
+        <div className="col-span-1 align-middle my-auto"><Photo /></div>
+        <div className="col-span-3 lg:col-span-5 align-bottom mt-auto"><Profile /></div>
       </div>
+      <div>
+          <p>{data.about}</p>
+          
+        </div>
 
       <div className="grid grid-cols-3">
           <div className="main-partition-left"></div>

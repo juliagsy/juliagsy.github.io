@@ -1,9 +1,9 @@
 .bar {
-    @apply fixed w-[100%] flex flex-row justify-center bg-white p-[2%];
+    @apply fixed w-[100%] flex flex-row justify-center bg-white py-[2%];
 }
 
 .item {
-    @apply px-[2%];
+    @apply px-[1%];
 }
 
 .item a:hover {

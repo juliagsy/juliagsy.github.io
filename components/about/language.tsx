@@ -6,8 +6,8 @@ import { Key } from "react";
 function LanguageItem({ item }) {
     return (
         <div>
-            <p className='capitalize text-xl'>{item[0]}</p>
-            <p className="text-lg"><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {item[1].join(", ")}</p>
+            <p className='capitalize text-base md:text-lg lg:text-xl'>{item[0]}</p>
+            <p className="text-sm md:text-base lg:text-lg"><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {item[1].join(", ")}</p>
         </div>
     )
 }

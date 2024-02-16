@@ -3,7 +3,7 @@
 }
 
 .cardTitle {
-  @apply text-3xl;
+  @apply text-xl md:text-2xl lg:text-3xl;
 }
 
 .cardDesc {
@@ -19,5 +19,5 @@
 }
 
 .cardPartition {
-  @apply h-[2px] my-[1%] bg-gradient-to-r from-violet-800 via-violet-300 to-violet-500;
+  @apply h-[2px] my-[3%] md:my-[1%] bg-gradient-to-r from-violet-800 via-violet-300 to-violet-500;
 }  
