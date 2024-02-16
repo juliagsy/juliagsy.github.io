@@ -11,7 +11,7 @@ function LinkItem({ item }) {
     )
 }
 
-export default function Link() {
+export default function Links() {
     return (
         <div className="grid grid-cols-3 gap-5">
             {
