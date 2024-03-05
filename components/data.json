@@ -1,6 +1,6 @@
 {
     "name": "Julia Goh",
-    "about": "Final year MEng Computer Science student at University College London. Experienced Python full-stack developer with expertise in Cloud/Web and Machine Learning (Generative AI). Fluent in English, Chinese and Malay. Limited proficiency in Korean and Japanese. Achieved “Top in the World” in Cambridge GCE A-Level Mathematics 2019.",
+    "about": "Final year MEng Computer Science student at University College London. Experienced Python full-stack developer with expertise in Machine Learning (Generative AI) and Cloud/Web. Fluent in English, Chinese and Malay. Limited proficiency in Korean and Japanese. Achieved “Top in the World” in Cambridge GCE A-Level Mathematics 2019.",
     "nav": [
         ["Home", "/"],
         ["Educations", "/educations"],
@@ -21,7 +21,6 @@
     ],
     "languages": [
         ["Fluent", ["English", "Chinese", "Malay"]],
-        ["Dialects", ["Cantonese", "Hokkien"]],
         ["Limited", ["Korean", "Japanese"]]
     ],
     "certifications": [
