@@ -14,6 +14,7 @@ export default function Profile() {
             <div className="flex flex-row gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Reference Letters:</p>
                 <p className={`${style.item}`}><a href="/static/unify_ref.pdf" target="_blank">Unify</a></p>
+                <p className={`${style.item}`}><a href="/static/ucl_ref.pdf" target="_blank">UCL</a></p>
             </div>
         </div>
     )
