@@ -34,9 +34,9 @@
         ["October 2021 - December 2021", "Cambridge Technology Associate", "Bridges for Enterprise", "https://www.bridgesforenterprise.com", ["Frontend development. Implemented the technology website and generalised a template.", "Tech Stack: React.js, HTML, Tailwind CSS, JavaScript, Django, Git"]]
     ],
     "educations": [
-        ["September 2020 - June 2024", "Master of Engineering in Computer Science", "University College London (UCL)", ["Minor in Intelligent Systems", "Integrated Masters - Direct continuation from Bachelor's Degree", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
-        ["March 2019 - June 2020", "Cambridge GCSE A-Levels", "Taylor's College Malaysia", ["Mathematics: A*, Further Mathematics: A*, Physics: A, Chemistry: A", "Awarded Cambridge GCSE Top in the World Mathematics", "Received Taylor's Excellence Award"], "https://university.taylors.edu.my/en.html"],
-        ["January 2014 - December 2018", "Malaysian Secondary Education", "SMK Infant Jesus Convent (IJC) Melaka", ["SPM (Form 5): 6A+ 3A", "PT3 (Form 3): 7A"], "https://en.wikipedia.org/wiki/Infant_Jesus_Convent,_Malacca"]
+        ["September 2020 - June 2024", "Master of Engineering in Computer Science", "University College London (UCL)", ["First Class Honours", "/static/ucl_award.pdf"], ["Minor in Intelligent Systems", "Integrated Masters - Direct continuation from Bachelor's Degree", ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"]], "https://www.ucl.ac.uk"],
+        ["March 2019 - June 2020", "Cambridge GCSE A-Levels", "Taylor's College Malaysia", "Mathematics: A*, Further Mathematics: A*, Physics: A, Chemistry: A", ["Awarded Cambridge GCSE Top in the World Mathematics", "Received Taylor's Excellence Award"], "https://university.taylors.edu.my/en.html"],
+        ["January 2014 - December 2018", "Malaysian Secondary Education", "SMK Infant Jesus Convent (IJC) Melaka", "SPM (Form 5): 6A+ 3A", ["PT3 (Form 3): 7A"], "https://en.wikipedia.org/wiki/Infant_Jesus_Convent,_Malacca"]
     ],
     "awards": [
         ["2020", [
