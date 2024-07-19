@@ -12,6 +12,10 @@ export default function Profile() {
                 <Links />
             </div>
             <div className="flex flex-row gap-3">
+                <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Resume/CV: </p>
+                <p className={`${style.item}`}><a href="/static/JuliaGoh_CV.pdf" target="_blank">PDF</a></p>
+            </div>
+            <div className="flex flex-row gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Reference Letters:</p>
                 <p className={`${style.item}`}><a href="/static/unify_ref.pdf" target="_blank">Unify</a></p>
                 <p className={`${style.item}`}><a href="/static/ucl_ref.pdf" target="_blank">UCL</a></p>
