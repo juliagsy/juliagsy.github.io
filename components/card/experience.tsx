@@ -13,6 +13,7 @@ export default function Experience({ item }) {
             <div className={styles.cardDesc}>
                 <p><FontAwesomeIcon icon={"fa-solid fa-calendar-days" as IconProp} /> {item[0]}</p>
                 <p><FontAwesomeIcon icon={"fa-solid fa-briefcase" as IconProp} /> <a href={item[3]} target="_blank">{item[2]}</a></p>
+                <p><FontAwesomeIcon icon={"fa-solid fa-map-marker-alt" as IconProp} /> {item[5]}</p>
             </div>
             
             <div className={styles.cardPartition}></div>
