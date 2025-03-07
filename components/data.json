@@ -60,7 +60,7 @@
     ],
     "projects": [
         ["2024", [
-            ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", ["Music-conditioned Image Generation", "Image-conditioned Music Generation", "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"]],
+            ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", ["Diffusion based Music-conditioned Image Generative AI", "Transformer based Image-conditioned Music Generative AI", "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"]],
             ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["Applied PageRank and HITS for analysing key driver in the evolution network.", "Analysed the community structure of the network with modularity.", "Tech Stack: Python, NetworkX, NumPy, Matplotlib, Git"]]
         ]],
         ["2023", [
