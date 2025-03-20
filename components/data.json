@@ -64,8 +64,6 @@
                 "Minor in Intelligent Systems", 
                 "Integrated Masters - Direct continuation from Bachelor's Degree", 
                 ["Treasurer of UCL Portuguese Speaking Society 22/23", "https://studentsunionucl.org/clubs-societies/portuguese-speaking-society"],
-                "Key Projects:",
-                "Football Match Prediction: Regression, Classification, Tree and Forest, and SVM with Python.",
                 "Computer Graphics: Ray Tracing, Rasterization and Path Tracing with C++.",
                 "Robotics: Forward and Inverse Kinematics, Path Planning and Robot Dynamics with ROS."
             ], "https://www.ucl.ac.uk"],
@@ -100,7 +98,12 @@
     ],
     "projects": [
         ["2024", [
-            ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", ["Diffusion based Music-conditioned Image Generative AI", "Transformer based Image-conditioned Music Generative AI", "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"]],
+            ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", 
+                [
+                    ["/static/gai_review.pdf", "Review", "Paper. Studied existing tech related to image and music generations, majority being text-conditioned."],
+                    ["/static/gai_overview.pdf", "Overview", "Paper. Developed POCs for Diffusion based Music-conditioned Image Generative AI and Transformer based Image-conditioned Music Generative AI."],
+                    "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"
+                ]],
             ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["Applied PageRank and HITS for analysing key driver in the evolution network.", "Analysed the community structure of the network with modularity.", "Tech Stack: Python, NetworkX, NumPy, Matplotlib, Git"]]
         ]],
         ["2023", [

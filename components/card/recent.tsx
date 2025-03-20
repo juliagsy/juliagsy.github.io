@@ -22,8 +22,10 @@ export default function Recent({ item }) {
             <ul>
                 {
                     item[5].slice(0, item[5].length - 1).map((desc) => (
-                        <li key={desc}><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {
-                            Array.isArray(desc) ? <a href={desc[1]}>{desc[0]}</a> : desc
+                        <li key={desc}> {
+                            Array.isArray(desc) 
+                            ? <p className='customLink'><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> <a className="underline hover:text-violet-700" href={desc[0]}>{desc[1]}</a> {desc[2]}</p>
+                            : <p><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {desc}</p>
                         }</li>
                     ))
                 }

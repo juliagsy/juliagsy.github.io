@@ -14,7 +14,7 @@ export default function Profile() {
             <div className="flex flex-row gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Resume/CV: </p>
                 <p className={`${style.item}`}><a href="/static/JuliaGoh_CV.pdf" target="_blank">English</a></p>
-                <p className={`${style.item}`}><a href="/static/JuliaGoh_CVChi.pdf" target="_blank">Chinese</a></p>
+                {/* <p className={`${style.item}`}><a href="/static/JuliaGoh_CVChi.pdf" target="_blank">Chinese</a></p> */}
             </div>
             <div className="flex flex-row gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Referral Letters:</p>
