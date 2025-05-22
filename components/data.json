@@ -1,6 +1,6 @@
 {
     "name": "Julia Goh",
-    "about": "Experienced Machine Learning (ML) Engineer (Data Science, Generative AI and Software/Full-Stack). MEng Computer Science graduate at University College London.  Fluent in English, Chinese and Malay. Open to roles in ML/AI Engineering and Data Science. Acquired Microsoft certifications of AI-900, AI-102 and DP-900.",
+    "about": "Experienced Machine Learning (ML) Engineer (Data Science, Generative AI and Software/Full-Stack). MEng Computer Science graduate at University College London.  Fluent in English, Chinese and Malay. Open to roles in ML/AI Engineering, Data Science and Full Stack. Acquired Microsoft certifications of AI-900, AI-102 and DP-900.",
     "nav": [
         ["Home", "/"],
         ["Educations", "/educations"],
@@ -29,7 +29,14 @@
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
     "experiences": [
-        ["September 2024 - Present", "Machine Learning Engineer (Intermediate)", "Petronas", "https://www.petronas.com", 
+        ["April 2025 - Present", "Founding Engineer (AI/ML & Full Stack)", "Unify", "https://unify.ai", 
+            [
+                "LLM Interface: Tables and plots for data visualisation. Code editor for in-browser editing. Terminal/shell feature in progress.",
+                "AI Assistant: In progress. Voice agent and AI browser control.",
+                "Tech Stack: Python, Node.js, React.js, Next.js, Fast API, Flask, Redis, PostgreSQL, Docker, GCP, Git"
+            ], "London, United Kingdom (Remote)"
+        ],
+        ["September 2024 - March 2025", "Machine Learning Engineer (Data Science)", "Petronas", "https://www.petronas.com", 
             [
                 "End-to-end model development and deployment, such as data analysis, model training, hyperparameters tuning, model selection and cloud deployment on Azure.", 
                 "Worked with linear models, trees, random forest, XG boost and light gradient boosting machine (LGBM).", 
@@ -38,7 +45,7 @@
                 "HIP: Computer Vision. Worked on working person detection through object detection with YOLO, pose estimation and vLLM with GPT4o. Involved prompt engineering for better inference performance.", 
                 "Tech Stack: Python, MLFlow, Docker, SQL, Azure, SonarCloud, DevOps, Git"
             ], "Kuala Lumpur, Malaysia"],
-        ["June 2022 - February 2024", "Machine Learning Engineer", "Unify", "https://unify.ai", 
+        ["June 2022 - February 2024", "Machine Learning Engineer (Full Stack)", "Unify", "https://unify.ai", 
             [
                 ["https://github.com/ivy-llc/models", "Ivy ML Models", "Applied Lead. Led the team to expand ML model collection from scratch to 15+ within 4 months, including computer vision and NLP base models for business showcase."], 
                 ["https://unify.ai/docs/ivy/overview/one_liners.html", "Ivy Transpiler", "Introduced the native compilation feature for optimising performance of ML models."],
