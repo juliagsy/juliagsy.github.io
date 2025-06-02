@@ -29,14 +29,7 @@
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
     "experiences": [
-        ["April 2025 - Present", "Founding Engineer (AI/ML & Full Stack)", "Unify", "https://unify.ai", 
-            [
-                "LLM Interface: Tables and plots for data visualisation. Code editor for in-browser editing. Terminal/shell feature in progress.",
-                "AI Assistant: In progress. Voice agent and AI browser control.",
-                "Tech Stack: Python, Node.js, React.js, Next.js, Fast API, Flask, Redis, PostgreSQL, Docker, GCP, Git"
-            ], "London, United Kingdom (Remote)"
-        ],
-        ["September 2024 - March 2025", "Machine Learning Engineer (Data Science)", "Petronas", "https://www.petronas.com", 
+        ["September 2024 - Present", "Machine Learning Engineer (Data Science)", "Petronas", "https://www.petronas.com", 
             [
                 "End-to-end model development and deployment, such as data analysis, model training, hyperparameters tuning, model selection and cloud deployment on Azure.", 
                 "Worked with linear models, trees, random forest, XG boost and light gradient boosting machine (LGBM).", 
