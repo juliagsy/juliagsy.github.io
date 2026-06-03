@@ -32,10 +32,10 @@
         ["April 2025 - Present", "Founding Engineer (AI/ML & Full Stack)", "Unify", "https://unify.ai",
             [
                 "LLM Interface: Built the in-browser developer environment — terminal (streaming output, scrollback, tab-completion), code editor with live execution, and a persistent CodeSandbox-backed file system with Google Drive sync.",
-                ["https://github.com/unifyai/unity", "AI Assistant Communications", "Architected the omni-channel communications infrastructure powering the AI assistant — voice calls, SMS, WhatsApp (messaging + calls), email (Gmail & Microsoft 365), Microsoft Teams, Slack and Discord — integrating Twilio, LiveKit and OAuth provider APIs."],
-                "AI Desktop & Browser Control: Built a vision-based (VLM) computer-use agent that automates tasks across remote Ubuntu, Windows and macOS desktops (noVNC streaming, idle-VM pooling, Playwright), with CLI-installable clients for connecting a user's own machine.",
-                "Organisation Support: Built multi-tenant organisation features on top of personal workspaces — member management and invites, role-based access control with custom roles, ownership transfer, and Google-Drive-style project/resource sharing.",
-                "Integrations: Designed a reusable OAuth integration framework and connectors (Salesforce, HubSpot, Employment Hero, Webex, Matterport) with per-assistant connect/disconnect flows.",
+                ["https://github.com/unifyai/unity", "AI Assistant Communications", "Architected the omni-channel communications infrastructure powering the AI assistant — voice calls, muli-channel messaging, emails, etc. — integrating Twilio, LiveKit and third-party APIs."],
+                "AI Desktop & Browser Control: Built a vision-based (VLM) computer-use agent that automates tasks across remote Ubuntu, Windows and macOS desktops, with CLI-installable clients for connecting a user's own machine.",
+                "Organisation Support: Built multi-tenant organisation features on top of personal workspaces — member management and invites, role-based access control with custom roles, ownership transfer, and project/resource sharing.",
+                "Integrations: Designed a reusable OAuth integration framework and connectors with per-assistant connect/disconnect flows.",
                 "Tech Stack: Python, TypeScript, Node.js, React.js, Next.js, FastAPI, PostgreSQL, Docker, Kubernetes, GCP, Playwright, Git"
             ], "London, United Kingdom (Remote)"
         ],
