@@ -31,12 +31,14 @@
     "experiences": [
         ["April 2025 - Present", "Founding Engineer (AI/ML & Full Stack)", "Unify", "https://unify.ai",
             [
-                "LLM Interface: Built the in-browser developer environment — terminal (streaming output, scrollback, tab-completion), code editor with live execution, and a persistent CodeSandbox-backed file system with Google Drive sync.",
-                ["https://github.com/unifyai/unity", "AI Assistant Communications", "Architected the omni-channel communications infrastructure powering the AI assistant — voice calls, muli-channel messaging, emails, etc. — integrating Twilio, LiveKit and third-party APIs."],
+                ["https://github.com/unifyai/unity", "AI Assistant Communications", "Architected the omni-channel communications infrastructure powering the AI assistant — voice calls, multi-channel messaging (Slack, Microsoft Teams, Discord, WhatsApp), emails, and in-app chat/calls — integrating Twilio, LiveKit, platform bot frameworks and third-party APIs."],
+                "Live Meeting Attendance: Built the assistant's ability to join Google Meet and Microsoft Teams calls as a real participant — participant tracking, two-way screenshare, in-meeting chat and auto-leave — via a Recall.ai bridge with a browser-automation fallback.",
+                "Voice Identity & Call Recording: Built speaker diarization with voice-fingerprint labelling, splitting co-located speakers sharing a single microphone through per-utterance embedding clustering, alongside call recording/egress and speech-aligned transcripts with in-app playback.",
                 "AI Desktop & Browser Control: Built a vision-based (VLM) computer-use agent that automates tasks across remote Ubuntu, Windows and macOS desktops, with CLI-installable clients for connecting a user's own machine.",
+                "LLM Interface: Built the in-browser developer environment — terminal (streaming output, scrollback, tab-completion), code editor with live execution, and a persistent CodeSandbox-backed file system with Google Drive sync.",
                 "Organisation Support: Built multi-tenant organisation features on top of personal workspaces — member management and invites, role-based access control with custom roles, ownership transfer, and project/resource sharing.",
-                "Integrations: Designed a reusable OAuth integration framework and connectors with per-assistant connect/disconnect flows.",
-                "Tech Stack: Python, TypeScript, Node.js, React.js, Next.js, FastAPI, PostgreSQL, Docker, Kubernetes, GCP, Playwright, Git"
+                "Integrations: Designed a reusable OAuth integration framework and connectors (HubSpot, Salesforce, Webex, Employment Hero, Matterport) with per-assistant connect/disconnect flows.",
+                "Tech Stack: Python, TypeScript, Node.js, React.js, Next.js, FastAPI, PostgreSQL, Docker, Kubernetes, GCP, LiveKit, Playwright, Git"
             ], "London, United Kingdom (Remote)"
         ],
         ["September 2024 - March 2025", "Machine Learning Engineer (Data Science)", "Petronas", "https://www.petronas.com", 
