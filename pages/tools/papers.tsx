@@ -64,14 +64,17 @@ export default function Papers() {
                 }
             </div>
 
-            <input
-                className="search-box"
-                type="search"
-                value={query}
-                aria-label="Search papers"
-                placeholder="Search title, authors, abstract or category"
-                onChange={(event) => setQuery(event.target.value)}
-            />
+            {/* px-[3%] matches .main-gallery so the box lines up with the cards */}
+            <div className="px-[3%]">
+                <input
+                    className="search-box"
+                    type="search"
+                    value={query}
+                    aria-label="Search papers"
+                    placeholder="Search title, authors, abstract or category"
+                    onChange={(event) => setQuery(event.target.value)}
+                />
+            </div>
 
             <p className="text-center py-[1%]">{shown} of {total} papers</p>
 
