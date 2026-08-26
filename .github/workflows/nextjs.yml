@@ -12,6 +12,14 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Allows other workflows (papers.yml) to reuse this build + deploy
+  workflow_call:
+    inputs:
+      ref:
+        description: "Git ref to build. Defaults to the commit that triggered the run."
+        type: string
+        required: false
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -31,6 +39,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
       - name: Detect package manager
         id: detect-package-manager
         run: |

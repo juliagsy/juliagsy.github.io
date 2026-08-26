@@ -1,0 +1,837 @@
+{
+    "updated": "26 August 2026",
+    "source": [
+        "Hugging Face Daily Papers",
+        "https://huggingface.co/papers"
+    ],
+    "days": [
+        {
+            "date": "2026-08-26",
+            "label": "26 August 2026",
+            "papers": [
+                {
+                    "id": "2608.24053",
+                    "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+                    "authors": "Junjie Zhou, Ke Mei, Lei Li, Tianyi Wang et al.",
+                    "summary": "WeMM-Embedding is a family of universal multimodal embedding models that align text, images, videos, and interleaved inputs in a shared space, achieving state-of-the-art retrieval and recommendation performance across public benchmarks and large-scale WeChat applications.",
+                    "keywords": [
+                        "multimodal embeddings",
+                        "cross-scale knowledge transfer",
+                        "fine-grained relevance supervision",
+                        "MMEB-v2",
+                        "universal multimodal embedding models"
+                    ],
+                    "upvotes": 25,
+                    "url": "https://arxiv.org/abs/2608.24053",
+                    "pdf": "https://arxiv.org/pdf/2608.24053"
+                },
+                {
+                    "id": "2608.23041",
+                    "title": "AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces",
+                    "authors": "Sungho Park, Wonjoong Kim, Rongyuan Tan, Jue Zhang et al.",
+                    "summary": "AutoSaddler automatically improves LLM agent harnesses via offline failure-driven optimization, boosting performance on long-horizon benchmarks.",
+                    "keywords": [
+                        "LLM agents",
+                        "harness optimization",
+                        "failure-trace diagnosis",
+                        "structured patch generation",
+                        "validation-based update selection"
+                    ],
+                    "upvotes": 24,
+                    "url": "https://arxiv.org/abs/2608.23041",
+                    "pdf": "https://arxiv.org/pdf/2608.23041"
+                },
+                {
+                    "id": "2608.24876",
+                    "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+                    "authors": "Zhaochen Yu, Yingcheng Wu, Zhenfei Yin, Kaiyuan Chen et al.",
+                    "summary": "Recuris introduces a recursive memory architecture that tracks progress and guides skill selection to improve long-horizon agent success through localized, validation-gated updates.",
+                    "keywords": [
+                        "recursive self-improvement",
+                        "Experiential-Working Memory",
+                        "Working Memory",
+                        "Experiential Memory",
+                        "Skill Memory"
+                    ],
+                    "upvotes": 14,
+                    "url": "https://arxiv.org/abs/2608.24876",
+                    "pdf": "https://arxiv.org/pdf/2608.24876"
+                },
+                {
+                    "id": "2608.24646",
+                    "title": "On-Policy Self-Distillation in Diffusion Models",
+                    "authors": "Wei Zhou, Xiongwei Zhu, Lingdong Kong, Bo Chen et al.",
+                    "summary": "DiffusionOPSD uses on-policy self-distillation to turn image-level rewards into explicit intermediate targets for diffusion models, improving alignment efficiency and enabling separate analysis of target construction and policy fitting.",
+                    "keywords": [
+                        "DiffusionOPSD",
+                        "on-policy self-distillation",
+                        "diffusion models",
+                        "reinforcement learning",
+                        "endpoint rewards"
+                    ],
+                    "upvotes": 10,
+                    "url": "https://arxiv.org/abs/2608.24646",
+                    "pdf": "https://arxiv.org/pdf/2608.24646"
+                },
+                {
+                    "id": "2608.24877",
+                    "title": "From Seeing to Acting: Smart Glasses as First-Person Intelligence Platforms",
+                    "authors": "Jiangning Zhang, Haojun Chen, Yong Liu",
+                    "summary": "Smart glasses are surveyed as unified first-person intelligence platforms requiring sustained perception-state-interaction-action loops across constrained hardware and diverse applications.",
+                    "keywords": [
+                        "multimodal models",
+                        "embodied intelligence",
+                        "egocentric vision"
+                    ],
+                    "upvotes": 3,
+                    "url": "https://arxiv.org/abs/2608.24877",
+                    "pdf": "https://arxiv.org/pdf/2608.24877"
+                },
+                {
+                    "id": "2608.24696",
+                    "title": "On-policy Distillation with Verifiable Reward",
+                    "authors": "Wenze Lin, Jiale Zhao, Xitai Jiang, Songde Rao et al.",
+                    "summary": "OPDVR integrates on-policy distillation with verifiable rewards via a ReLU-gated implicit reward reformulation, improving reasoning performance without extra hyperparameters.",
+                    "keywords": [
+                        "Reinforcement Learning with Verifiable Rewards",
+                        "on-policy distillation",
+                        "OPDVR",
+                        "implicit reward",
+                        "ReLU gating"
+                    ],
+                    "upvotes": 2,
+                    "url": "https://arxiv.org/abs/2608.24696",
+                    "pdf": "https://arxiv.org/pdf/2608.24696"
+                },
+                {
+                    "id": "2608.23566",
+                    "title": "Best Practice Critic Optimization",
+                    "authors": "Penghui Qi, Xiangxin Zhou, Wee Sun Lee",
+                    "summary": "BPCO stabilizes critic-based reinforcement learning for language models by combining bounded value predictions, Monte Carlo targets, and adaptive advantage estimation, matching group-based methods with single-response sampling.",
+                    "keywords": [
+                        "GRPO",
+                        "DPPO",
+                        "critic optimization",
+                        "value predictions",
+                        "Monte Carlo value targets"
+                    ],
+                    "upvotes": 1,
+                    "url": "https://arxiv.org/abs/2608.23566",
+                    "pdf": "https://arxiv.org/pdf/2608.23566"
+                },
+                {
+                    "id": "2608.24794",
+                    "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+                    "authors": "Boyang Liu, Senjie Jin, Peixin Wang, Zhangyue Yin et al.",
+                    "summary": "CAFE couples a search agent and critic via shared parameters to learn in-trajectory corrective feedback, improving search performance and reducing hallucinations across benchmarks.",
+                    "keywords": [
+                        "outcome-supervised search agents",
+                        "corrective feedback",
+                        "in-trajectory intervention",
+                        "CAFE",
+                        "shared-parameter model"
+                    ],
+                    "upvotes": 1,
+                    "url": "https://arxiv.org/abs/2608.24794",
+                    "pdf": "https://arxiv.org/pdf/2608.24794"
+                },
+                {
+                    "id": "2608.24845",
+                    "title": "LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training",
+                    "authors": "Andreas Hochlehnert, Marianna Nezhurina, Mehdi Cherti, Andrej Radonjic et al.",
+                    "summary": "LAION-BVD is a large-scale open video dataset enabling multimodal pre-training across video, audio, and image modalities with synthetic captions and strong benchmark performance.",
+                    "keywords": [
+                        "multimodal learning",
+                        "LAION-BVD",
+                        "CommonCrawl",
+                        "content-aware scene detection",
+                        "synthetic captions"
+                    ],
+                    "upvotes": 1,
+                    "url": "https://arxiv.org/abs/2608.24845",
+                    "pdf": "https://arxiv.org/pdf/2608.24845"
+                },
+                {
+                    "id": "2608.22274",
+                    "title": "Length-Adaptive Decoding for Masked Diffusion Machine Translation",
+                    "authors": "Yan Zhan, Mengkai Hou, Wanting Zhang, Zhijun Gao",
+                    "summary": "Entropy-Valley selects target lengths for masked diffusion translation by scoring predictive entropy, improving adequacy and showing length choice matters more than unmasking order.",
+                    "keywords": [
+                        "masked diffusion language models",
+                        "dLLMs",
+                        "entropy-valley",
+                        "predictive entropy",
+                        "all-mask forward passes"
+                    ],
+                    "upvotes": 1,
+                    "url": "https://arxiv.org/abs/2608.22274",
+                    "pdf": "https://arxiv.org/pdf/2608.22274"
+                }
+            ]
+        },
+        {
+            "date": "2026-08-25",
+            "label": "25 August 2026",
+            "papers": [
+                {
+                    "id": "2608.23283",
+                    "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+                    "authors": "Apodex Team, B. An, B. Li, B. Wang et al.",
+                    "summary": "Apodex 1.1 improves sustained, verifiable progress on complex real-world tasks by scaling executable environments and training agents to coordinate long-horizon work with state maintenance and recovery.",
+                    "keywords": [
+                        "agentic coordination scaling",
+                        "environment scaling",
+                        "execution harness",
+                        "AgentOS",
+                        "long-horizon task decomposition"
+                    ],
+                    "upvotes": 175,
+                    "url": "https://arxiv.org/abs/2608.23283",
+                    "pdf": "https://arxiv.org/pdf/2608.23283"
+                },
+                {
+                    "id": "2608.23189",
+                    "title": "EchoWM: Open and Enterable Omnimodal World Models",
+                    "authors": "Songchun Zhang, Yaowei Li, Junhao Zhuang, Weiyang Jin et al.",
+                    "summary": "EchoWM is an omnimodal world model that generates synchronized high-resolution video, sound, music, and speech while following continuous 6-DoF navigation trajectories across first- and third-person views.",
+                    "keywords": [
+                        "omnimodal world model",
+                        "enterable generative media",
+                        "camera intent",
+                        "6-DoF trajectory",
+                        "dataset-level calibration"
+                    ],
+                    "upvotes": 66,
+                    "url": "https://arxiv.org/abs/2608.23189",
+                    "pdf": "https://arxiv.org/pdf/2608.23189"
+                },
+                {
+                    "id": "2608.20958",
+                    "title": "TLive-Omni: An Omni-Modal Understanding Model for E-Commerce Live Streaming",
+                    "authors": "Yibo Hu, Yu Qian, Mao Gu, Yingfan Tao et al.",
+                    "summary": "TLive-Omni is an omni-modal model for live-commerce that unifies image, video, audio, and text via timestamped token grouping, staged supervised training, and reinforcement fine-tuning with verifiable feedback to enable accurate real-time understanding.",
+                    "keywords": [
+                        "omni-modal understanding",
+                        "Per-vGrid",
+                        "timestamped token organization",
+                        "cross-modal alignment",
+                        "three-stage supervised training"
+                    ],
+                    "upvotes": 55,
+                    "url": "https://arxiv.org/abs/2608.20958",
+                    "pdf": "https://arxiv.org/pdf/2608.20958"
+                },
+                {
+                    "id": "2608.16812",
+                    "title": "Unlocking the Potential of Image Editing via Concept Scaling and Dense Supervision",
+                    "authors": "Long Cui, Xiaoqian Liu, Qi Qin, Yi Xin et al.",
+                    "summary": "A hierarchical taxonomy and dense supervision strategy improve diffusion-based image editing through fine-grained concepts, large-scale paired data, and granular evaluation.",
+                    "keywords": [
+                        "text-to-image diffusion models",
+                        "edit concept granularity",
+                        "sparse supervision signals",
+                        "hierarchical taxonomy",
+                        "ConceptEdit-12M"
+                    ],
+                    "upvotes": 46,
+                    "url": "https://arxiv.org/abs/2608.16812",
+                    "pdf": "https://arxiv.org/pdf/2608.16812"
+                },
+                {
+                    "id": "2608.23035",
+                    "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+                    "authors": "Yi Zhu, Xiongwei Wu, Qiyi Wang, Tingyu Qu et al.",
+                    "summary": "MobilePA-Bench is an interactive sandbox benchmark that evaluates mobile planning agents on tool-calling, sub-agent collaboration, memory usage, and composite skill invocation under real runtime constraints.",
+                    "keywords": [
+                        "tool-calling",
+                        "mobile planning agents",
+                        "executable sandbox",
+                        "sub-agent collaboration",
+                        "memory usage"
+                    ],
+                    "upvotes": 35,
+                    "url": "https://arxiv.org/abs/2608.23035",
+                    "pdf": "https://arxiv.org/pdf/2608.23035"
+                },
+                {
+                    "id": "2608.23552",
+                    "title": "Prime Agent: A Self-Improving RLM Harness",
+                    "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller et al.",
+                    "summary": "Prime Agent is an open-source harness that uses recursive subagents, persistent computation, and agent-to-agent coordination to extend language models' long-horizon capabilities across coding and reasoning tasks.",
+                    "keywords": [
+                        "Recursive Language Model",
+                        "test-time compute",
+                        "subagents",
+                        "agent-to-agent communication",
+                        "daemon-backed sessions"
+                    ],
+                    "upvotes": 32,
+                    "url": "https://arxiv.org/abs/2608.23552",
+                    "pdf": "https://arxiv.org/pdf/2608.23552"
+                },
+                {
+                    "id": "2608.22876",
+                    "title": "The Mask Is Not the Model: Auditing Prefix Invariance in Attention, State-Space, and Hybrid Sequence Models",
+                    "authors": "Taebong Kim, Youngsik Hong, Minsik Kim, Sunyoung Choi et al.",
+                    "summary": "The study proposes a lightweight audit to detect causality violations in sequence models by verifying prefix invariance, revealing that attention-mask checks miss leaks from scans or normalization.",
+                    "keywords": [
+                        "prefix invariance",
+                        "causality",
+                        "attention-mask inspection",
+                        "scans",
+                        "normalization"
+                    ],
+                    "upvotes": 29,
+                    "url": "https://arxiv.org/abs/2608.22876",
+                    "pdf": "https://arxiv.org/pdf/2608.22876"
+                },
+                {
+                    "id": "2608.19567",
+                    "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
+                    "authors": "Bowen Cui, Weijie Wang, Zeyu Zhang, Yefei He et al.",
+                    "summary": "Block3D accelerates text-to-3D generation by using block-wise diffusion with confidence-guided correction to reduce inference time while preserving geometric fidelity.",
+                    "keywords": [
+                        "text-to-3D generation",
+                        "discrete shape tokens",
+                        "autoregressive decoding",
+                        "diffusion models",
+                        "flow-matching"
+                    ],
+                    "upvotes": 27,
+                    "url": "https://arxiv.org/abs/2608.19567",
+                    "pdf": "https://arxiv.org/pdf/2608.19567"
+                },
+                {
+                    "id": "2608.20430",
+                    "title": "RISE: Adaptive Imagination for World Action Models",
+                    "authors": "Hongbo Lu, Liang Yao, Chenghao He, Hao Han et al.",
+                    "summary": "RISE adaptively decides when to continue or stop imagination rollouts for planning by weighing expected benefit against cost, supported by a counterfactual driving dataset with expert annotations.",
+                    "keywords": [
+                        "World Action Models",
+                        "adaptive imagination",
+                        "Roll/Stop decisions",
+                        "Latent Evaluator",
+                        "Rollout Gate"
+                    ],
+                    "upvotes": 24,
+                    "url": "https://arxiv.org/abs/2608.20430",
+                    "pdf": "https://arxiv.org/pdf/2608.20430"
+                },
+                {
+                    "id": "2608.23392",
+                    "title": "Towards a Densing Law for User Representation Learning at Billion-Scale Capacity",
+                    "authors": "Bin Dou, Junru Zhang, Zhaoyi Yuan, Wuliang Huang et al.",
+                    "summary": "The study proposes a scaling law linking data size to tokenization capacity for user behavior modeling and introduces an adaptive tokenization method to improve efficiency.",
+                    "keywords": [
+                        "user representation learning",
+                        "tokenization",
+                        "User Behavioral Densing Law",
+                        "ALGN",
+                        "adaptive variable-length tokenization"
+                    ],
+                    "upvotes": 22,
+                    "url": "https://arxiv.org/abs/2608.23392",
+                    "pdf": "https://arxiv.org/pdf/2608.23392"
+                }
+            ]
+        },
+        {
+            "date": "2026-08-24",
+            "label": "24 August 2026",
+            "papers": [
+                {
+                    "id": "2608.21156",
+                    "title": "Graph Engineering in the Era of LLM Agents: From Individual Intelligence to System Intelligence",
+                    "authors": "Yuyuan Feng, Zhishang Xiang, Chaobin Yang, Qichao Ma et al.",
+                    "summary": "Graph Engineering organizes multi-agent LLM systems through dynamic graph structures to coordinate specialized agents and manage complex, evolving tasks.",
+                    "keywords": [
+                        "Prompt Engineering",
+                        "Context Engineering",
+                        "Harness Engineering",
+                        "Loop Engineering",
+                        "System Intelligence"
+                    ],
+                    "upvotes": 47,
+                    "url": "https://arxiv.org/abs/2608.21156",
+                    "pdf": "https://arxiv.org/pdf/2608.21156"
+                },
+                {
+                    "id": "2608.20061",
+                    "title": "Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts",
+                    "authors": "Nayeon Kim, Hojin Lee, Yunju Bak, Jaesun Park et al.",
+                    "summary": "A two-step hyperparameter transfer framework predicts optimal learning rates for large Mixture-of-Experts models by scaling across widths and token budgets, enabling efficient pretraining without costly sweeps.",
+                    "keywords": [
+                        "Mixture-of-Experts",
+                        "Maximal Update Parameterization",
+                        "Multi-head Latent Attention",
+                        "Muon optimizer",
+                        "hyperparameter transfer"
+                    ],
+                    "upvotes": 42,
+                    "url": "https://arxiv.org/abs/2608.20061",
+                    "pdf": "https://arxiv.org/pdf/2608.20061"
+                },
+                {
+                    "id": "2608.20910",
+                    "title": "InfinityEdit: Infinite Video Editing with a Lightweight Edit-Ignition Adapter",
+                    "authors": "Yunze Tong, Mushui Liu, Canyu Zhao, Shiyi Zhang et al.",
+                    "summary": "InfinityEdit enables continuous, unbounded video editing by using a lightweight adapter with history, temporal causal, and edit cross-attention modules to extend edits into future streaming frames while maintaining stability.",
+                    "keywords": [
+                        "infinite video editing",
+                        "streaming video generator",
+                        "edit adapter",
+                        "history cross-attention",
+                        "temporal causal self-attention"
+                    ],
+                    "upvotes": 36,
+                    "url": "https://arxiv.org/abs/2608.20910",
+                    "pdf": "https://arxiv.org/pdf/2608.20910"
+                },
+                {
+                    "id": "2608.16425",
+                    "title": "ParaTempo: Efficient Parallel Reasoning via Temporal Confidence",
+                    "authors": "Xuteng Zhang, Wenhao Zeng, Xiaodong Gu, Chao Hu et al.",
+                    "summary": "ParaTempo improves parallel reasoning efficiency by using temporal confidence to dynamically prune, retire, and reallocate reasoning branches without synchronization.",
+                    "keywords": [
+                        "parallel reasoning",
+                        "temporal confidence",
+                        "answer-space convergence",
+                        "branch-level control",
+                        "asynchronous reasoning"
+                    ],
+                    "upvotes": 33,
+                    "url": "https://arxiv.org/abs/2608.16425",
+                    "pdf": "https://arxiv.org/pdf/2608.16425"
+                },
+                {
+                    "id": "2608.12781",
+                    "title": "Beyond Correctness: Benchmarking and Aligning Response Behaviors in Hybrid-Thinking MLLMs",
+                    "authors": "Xinming Wang, Weinong Wang, Hongming Yang, Yansong Lin et al.",
+                    "summary": "Hybrid-thinking multimodal language models suffer from response-pattern misalignment between thinking and non-thinking modes, which is addressed by a diagnostic benchmark and pattern-specific reinforcement learning penalties.",
+                    "keywords": [
+                        "multimodal large language models",
+                        "hybrid-thinking",
+                        "response-pattern alignment",
+                        "PatternEval",
+                        "chain-of-thought leakage"
+                    ],
+                    "upvotes": 30,
+                    "url": "https://arxiv.org/abs/2608.12781",
+                    "pdf": "https://arxiv.org/pdf/2608.12781"
+                },
+                {
+                    "id": "2608.21360",
+                    "title": "OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs",
+                    "authors": "Xianyun Sun, Chaoyou Fu, Zhengye Zhang, Feiyang Duan et al.",
+                    "summary": "OmniAssistBench evaluates real-time interactive video assistants by reverse-engineering multi-turn interaction videos, revealing that current omni-modal models struggle with visual prompts, context retention, and timely responses.",
+                    "keywords": [
+                        "omni-modal large language models",
+                        "OmniAssistBench",
+                        "multi-turn interactions",
+                        "visual prompts",
+                        "historical context"
+                    ],
+                    "upvotes": 28,
+                    "url": "https://arxiv.org/abs/2608.21360",
+                    "pdf": "https://arxiv.org/pdf/2608.21360"
+                },
+                {
+                    "id": "2608.16647",
+                    "title": "Every Coin Has Two Sides: On the Dual Nature of Generalization in On-Policy Distillation of Large Language Models",
+                    "authors": "Zhaoyi Li, Deyang Kong, Yuan Wei, Evan Yang et al.",
+                    "summary": "On-policy distillation transfers reasoning behaviors rather than specific answers, with generalization strongly tied to teacher-student origin alignment and multi-teacher combinations causing capability trade-offs.",
+                    "keywords": [
+                        "on-policy distillation",
+                        "reasoning behavior",
+                        "cross-domain transfer",
+                        "multi-teacher",
+                        "same-origin"
+                    ],
+                    "upvotes": 15,
+                    "url": "https://arxiv.org/abs/2608.16647",
+                    "pdf": "https://arxiv.org/pdf/2608.16647"
+                },
+                {
+                    "id": "2608.21439",
+                    "title": "WorldMind: Decoupled Game World Model for State-Aware NPC Behavior",
+                    "authors": "Zhiyang Deng, Boran Zhang, Danze Chen, Yeying Jin",
+                    "summary": "WorldMind decouples game world modeling into state understanding, decision-making, control, and generation layers to enable explicit, state-aware NPC behavior.",
+                    "keywords": [
+                        "game world models",
+                        "NPC behavior",
+                        "state-grounded decision-making",
+                        "closed interaction loop",
+                        "compact state reconstruction"
+                    ],
+                    "upvotes": 13,
+                    "url": "https://arxiv.org/abs/2608.21439",
+                    "pdf": "https://arxiv.org/pdf/2608.21439"
+                },
+                {
+                    "id": "2608.20886",
+                    "title": "EviRank: Structured Relevance Evidence for Multimodal Image Re-ranking",
+                    "authors": "Enjun Du, Siyi Liu, Zirong Chen, Xinyu Zuo et al.",
+                    "summary": "EviRank reformulates multimodal image re-ranking as semantic constraint satisfaction by parsing queries into structured evidence packages and verifying candidates via rubric scoring and listwise comparison without training.",
+                    "keywords": [
+                        "multimodal image re-ranking",
+                        "compositional queries",
+                        "semantic constraint satisfaction",
+                        "evidence package",
+                        "rubric scoring"
+                    ],
+                    "upvotes": 11,
+                    "url": "https://arxiv.org/abs/2608.20886",
+                    "pdf": "https://arxiv.org/pdf/2608.20886"
+                },
+                {
+                    "id": "2608.08676",
+                    "title": "UniSpace: Unified Visual Representation and Scalable Multimodal Modeling",
+                    "authors": "Jinbo Yan, Limeng Qiao, Jie Qin, Junyan He et al.",
+                    "summary": "A reparameterized pretrained vision transformer unifies semantic understanding, high-fidelity reconstruction, and image generation within a single visual space without requiring a separate VAE.",
+                    "keywords": [
+                        "semantic ViT",
+                        "Patch Reparameterization",
+                        "reconstruction-aware patch embedding",
+                        "Mixture-of-Transformer-Experts",
+                        "UniSpace"
+                    ],
+                    "upvotes": 10,
+                    "url": "https://arxiv.org/abs/2608.08676",
+                    "pdf": "https://arxiv.org/pdf/2608.08676"
+                }
+            ]
+        },
+        {
+            "date": "2026-08-21",
+            "label": "21 August 2026",
+            "papers": [
+                {
+                    "id": "2608.19880",
+                    "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+                    "authors": "Chengsong Huang, Zifeng Wang, Rujun Han, Jun Yan et al.",
+                    "summary": "EnvHarness and EnvRigger dynamically reshape static environments via programmable plugins to target agent weaknesses and improve reinforcement learning co-evolution.",
+                    "keywords": [
+                        "LLM agents",
+                        "Environment Harness",
+                        "EnvHarness",
+                        "EnvRigger",
+                        "black-box policy"
+                    ],
+                    "upvotes": 263,
+                    "url": "https://arxiv.org/abs/2608.19880",
+                    "pdf": "https://arxiv.org/pdf/2608.19880"
+                },
+                {
+                    "id": "2608.18580",
+                    "title": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
+                    "authors": "Kou Shi, Zun Wang, Qisheng Su, Shiting Huang et al.",
+                    "summary": "FACET constructs executable terminal tasks by preserving source intent and grounding instructions, solutions, and verifiers in a shared repaired environment to enable scalable agent training.",
+                    "keywords": [
+                        "terminal agents",
+                        "executable supervision",
+                        "cross-artifact consistency",
+                        "agent skills",
+                        "execution environment"
+                    ],
+                    "upvotes": 119,
+                    "url": "https://arxiv.org/abs/2608.18580",
+                    "pdf": "https://arxiv.org/pdf/2608.18580"
+                },
+                {
+                    "id": "2608.20335",
+                    "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+                    "authors": "Yudong Jin, Tao Xie, Qihang Zhang, Zehong Shen et al.",
+                    "summary": "4DAnyone reconstructs 4D humans from monocular video by generating multiview-consistent videos and lifting them into 4D Gaussian Splatting, using reference and target context designs to overcome scaling bottlenecks.",
+                    "keywords": [
+                        "4D Gaussian Splatting",
+                        "video diffusion models",
+                        "DiT",
+                        "bounded-attention-context",
+                        "Reference Context Packing"
+                    ],
+                    "upvotes": 76,
+                    "url": "https://arxiv.org/abs/2608.20335",
+                    "pdf": "https://arxiv.org/pdf/2608.20335"
+                },
+                {
+                    "id": "2608.19799",
+                    "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+                    "authors": "Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang et al.",
+                    "summary": "SWE-bench Science benchmarks coding agents on scientific software repair, revealing failure mechanisms and mixed effects of scientific guidance.",
+                    "keywords": [
+                        "SWE-bench Science",
+                        "scientific software engineering",
+                        "coding agents",
+                        "pass@1",
+                        "failure mechanisms"
+                    ],
+                    "upvotes": 63,
+                    "url": "https://arxiv.org/abs/2608.19799",
+                    "pdf": "https://arxiv.org/pdf/2608.19799"
+                },
+                {
+                    "id": "2608.20336",
+                    "title": "WithEveryone: Unified Planning and Identity Grounding for Group Image Generation",
+                    "authors": "Hengyuan Xu, Qixun Wang, Yiji Cheng, Miles Yang et al.",
+                    "summary": "WithEveryone enables reliable identity-preserving group image generation for up to ten people by grounding identities to layout plans and using region-based identity losses.",
+                    "keywords": [
+                        "identity-preserving image generation",
+                        "addressed token",
+                        "identity--layout plan",
+                        "Layout-Grounded ID Loss",
+                        "ID Representation Forcing"
+                    ],
+                    "upvotes": 41,
+                    "url": "https://arxiv.org/abs/2608.20336",
+                    "pdf": "https://arxiv.org/pdf/2608.20336"
+                },
+                {
+                    "id": "2608.20202",
+                    "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+                    "authors": "Mengru Wang, Haozhe Luo, Zhenqian Xu, Zhixiang Cui et al.",
+                    "summary": "Retrieved memories can induce reasoning errors and belief distortions in large language models, and an inference-time strategy helps avoid these cognitive traps while maintaining benchmark performance.",
+                    "keywords": [
+                        "memory-induced cognitive traps",
+                        "Reasoning Fixation",
+                        "Belief Distortion",
+                        "MemTrapBench",
+                        "AdaptiveMem"
+                    ],
+                    "upvotes": 32,
+                    "url": "https://arxiv.org/abs/2608.20202",
+                    "pdf": "https://arxiv.org/pdf/2608.20202"
+                },
+                {
+                    "id": "2608.13120",
+                    "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+                    "authors": "Qianxi Yan, Chunrong Chen, Jiuzhou Zhao, Min Zhang et al.",
+                    "summary": "SkillEvo improves agent skills through multi-turn feedback and active governance to sustain evolution gradients.",
+                    "keywords": [
+                        "multi-turn user simulation",
+                        "feedback generator",
+                        "governance layer",
+                        "evolution gradients",
+                        "self-reflection"
+                    ],
+                    "upvotes": 31,
+                    "url": "https://arxiv.org/abs/2608.13120",
+                    "pdf": "https://arxiv.org/pdf/2608.13120"
+                },
+                {
+                    "id": "2608.14022",
+                    "title": "ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models",
+                    "authors": "Xinye Li, Lingshuai Lin, Lei Wang, Liuzhou Zhang et al.",
+                    "summary": "ForgeWM progressively distills bidirectional video generators into efficient few-step interactive world models with aligned discrete and continuous controls, supporting low-latency interaction and replay-time refinement.",
+                    "keywords": [
+                        "action-conditioned video world models",
+                        "causal distillation",
+                        "causal consistency distillation",
+                        "on-policy distribution matching",
+                        "bidirectional teacher"
+                    ],
+                    "upvotes": 24,
+                    "url": "https://arxiv.org/abs/2608.14022",
+                    "pdf": "https://arxiv.org/pdf/2608.14022"
+                },
+                {
+                    "id": "2607.21596",
+                    "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+                    "authors": "Zeyu Ren, Ling Yue, Ran Li, Yishu Wang et al.",
+                    "summary": "FlowEvo enables large language model agents to co-evolve reusable skills and workflows during inference, improving accuracy and efficiency across diverse benchmarks.",
+                    "keywords": [
+                        "FlowEvo",
+                        "skill libraries",
+                        "workflow construction",
+                        "inference-time adaptation",
+                        "negative transfer"
+                    ],
+                    "upvotes": 19,
+                    "url": "https://arxiv.org/abs/2607.21596",
+                    "pdf": "https://arxiv.org/pdf/2607.21596"
+                },
+                {
+                    "id": "2608.19854",
+                    "title": "Repo0: Design-Driven Zero-to-All Code Generation",
+                    "authors": "Silin Chen, Haoyi Teng, Xiaodong Gu, Yuling Shi et al.",
+                    "summary": "Repo0 uses a dual-graph architectural state and modularity-guided structural evolution to generate complete software repositories from natural-language requirements with high functionality coverage.",
+                    "keywords": [
+                        "zero-to-all code generation",
+                        "Dual-DAG",
+                        "requirement-level DAG",
+                        "component-level DAG",
+                        "structural actions"
+                    ],
+                    "upvotes": 19,
+                    "url": "https://arxiv.org/abs/2608.19854",
+                    "pdf": "https://arxiv.org/pdf/2608.19854"
+                }
+            ]
+        },
+        {
+            "date": "2026-08-20",
+            "label": "20 August 2026",
+            "papers": [
+                {
+                    "id": "2608.17426",
+                    "title": "SemComp-Bench: Benchmarking Semantic Task Completion in Video Generation",
+                    "authors": "Keyu Tu, Zhuowei Chen, Mengqi Huang, Yuxin Wang et al.",
+                    "summary": "Semantic task completion video generation evaluates whether generated videos achieve intended outcomes with semantic grounding, supported by a curated dataset and vision-language model-based benchmark.",
+                    "keywords": [
+                        "video generation",
+                        "vision-language model",
+                        "semantic grounding",
+                        "outcome achievement",
+                        "generation reliability"
+                    ],
+                    "upvotes": 157,
+                    "url": "https://arxiv.org/abs/2608.17426",
+                    "pdf": "https://arxiv.org/pdf/2608.17426"
+                },
+                {
+                    "id": "2608.16590",
+                    "title": "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+                    "authors": "Xin Ding, Liang Mi, Mingzhe Huang, Zixuan Wang et al.",
+                    "summary": "Zetta is a closed-loop embodied harness that evolves runtime critics and recovery skills online to govern physical execution at action frequency, achieving high success on robot benchmarks with faster inference and scaling self-exploration.",
+                    "keywords": [
+                        "closed-loop embodied harness",
+                        "code-based runtime critics",
+                        "recovery skills",
+                        "action-frequency governance",
+                        "rollout-level critic-recovery"
+                    ],
+                    "upvotes": 146,
+                    "url": "https://arxiv.org/abs/2608.16590",
+                    "pdf": "https://arxiv.org/pdf/2608.16590"
+                },
+                {
+                    "id": "2608.18565",
+                    "title": "SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation",
+                    "authors": "Yanlun Tu, Huacan Wang, Ziyue Zhou, Jie Zhou et al.",
+                    "summary": "SemaPLC is a verification-gated agent harness that validates generated PLC logic through external compilation and live runtime execution, achieving higher verified pass rates than baseline methods.",
+                    "keywords": [
+                        "programmable logic controllers (PLCs)",
+                        "program organization units (POUs)",
+                        "SemaPLC",
+                        "verification-gated agent harness",
+                        "live runtime"
+                    ],
+                    "upvotes": 116,
+                    "url": "https://arxiv.org/abs/2608.18565",
+                    "pdf": "https://arxiv.org/pdf/2608.18565"
+                },
+                {
+                    "id": "2608.17253",
+                    "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+                    "authors": "Yunhao Yang, Yuexin Bian, Yunjie Tian, Di Fu et al.",
+                    "summary": "Co-RL enables unsupervised reasoning via cooperative multi-agent reinforcement learning with peer-derived rewards, improving performance across text and vision tasks without ground-truth labels.",
+                    "keywords": [
+                        "reinforcement learning",
+                        "self-rewarding RL",
+                        "cooperative multi-agent training",
+                        "Co-RL",
+                        "peer-derived rewards"
+                    ],
+                    "upvotes": 92,
+                    "url": "https://arxiv.org/abs/2608.17253",
+                    "pdf": "https://arxiv.org/pdf/2608.17253"
+                },
+                {
+                    "id": "2608.13558",
+                    "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+                    "authors": "Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee et al.",
+                    "summary": "OmniScientist is an end-to-end omni-modal AI scientist that performs multidisciplinary research directly from heterogeneous raw evidence using autonomous agents and lifecycle-wide perception, improving evidence-grounded discovery across diverse scientific modalities.",
+                    "keywords": [
+                        "omni-modal AI scientist",
+                        "perception layer",
+                        "autonomous agents",
+                        "deterministic pipeline",
+                        "idea checks"
+                    ],
+                    "upvotes": 91,
+                    "url": "https://arxiv.org/abs/2608.13558",
+                    "pdf": "https://arxiv.org/pdf/2608.13558"
+                },
+                {
+                    "id": "2608.19197",
+                    "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+                    "authors": "Bo Liu, Simon Yu, Yiding Jiang, Ao Qu et al.",
+                    "summary": "SPADE is a self-play reinforcement learning framework where a language model designs adaptive executable training environments and learns to solve them, improving reasoning and tool-use performance through regret-based environment targeting.",
+                    "keywords": [
+                        "self-play RL",
+                        "LLM",
+                        "OpenAI Gym",
+                        "reset()/step()",
+                        "reward functions"
+                    ],
+                    "upvotes": 51,
+                    "url": "https://arxiv.org/abs/2608.19197",
+                    "pdf": "https://arxiv.org/pdf/2608.19197"
+                },
+                {
+                    "id": "2608.18940",
+                    "title": "Training Chemical Plausibility-Aware Large Language Models for Single-Step Retrosynthesis",
+                    "authors": "Bogdan Zagribelnyy, Ivan Ilin, Nikita Bondarev, Maksim Kuznetsov et al.",
+                    "summary": "Top-K prompting and plausibility-aware training improve diverse reaction prediction in single-step retrosynthesis, yielding state-of-the-art results on a large verified reaction dataset and motivating ensemble systems.",
+                    "keywords": [
+                        "Top-K prompting",
+                        "single-step retrosynthesis",
+                        "computer-aided synthesis planning",
+                        "CREED-CCV-2+USPTO-XL",
+                        "C3LM"
+                    ],
+                    "upvotes": 33,
+                    "url": "https://arxiv.org/abs/2608.18940",
+                    "pdf": "https://arxiv.org/pdf/2608.18940"
+                },
+                {
+                    "id": "2608.18423",
+                    "title": "FM-Bench: A Benchmark for Long-Horizon Management with Competing Agents",
+                    "authors": "Tianyou Wang, Chongyang Gao, Kezhen Chen, Chen Dong et al.",
+                    "summary": "FM-Bench evaluates long-horizon decision-making of LLM agents managing a football club over 20 years, revealing that managerial behavior rather than scale or token spend drives performance.",
+                    "keywords": [
+                        "FM-Bench",
+                        "long-horizon decision-making",
+                        "LLM agents",
+                        "deterministic engine",
+                        "scripted anchor"
+                    ],
+                    "upvotes": 20,
+                    "url": "https://arxiv.org/abs/2608.18423",
+                    "pdf": "https://arxiv.org/pdf/2608.18423"
+                },
+                {
+                    "id": "2608.14929",
+                    "title": "Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification",
+                    "authors": "Aman Singh Thakur, Rayan Khoury",
+                    "summary": "Compatible open-weight language model checkpoints share detectable weight-space ancestry signals that distinguish true lineage from independent or distilled models without requiring data.",
+                    "keywords": [
+                        "white-box lineage verification",
+                        "residual training",
+                        "identity-aligned component",
+                        "branch products",
+                        "residual blocks"
+                    ],
+                    "upvotes": 18,
+                    "url": "https://arxiv.org/abs/2608.14929",
+                    "pdf": "https://arxiv.org/pdf/2608.14929"
+                },
+                {
+                    "id": "2608.18171",
+                    "title": "Looped Language Models Improve Compositional Tool Calling",
+                    "authors": "Andrei Cristian Popescu, Haitz Sáez de Ocáriz Borde, Pietro Liò",
+                    "summary": "Looped language models improve compositional, multi-step tool use through recurrent computation, with adaptive inference balancing accuracy and compute cost.",
+                    "keywords": [
+                        "looped language models",
+                        "compositional tool-calling",
+                        "recurrent depth",
+                        "adaptive inference",
+                        "API-Bank"
+                    ],
+                    "upvotes": 17,
+                    "url": "https://arxiv.org/abs/2608.18171",
+                    "pdf": "https://arxiv.org/pdf/2608.18171"
+                }
+            ]
+        }
+    ]
+}

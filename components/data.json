@@ -6,7 +6,11 @@
         ["Educations", "/educations"],
         ["Experiences", "/experiences"],
         ["Projects", "/projects"],
-        ["Awards", "/awards"]
+        ["Awards", "/awards"],
+        ["Tools", "/tools"]
+    ],
+    "tools": [
+        ["Latest Papers", "/tools/papers", "fa-solid fa-newspaper", "Daily pick of the latest AI/ML papers, refreshed every day and keeping the last 5 days."]
     ],
     "contacts": [
         ["Email", "fa-solid fa-envelope", "mailto:juliagsy@gmail.com"],

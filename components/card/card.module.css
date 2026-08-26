@@ -21,3 +21,11 @@
 .cardPartition {
   @apply h-[2px] my-[3%] md:my-[1%] bg-gradient-to-r from-violet-800 via-violet-300 to-violet-500;
 }  
+
+.cardLink {
+  @apply block;
+}
+
+.cardLink:hover .card {
+  @apply border-violet-700 text-violet-700;
+}
