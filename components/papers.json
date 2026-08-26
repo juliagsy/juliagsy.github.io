@@ -364,7 +364,7 @@
                     "id": "2608.24659",
                     "title": "REDnet: Recursive Encoder and Decoder for Speech Separation under Unknown Number of Speakers and Variable Number of Microphones",
                     "authors": "Fulin Wu, Zhong-Qiu Wang",
-                    "summary": "We propose $\\textit{recursive encoder and decoder}$ (RED) for building a single deep neural network (DNN) model that can separate multi-speaker mixtures containing unknown numbers of speakers and variable numbers of microphones arranged in...",
+                    "summary": "We propose recursive encoder and decoder (RED) for building a single deep neural network (DNN) model that can separate multi-speaker mixtures containing unknown numbers of speakers and variable numbers of microphones arranged in an unknown...",
                     "cats": [
                         "eess.AS"
                     ],
@@ -455,7 +455,7 @@
                     "id": "2608.24622",
                     "title": "Scalable datacenter replication with mostly-synchronous consensus on hardware",
                     "authors": "Davide Rovelli, Philipp Berdesinski, Rodrigo Otoni, Patrick Eugster",
-                    "summary": "Consistent replication of data among distributed processes -- a task involving the well-known consensus problem -- is notoriously expensive and hard to scale, affecting especially datacenter services with stringent performance...",
+                    "summary": "Consistent replication of data among distributed processes – a task involving the well-known consensus problem – is notoriously expensive and hard to scale, affecting especially datacenter services with stringent performance requirements...",
                     "cats": [
                         "cs.DC"
                     ],
@@ -481,9 +481,9 @@
                 },
                 {
                     "id": "2608.24579",
-                    "title": "Visually-Guided Spatial Audio Generation for $360^\\circ$ In-the-Wild Speech Scenes",
+                    "title": "Visually-Guided Spatial Audio Generation for 360° In-the-Wild Speech Scenes",
                     "authors": "Qingyu Luo, Peng Zhang, Wenwu Wang, Philip J. B. Jackson",
-                    "summary": "Spatial audio is a key component of immersive $360^\\circ$ media, yet high-quality spatial capture remains limited in real-world speech-dominant scenes. We study visually guided First-Order Ambisonics (FOA) speech spatialization in the...",
+                    "summary": "Spatial audio is a key component of immersive 360° media, yet high-quality spatial capture remains limited in real-world speech-dominant scenes. We study visually guided First-Order Ambisonics (FOA) speech spatialization in the wild: given...",
                     "cats": [
                         "eess.AS"
                     ],
@@ -573,7 +573,7 @@
                     "id": "2608.24461",
                     "title": "Do System Prompts Leave Behavioral Fingerprints? A Large-Scale Empirical Study of Clone Detection via Output Similarity",
                     "authors": "Linghan Chen, Yudong Gao, Jiyao Wang, Kaiyan Ji et al.",
-                    "summary": "System prompts can be extracted from commercial LLMs with over 80\\% success and redeployed at zero cost, yet a prompt owner has no way to verify whether a suspected deployment is a clone. We propose Black-Box Behavioral Fingerprinting...",
+                    "summary": "System prompts can be extracted from commercial LLMs with over 80% success and redeployed at zero cost, yet a prompt owner has no way to verify whether a suspected deployment is a clone. We propose Black-Box Behavioral Fingerprinting...",
                     "cats": [
                         "cs.CR"
                     ],
@@ -1048,7 +1048,7 @@
                     "id": "2608.23771",
                     "title": "Scale, Concentration, and Entry Timing in the Shopify App Ecosystem: A Longitudinal Study of Platform Governance and Application Survival",
                     "authors": "Fabrizio Assabese, Peter-Jan Celis, Giuseppe Destefanis",
-                    "summary": "The Shopify marketplace hosts more than 16,000 active third-party applications, serving 2.7 million active merchant stores generating an estimated \\$706 billion in annual sales, yet little empirical evidence exists on its structure and...",
+                    "summary": "The Shopify marketplace hosts more than 16,000 active third-party applications, serving 2.7 million active merchant stores generating an estimated 706 billion in annual sales, yet little empirical evidence exists on its structure and...",
                     "cats": [
                         "cs.SE"
                     ],
@@ -1091,7 +1091,7 @@
                 },
                 {
                     "id": "2608.23758",
-                    "title": "EXAM$^2$: $\\underline{Ex}tending$ $\\underline{A}udio$ $Understanding$ $in$ $\\underline{M}ultilingual$ $and$ $\\underline{M}ultimodal$ $Analysis$",
+                    "title": "EXAM²: Extending Audio Understanding in Multilingual and Multimodal Analysis",
                     "authors": "Jiawen Wang, Xiaoxue Gao, Zi Haur Pang, Nancy F. Chen",
                     "summary": "Recent large audio language models (LALMs) have achieved impressive progress in audio understanding. However, existing evaluations remain largely constrained to English and narrow audio domains. Prior benchmarks typically focus on a single...",
                     "cats": [
@@ -1822,7 +1822,7 @@
                     "id": "2608.23630",
                     "title": "FPGAgent: An LLM-Assisted Framework for Autonomous HLS Code Generation and Verification in FPGA Environments",
                     "authors": "Tianyu Wang, Wenjie Wang, Jianguo Yao, Haibing Guan et al.",
-                    "summary": "Large language models (LLMs) have shown substantial promise for high-level synthesis (HLS) code generation, but most existing approaches validate only simulation or synthesis results. Because of timing and place-and-route constraints...",
+                    "summary": "Large language models (LLMs) have shown substantial promise for high-level synthesis (HLS) code generation, but most existing approaches validate only simulation or synthesis results. Because of timing and place-and-route constraints, HLS...",
                     "cats": [
                         "cs.SE"
                     ],
@@ -2305,7 +2305,7 @@
                 },
                 {
                     "id": "2608.22035",
-                    "title": "Ludi${}_{\\scriptscriptstyle 0.1}$: An Agentic System for Socially Intelligent Robots",
+                    "title": "Ludi0.1: An Agentic System for Socially Intelligent Robots",
                     "authors": "Wooseong Chung, William Cong, Jakub Dworakowski, Ethan Ewer et al.",
                     "summary": "Robot foundation models have substantially advanced perception and control, but natural human-robot collaboration requires more than executing isolated commands. A robot must recognize ambiguity, maintain context across turns, communicate...",
                     "cats": [
@@ -2378,7 +2378,7 @@
                     "id": "2608.21989",
                     "title": "Key Recovery from Residue-Confined Errors in Pradhan CRT-RLWE",
                     "authors": "Lukasz Olejnik, Bartosz Naskrecki",
-                    "summary": "We show that the CRT-FHE scheme of Pradhan et al.\\ is insecure for laws within its assumed error distribution range. The secret key follows from the public key by a single ring inversion whenever the public multiplier is a unit. The...",
+                    "summary": "We show that the CRT-FHE scheme of Pradhan et al. is insecure for laws within its assumed error distribution range. The secret key follows from the public key by a single ring inversion whenever the public multiplier is a unit. The...",
                     "cats": [
                         "cs.CR"
                     ],
@@ -2819,7 +2819,7 @@
                     "id": "2608.21643",
                     "title": "Cross-Layer Roots of Trust: Integrating Biometrics, PUFs, and Hardware Obfuscation",
                     "authors": "Nima Karimian",
-                    "summary": "Modern cyber--physical, Internet-of-Things (IoT), wearable, and edge systems increasingly require trust in three distinct entities: the human requesting access, the physical device executing the computation, and the hardware function that...",
+                    "summary": "Modern cyber–physical, Internet-of-Things (IoT), wearable, and edge systems increasingly require trust in three distinct entities: the human requesting access, the physical device executing the computation, and the hardware function that...",
                     "cats": [
                         "cs.CR"
                     ],
@@ -3090,7 +3090,7 @@
                     "id": "2608.21500",
                     "title": "SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation",
                     "authors": "Yibo Peng, Long Lian, David Wagner, Sizhe Chen",
-                    "summary": "Prompt injection is listed as the \\#1 threat to AI agents. When an agent accesses external data from websites, files, or emails, an attacker may inject a prompt into the data, saying, \"Ignore all prior instructions and perform <an...",
+                    "summary": "Prompt injection is listed as the #1 threat to AI agents. When an agent accesses external data from websites, files, or emails, an attacker may inject a prompt into the data, saying, \"Ignore all prior instructions and perform <an...",
                     "cats": [
                         "cs.CR",
                         "cs.AI"

@@ -54,9 +54,86 @@ function decode(text) {
         .replace(/&amp;/g, "&");
 }
 
-/** Collapses the newlines arXiv wraps titles and abstracts at. */
+// arXiv titles and abstracts are LaTeX source, so they arrive with math delimiters,
+// formatting commands and accent escapes in them. Render what we can as plain
+// Unicode and strip the rest, rather than showing raw markup on the page.
+const SYMBOL = {
+    alpha: "α", beta: "β", gamma: "γ", delta: "δ", epsilon: "ε",
+    zeta: "ζ", eta: "η", theta: "θ", iota: "ι", kappa: "κ",
+    lambda: "λ", mu: "μ", nu: "ν", xi: "ξ", pi: "π", rho: "ρ",
+    sigma: "σ", tau: "τ", upsilon: "υ", phi: "φ", chi: "χ",
+    psi: "ψ", omega: "ω", Gamma: "Γ", Delta: "Δ", Theta: "Θ",
+    Lambda: "Λ", Xi: "Ξ", Pi: "Π", Sigma: "Σ", Phi: "Φ",
+    Psi: "Ψ", Omega: "Ω", times: "×", cdot: "·", pm: "±",
+    leq: "≤", geq: "≥", neq: "≠", approx: "≈", equiv: "≡",
+    infty: "∞", rightarrow: "→", leftarrow: "←", to: "→",
+    ldots: "…", dots: "…", circ: "°", ell: "ℓ", partial: "∂",
+    nabla: "∇", propto: "∝", in: "∈", subset: "⊂", cup: "∪",
+    cap: "∩", forall: "∀", exists: "∃", sqrt: "√", sum: "∑",
+    prod: "∏", int: "∫", angle: "∠", perp: "⊥",
+};
+const SUP = { 0:"⁰", 1:"¹", 2:"²", 3:"³", 4:"⁴", 5:"⁵",
+    6:"⁶", 7:"⁷", 8:"⁸", 9:"⁹", "+":"⁺", "-":"⁻",
+    n:"ⁿ", i:"ⁱ" };
+const SUB = { 0:"₀", 1:"₁", 2:"₂", 3:"₃", 4:"₄", 5:"₅",
+    6:"₆", 7:"₇", 8:"₈", 9:"₉", "+":"₊", "-":"₋" };
+const ACCENT = { "'": "́", "`": "̀", '"': "̈", "^": "̂", "~": "̃",
+    "=": "̄", ".": "̇", u: "̆", v: "̌", H: "̋", c: "̧",
+    k: "̨", d: "̣", b: "̱", r: "̊" };
+const LETTER = { ss: "ß", aa: "å", AA: "Å", o: "ø", O: "Ø",
+    ae: "æ", AE: "Æ", oe: "œ", OE: "Œ", l: "ł", L: "Ł" };
+
+/** Renders sub/superscript content in Unicode, or falls back to the bare text. */
+function script(content, map) {
+    const text = content.trim();
+    const chars = [...text];
+    return chars.length > 0 && chars.every((c) => c in map)
+        ? chars.map((c) => map[c]).join("")
+        : text;
+}
+
+function delatex(text) {
+    let out = String(text);
+    out = out.replace(/\\\\/g, " ");
+
+    // Dotless i/j only ever appear as accent bases: \'{\i} -> i + acute -> i-acute
+    out = out.replace(/\\([ij])\b/g, "$1");
+
+    // \'e, \'{e}, \c{c} ... -> base letter plus a combining mark, folded by NFC below
+    out = out.replace(/\\(['`"^~=.])\s*\{?([a-zA-Z])\}?/g, (whole, mark, letter) => letter + ACCENT[mark]);
+    out = out.replace(/\\([uvHckdbr])\{([a-zA-Z])\}/g, (whole, mark, letter) => letter + ACCENT[mark]);
+    out = out.replace(/\\(ss|aa|AA|ae|AE|oe|OE|[oOlL])(?![a-zA-Z])/g, (whole, name) => LETTER[name] ?? whole);
+
+    // Sizing and font switches carry nothing in plain text
+    out = out.replace(/\\(?:scriptscriptstyle|scriptstyle|displaystyle|textstyle|mathrm|rm|bf|it|sf|tt|left|right|big|Big)\b/g, "");
+
+    // \textbf{x}, \underline{x}, \mathcal{X} ... -> x, repeated for nesting
+    for (let depth = 0; depth < 4; depth += 1) {
+        out = out.replace(/\\[a-zA-Z]+\s*\{([^{}]*)\}/g, "$1");
+    }
+
+    out = out.replace(/\\([a-zA-Z]+)/g, (whole, name) => SYMBOL[name] ?? whole);
+    out = out.replace(/\^\{([^{}]*)\}|\^(\S)/g, (whole, braced, single) => script(braced ?? single, SUP));
+    out = out.replace(/_\{([^{}]*)\}|_(\S)/g, (whole, braced, single) => script(braced ?? single, SUB));
+    out = out.replace(/\\([%&_#${}])/g, "$1");
+
+    // Spacing controls: "et al.\ is" forces an interword space; \! and \- are invisible
+    out = out.replace(/\\[ ,;:]/g, " ");
+    out = out.replace(/\\[!\-]/g, "");
+
+    out = out.replace(/\\[a-zA-Z]+/g, "");
+    out = out.replace(/[${}]/g, "");
+    out = out.replace(/---/g, "—").replace(/--/g, "–").replace(/~/g, " ");
+
+    return out;
+}
+
+/** Collapses the newlines arXiv wraps at, then renders LaTeX source as plain text. */
 function clean(text) {
-    return decode(String(text ?? "").replace(/\s+/g, " ")).trim();
+    return delatex(decode(String(text ?? "").replace(/\s+/g, " ")))
+        .replace(/\s+/g, " ")
+        .trim()
+        .normalize("NFC");
 }
 
 /** Truncates on a word boundary so cards stay an even height. */
