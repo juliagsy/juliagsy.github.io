@@ -5,8 +5,8 @@ import Tool from "@/components/card/tool";
 import { Key } from "react";
 
 // Tools that preview a set of labels on their card instead of a description.
-const chips: Record<string, string[]> = {
-    "/tools/papers": topics.map((item) => item[1] as string),
+const chips: Record<string, string[][]> = {
+    "/tools/papers": topics.map((item) => [item[0] as string, item[1] as string]),
 };
 
 export default function Tools() {
