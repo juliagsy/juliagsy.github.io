@@ -1,3 +1,4 @@
+import Link from "next/link";
 import data from "@/components/data.json";
 import Links from "@/components/about/links";
 import style from "@/components/about/about.module.css";
@@ -13,7 +14,7 @@ export default function Profile() {
             </div>
             <div className="flex flex-row gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Resume/CV: </p>
-                <p className={`${style.item}`}><a href="/static/JuliaGoh_CV.pdf" target="_blank">English</a></p>
+                <p className={`${style.item}`}><Link href="/resume" target="_blank">English</Link></p>
                 {/* <p className={`${style.item}`}><a href="/static/JuliaGoh_CVChi.pdf" target="_blank">Chinese</a></p> */}
             </div>
             <div className="flex flex-row gap-3">

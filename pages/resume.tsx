@@ -2,7 +2,15 @@ import Head from "next/head";
 import data from "@/components/data.json";
 import { Key } from "react";
 
-const research = data.projects.filter((item) => item[6] === "research");
+// The resume is a summary, not the whole site — keep only the most recent of each.
+// data.json is ordered newest-first, so a slice is enough.
+const EDUCATIONS = 1;
+const EXPERIENCES = 3;
+const RESEARCH = 3;
+
+const educations = data.educations.slice(0, EDUCATIONS);
+const experiences = data.experiences.slice(0, EXPERIENCES);
+const research = data.projects.filter((item) => item[6] === "research").slice(0, RESEARCH);
 
 // "September 2020 - June 2024" -> "September '20 – June '24", as the PDF has it.
 const shortDate = (text) => String(text)
@@ -37,8 +45,15 @@ function Entry({ head, items, boldLast = false }) {
     )
 }
 
+// Dates sit on a continuation line of their own, keeping the leading pipe — the
+// same shape the PDF header uses for its second line of links.
 function Head3({ org, title, date }) {
-    return <><span className="font-bold">{org}</span> | {title} | {shortDate(date)}</>
+    return (
+        <>
+            <span className="font-bold">{org}</span> | {title}
+            <br />| {shortDate(date)}
+        </>
+    )
 }
 
 // Kept as its own component so `item` arrives untyped: narrowing Array.isArray()
@@ -103,14 +118,14 @@ export default function Resume() {
 
                 <p className="resume-section">Education</p>
                 {
-                    data.educations.map((item) => (
+                    educations.map((item) => (
                         <EducationEntry key={item[1] as Key} item={item} />
                     ))
                 }
 
                 <p className="resume-section">Experiences</p>
                 {
-                    data.experiences.map((item) => (
+                    experiences.map((item) => (
                         <Entry
                             key={item[0] as Key}
                             head={<Head3 org={item[2]} title={item[1]} date={item[0]} />}
