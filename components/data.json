@@ -17,10 +17,10 @@
         ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/julia-goh-3750b11b9/"]
     ],
     "tech": [
-        ["os", ["apple", "linux", "ubuntu", "debian"], []],
+        ["os", ["apple", "linux", "ubuntu", "windows"], []],
         ["framework", ["python", "java"], ["c"]],
-        ["cloud/web", ["aws", "google", "sass", "js", "node", "react", "npm", "yarn"], []],
-        ["others", ["git", "docker", "figma", "trello"], []]
+        ["cloud/web", ["aws", "google", "microsoft", "js", "node", "react", "html5", "css3"], []],
+        ["others", ["git", "github", "docker"], []]
     ],
     "languages": [
         ["Fluent", ["English", "Chinese", "Malay"]],
