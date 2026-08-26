@@ -6,7 +6,7 @@
 /* global */
 
 body {
-  @apply bg-sky-50 mt-[15%] mb-[20%] md:my-[12%] lg:my-[9%] font-serif text-base md:text-lg;
+  @apply bg-sky-50 mt-[15%] mb-[20%] md:my-[12%] lg:my-[9%] font-serif text-base md:text-lg print:m-0 print:bg-white;
 }
 
 
@@ -81,4 +81,68 @@ body {
 
 .show-toggle:hover {
   @apply text-violet-700;
+}
+
+
+/* resume — mirrors the A4 / Century Gothic layout of the CV PDF */
+
+@page {
+  size: A4;
+  margin: 13mm 16mm;
+}
+
+.resume {
+  @apply mx-auto bg-white text-black print:w-auto print:p-0;
+  font-family: 'Century Gothic', Questrial, 'URW Gothic', ui-sans-serif, sans-serif;
+  width: 210mm;
+  padding: 13mm 16mm;
+  font-size: 10pt;
+  line-height: 1.35;
+}
+
+.resume a {
+  @apply underline;
+}
+
+.resume-name {
+  font-size: 19pt;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.resume-meta {
+  font-size: 9.5pt;
+  line-height: 1.45;
+}
+
+.resume-section {
+  font-size: 13.5pt;
+  font-weight: 700;
+  margin-top: 5.5mm;
+  margin-bottom: 1mm;
+}
+
+/* keep an entry and its bullets together across a page break */
+.resume-entry {
+  margin-bottom: 3.4mm;
+  break-inside: avoid;
+}
+
+.resume-entry-head {
+  font-size: 10.5pt;
+  margin-bottom: 0.6mm;
+}
+
+.resume-list {
+  @apply list-none m-0 p-0;
+}
+
+.resume-list li {
+  padding-left: 3.4mm;
+  text-indent: -3.4mm;
+  margin-bottom: 0.5mm;
+}
+
+.resume-list li::before {
+  content: "\2022  ";
 }

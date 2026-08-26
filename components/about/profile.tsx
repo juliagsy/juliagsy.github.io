@@ -18,9 +18,11 @@ export default function Profile() {
             </div>
             <div className="flex flex-row gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Referrals:</p>
-                <p className={`${style.item}`}><a href="/static/pdsb_ref.pdf" target="_blank">Petronas</a></p>
-                <p className={`${style.item}`}><a href="/static/unify_ref.pdf" target="_blank">Unify</a></p>
-                <p className={`${style.item}`}><a href="/static/ucl_ref.pdf" target="_blank">UCL</a></p>
+                {
+                    data.referrals.map((item) => (
+                        <p key={item[0]} className={`${style.item}`}><a href={item[1]} target="_blank">{item[0]}</a></p>
+                    ))
+                }
             </div>
         </div>
     )

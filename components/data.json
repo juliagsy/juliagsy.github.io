@@ -11,6 +11,11 @@
     "tools": [
         ["Latest Papers", "/tools/papers", "fa-solid fa-newspaper"]
     ],
+    "referrals": [
+        ["Petronas", "/static/pdsb_ref.pdf"],
+        ["Unify", "/static/unify_ref.pdf"],
+        ["UCL", "/static/ucl_ref.pdf"]
+    ],
     "contacts": [
         ["Email", "fa-solid fa-envelope", "mailto:juliagsy@gmail.com"],
         ["GitHub", "fa-brands fa-github-alt", "https://github.com/juliagsy"],

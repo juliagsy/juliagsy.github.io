@@ -1,5 +1,5 @@
 .bar {
-    @apply fixed w-[100%] flex flex-row flex-wrap justify-center bg-white py-[2%];
+    @apply fixed w-[100%] flex flex-row flex-wrap justify-center bg-white py-[2%] print:hidden;
 }
 
 .item {
