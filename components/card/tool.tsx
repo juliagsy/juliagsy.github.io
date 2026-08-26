@@ -3,7 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 
-export default function Tool({ item }) { 
+function ToolChips({ chips }) {
+    return (
+        <div className="flex flex-row flex-wrap gap-x-5 gap-y-1">
+            {
+                chips.map((chip) => (
+                    <p key={chip}>{chip}</p>
+                ))
+            }
+        </div>
+    )
+}
+
+
+export default function Tool({ item, chips }) { 
     return (
         <a className={styles.cardLink} href={item[1]}>
             <div className={styles.card}>
@@ -12,7 +25,11 @@ export default function Tool({ item }) {
                 </div>
 
                 <div className={styles.cardPartition}></div>
-                <p><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {item[3]}</p>
+                {
+                    chips
+                    ? <ToolChips chips={chips} />
+                    : <p><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {item[3]}</p>
+                }
             </div>
         </a>
     )

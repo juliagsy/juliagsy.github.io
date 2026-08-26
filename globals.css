@@ -46,3 +46,23 @@ body {
 .component-gallery {
   @apply grid grid-cols-1 gap-5 py-[3%];
 }
+
+.filter-bar {
+  @apply flex flex-row flex-wrap justify-center gap-x-5 gap-y-1 py-[1%];
+}
+
+.filter-item:hover {
+  @apply text-violet-700;
+}
+
+.filter-item-active {
+  @apply text-violet-700 underline;
+}
+
+.search-box {
+  @apply w-[100%] border-black border-solid border-[3px] rounded-lg px-[2%] py-[1%] bg-transparent;
+}
+
+.search-box:focus {
+  @apply outline-none border-violet-700;
+}

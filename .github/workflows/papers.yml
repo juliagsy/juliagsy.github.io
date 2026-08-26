@@ -24,6 +24,9 @@ jobs:
   # Scrape job
   scrape:
     runs-on: ubuntu-latest
+    # ~2.5 min normally (8 topics x 5 days, 3s apart as arXiv asks); this is the
+    # backstop if their API degrades and every request burns its retries.
+    timeout-minutes: 20
     permissions:
       contents: write
     outputs:

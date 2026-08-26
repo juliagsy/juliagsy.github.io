@@ -14,7 +14,7 @@ function PaperGroup({ item }) {
                 <p><FontAwesomeIcon icon={"fa-solid fa-user-group" as IconProp} /> {item.authors}</p>
                 <p><FontAwesomeIcon icon={"fa-regular fa-file" as IconProp} /> <a href={item.url} target="_blank">arXiv:{item.id}</a> · <a href={item.pdf} target="_blank">PDF</a></p>
                 {
-                    item.keywords.length === 0 ? null : <p><FontAwesomeIcon icon={"fa-solid fa-tags" as IconProp} /> {item.keywords.join(", ")}</p>
+                    item.cats.length === 0 ? null : <p><FontAwesomeIcon icon={"fa-solid fa-tags" as IconProp} /> {item.cats.join(", ")}</p>
                 }
             </div>
 

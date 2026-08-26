@@ -1,0 +1,11 @@
+[
+    ["all", "All", []],
+    ["ai-ml", "AI & ML", ["cs.AI", "cs.LG", "cs.CL", "cs.CV", "cs.NE", "stat.ML"]],
+    ["audio", "Audio & Music", ["cs.SD", "eess.AS", "cs.MM"]],
+    ["graphics", "Graphics & Games", ["cs.GR"], ["video game", "gameplay", "game engine", "procedural content", "minecraft", "atari"]],
+    ["hci", "HCI", ["cs.HC"]],
+    ["robotics", "Robotics", ["cs.RO"]],
+    ["security", "Security", ["cs.CR"]],
+    ["software", "Software Eng", ["cs.SE"]],
+    ["systems", "Systems & Networking", ["cs.DC", "cs.NI", "cs.OS"]]
+]
