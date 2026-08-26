@@ -48,7 +48,11 @@ body {
 }
 
 .filter-bar {
-  @apply flex flex-row flex-wrap justify-center gap-x-5 gap-y-1 py-[1%];
+  @apply flex flex-row flex-wrap justify-center gap-2 py-[1%];
+}
+
+.filter-item {
+  @apply rounded-lg bg-white px-4 py-1;
 }
 
 .filter-item:hover {
@@ -56,11 +60,15 @@ body {
 }
 
 .filter-item-active {
-  @apply text-violet-700 underline;
+  @apply bg-violet-700 text-white;
+}
+
+.filter-item-active:hover {
+  @apply text-white;
 }
 
 .search-box {
-  @apply w-[100%] border-black border-solid border-[3px] rounded-lg px-[2%] py-[1%] bg-transparent;
+  @apply w-[100%] border-black border-solid border-[3px] rounded-lg px-[2%] py-[1%] bg-white;
 }
 
 .search-box:focus {

@@ -5,7 +5,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 function ToolChips({ chips }) {
     return (
-        <div className="flex flex-row flex-wrap gap-x-5 gap-y-1">
+        <div className="grid grid-cols-1">
             {
                 chips.map((chip) => (
                     <p key={chip}>{chip}</p>

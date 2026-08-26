@@ -42,7 +42,7 @@ export default function Papers() {
                         <button
                             key={item[0] as Key}
                             type="button"
-                            className={item[0] === topic ? "filter-item-active" : "filter-item"}
+                            className={`filter-item${item[0] === topic ? " filter-item-active" : ""}`}
                             onClick={() => setTopic(item[0] as string)}
                         >
                             {item[1]}
