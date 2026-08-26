@@ -12,12 +12,12 @@ export default function Profile() {
             <div className="flex flex-row">
                 <Links />
             </div>
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-row flex-wrap gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Resume/CV: </p>
                 <p className={`${style.item}`}><Link href="/resume" target="_blank">English</Link></p>
                 {/* <p className={`${style.item}`}><a href="/static/JuliaGoh_CVChi.pdf" target="_blank">Chinese</a></p> */}
             </div>
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-row flex-wrap gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Referrals:</p>
                 {
                     data.referrals.map((item) => (

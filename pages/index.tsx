@@ -61,7 +61,7 @@ export default function Home() {
           <div className="main-partition-right"></div>
       </div>
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-0">
         <div>
             <p className={styles.title}>Tech Stack</p>
             <Tech />
