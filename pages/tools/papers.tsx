@@ -16,7 +16,7 @@ export default function Papers() {
                 <title>{`${data.name} - Latest Papers`}</title>
             </Head>
             <p className="text-center py-[2%]">
-                Daily pick of the latest AI/ML papers from <a className="underline hover:text-violet-700" href={papers.source[1]} target="_blank">{papers.source[0]}</a>, keeping the last {papers.days.length} days. Updated {papers.updated}.
+                Daily pick of latest papers for the past {papers.days.length} days. Updated {papers.updated}.
             </p>
             <div className="main-gallery">
                 {
