@@ -17,10 +17,12 @@
         ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/julia-goh-3750b11b9/"]
     ],
     "tech": [
-        ["os", ["apple", "linux", "ubuntu", "windows"], []],
-        ["framework", ["python", "java"], ["c"]],
-        ["cloud/web", ["aws", "google", "microsoft", "js", "node", "react", "html5", "css3"], []],
-        ["others", ["git", "github", "docker"], []]
+        ["os", ["apple", "linux", "ubuntu", "windows"], [], []],
+        ["programming", ["python", "js", "java"], ["c"], [["typescript", "TypeScript"]]],
+        ["ML/data", [], [], [["pytorch", "PyTorch"], ["tensorflow", "TensorFlow"], ["scikitlearn", "scikit-learn"], ["numpy", "NumPy"], ["pandas", "pandas"], ["huggingface", "Hugging Face"], ["mlflow", "MLflow"]]],
+        ["web", ["react", "node", "html5", "css3"], [], [["nextdotjs", "Next.js"], ["fastapi", "FastAPI"], ["django", "Django"], ["flask", "Flask"], ["tailwindcss", "Tailwind CSS"]]],
+        ["cloud/infra", ["aws", "google", "microsoft", "docker"], [], [["kubernetes", "Kubernetes"], ["postgresql", "PostgreSQL"]]],
+        ["others", ["git", "github"], [], [["nvidia", "NVIDIA"], ["arduino", "Arduino"]]]
     ],
     "languages": [
         ["Fluent", ["English", "Chinese", "Malay"]],
