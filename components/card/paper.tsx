@@ -1,6 +1,30 @@
 import styles from '@/components/card/card.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { useState } from 'react';
+
+
+const PREVIEW = 240;
+
+
+function Summary({ text }) {
+    const [expanded, setExpanded] = useState(false);
+
+    if (text.length <= PREVIEW) return <p>{text}</p>;
+
+    const cut = text.slice(0, PREVIEW);
+    const boundary = cut.lastIndexOf(" ");
+    const preview = cut.slice(0, boundary > 0 ? boundary : PREVIEW).replace(/[,;:.]$/, "");
+
+    return (
+        <p>
+            {expanded ? text : `${preview}...`}{" "}
+            <button type="button" className="show-toggle" onClick={() => setExpanded(!expanded)}>
+                {expanded ? "show less" : "show more"}
+            </button>
+        </p>
+    )
+}
 
 
 function PaperGroup({ item }) {
@@ -19,7 +43,7 @@ function PaperGroup({ item }) {
             </div>
 
             <div className={styles.cardPartition}></div>
-            <p>{item.summary}</p>
+            <Summary text={item.summary} />
         </div>
     )
 }
