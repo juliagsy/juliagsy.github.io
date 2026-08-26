@@ -3,8 +3,7 @@
     "about": "Experienced Machine Learning (ML) Engineer (Data Science, Generative AI and Software/Full-Stack). MEng Computer Science graduate at University College London.  Fluent in English, Chinese and Malay. Open to roles in ML/AI Engineering, Data Science and Full Stack. Acquired Microsoft certifications of AI-900, AI-102 and DP-900.",
     "nav": [
         ["Home", "/"],
-        ["Educations", "/educations"],
-        ["Experiences", "/experiences"],
+        ["Profile", "/profile"],
         ["Projects", "/projects"],
         ["Awards", "/awards"],
         ["Tools", "/tools"]

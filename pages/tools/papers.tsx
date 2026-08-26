@@ -3,26 +3,15 @@ import data from "@/components/data.json";
 import papers from "@/components/papers.json";
 import topics from "@/components/topics.json";
 import Paper from "@/components/card/paper";
-import { Key, useEffect, useState } from "react";
+import useTab from "@/components/tab";
+import { Key, useState } from "react";
 
 const total = papers.days.reduce((count, day) => count + day.papers.length, 0);
 
 export default function Papers() {
-    const [topic, setTopic] = useState("all");
-    const [query, setQuery] = useState("");
-
     // Deep links from the tools card (/tools/papers#robotics) open on that filter.
-    useEffect(() => {
-        const hash = window.location.hash.slice(1);
-        if (topics.some((item) => item[0] === hash)) setTopic(hash);
-    }, []);
-
-    // Keep the address bar in step so the view stays shareable. replaceState
-    // rather than location.hash, which would stack history entries per click.
-    const selectTopic = (id) => {
-        setTopic(id);
-        window.history.replaceState(null, "", id === "all" ? window.location.pathname : `#${id}`);
-    };
+    const [topic, selectTopic] = useTab(topics.map((item) => item[0] as string));
+    const [query, setQuery] = useState("");
 
     const search = query.trim().toLowerCase();
     const match = (paper) => (

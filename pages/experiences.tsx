@@ -1,26 +1,20 @@
 import Head from "next/head";
+import Link from "next/link";
 import data from "@/components/data.json";
-import Experience from "@/components/card/experience";
-import { Key } from "react";
 
+// Experiences was folded into /profile. Kept as a redirect so existing links,
+// bookmarks and search results still land somewhere useful. Meta refresh
+// rather than a router push, so it works with JavaScript disabled too.
 export default function Experiences() {
     return (
         <div className="content">
-            <div className="grid grid-cols-3">
-                <div className="main-partition-left mr-[15%] md:mr-[0%]"></div>
-                <div className="main-title">Experiences</div>
-                <div className="main-partition-right ml-[15%] md:ml-[0%]"></div>
-            </div>
             <Head>
                 <title>{`${data.name} - Experiences`}</title>
+                <meta httpEquiv="refresh" content="0; url=/profile#experiences" />
             </Head>
-            <div className="main-gallery">
-                {
-                    data.experiences.map((item) => (
-                        <Experience key={item[0] as Key} item={item} />
-                    ))
-                }
-            </div>
+            <p className="text-center py-[3%]">
+                Experiences now lives on <Link className="underline hover:text-violet-700" href="/profile#experiences">Profile</Link>.
+            </p>
         </div>
     )
 }
