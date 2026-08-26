@@ -13,7 +13,6 @@ function PaperGroup({ item }) {
             <div className={styles.cardDesc}>
                 <p><FontAwesomeIcon icon={"fa-solid fa-user-group" as IconProp} /> {item.authors}</p>
                 <p><FontAwesomeIcon icon={"fa-regular fa-file" as IconProp} /> <a href={item.url} target="_blank">arXiv:{item.id}</a> · <a href={item.pdf} target="_blank">PDF</a></p>
-                <p><FontAwesomeIcon icon={"fa-regular fa-thumbs-up" as IconProp} /> {item.upvotes}</p>
             </div>
 
             <div className={styles.cardPartition}></div>
