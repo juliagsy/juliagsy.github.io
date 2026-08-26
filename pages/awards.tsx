@@ -17,7 +17,7 @@ export default function Awards() {
             <div className="main-gallery">
                 {
                     data.awards.map((item) => (
-                        <Award key={item[0] as Key} item={item} />
+                        <Award key={item[1] as Key} item={item} />
                     ))
                 }
             </div>

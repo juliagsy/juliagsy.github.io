@@ -4,7 +4,7 @@ import Profile from "@/components/about/profile";
 import data from "@/components/data.json";
 import Education from "@/components/card/education";
 import Experience from "@/components/card/experience";
-import Recent from "@/components/card/recent";
+import Project from "@/components/card/project";
 import styles from "@/components/about/about.module.css";
 import Tech from "@/components/about/tech";
 import Language from "@/components/about/language";
@@ -49,13 +49,9 @@ export default function Home() {
         
         <p className="component-title">Projects</p>
         {
-          <Recent item={data.projects[0][1][0]} />
-        }
-        {
-          <Recent item={data.projects[0][1][1]} />
-        }
-        {
-          <Recent item={data.projects[1][1][0]} />
+          data.projects.slice(0, 3).map((item) => (
+            <Project key={item[0] as Key} item={item} />
+          ))
         }
       </div>
 

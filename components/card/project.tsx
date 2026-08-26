@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 
-function ProjectGroup({ item }) { 
+export default function Project({ item }) { 
     return (
         <div className={styles.card}>
             <div className={styles.cardTitle}>
@@ -36,23 +36,6 @@ function ProjectGroup({ item }) {
                     </li>
                 }
             </ul>
-        </div>
-    )
-}
-
-
-export default function Project({ item }) { 
-    return (
-        <div>
-            <div id={item[0]} className='item-anchor'></div>
-            <div className='component-title'>{item[0]}</div>
-            <div className="component-gallery">
-                {
-                    item[1].map((desc) => (
-                        <ProjectGroup key={desc[0]} item={desc} />
-                    ))
-                }
-            </div>
         </div>
     )
 }

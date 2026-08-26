@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 
-function AwardGroup({ item }) {
+export default function Award({ item }) {
     return (
         <div className={styles.card}>
             <div className={styles.cardTitle}>
@@ -23,22 +23,6 @@ function AwardGroup({ item }) {
                     ))
                 }
             </ul>
-        </div>
-    )
-}
-
-export default function Award({ item }) { 
-    return (
-        <div>
-            <div id={item[0]} className='item-anchor'></div>
-            <div className='component-title'>{item[0]}</div>
-            <div className="component-gallery">
-                {
-                    item[1].map((desc) => (
-                        <AwardGroup key={desc[0]} item={desc} />
-                    ))
-                }
-            </div>
         </div>
     )
 }

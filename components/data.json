@@ -93,45 +93,29 @@
             ], "https://en.wikipedia.org/wiki/Infant_Jesus_Convent,_Malacca"]
     ],
     "awards": [
-        ["2020", [
-            ["2020", "Top in the World Mathematics", "Cambridge GCSE A-Levels", ["Cambridge Outstanding Learner Award", "Achieved a percentile of 100% in the November 2019 AS papers"], "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/"]
-        ]],
-        ["2019", [
-            ["2019", "Taylor's Excellence Award", "Taylor's College Malaysia", ["Partial tuition fee waiver for the GCSE A-Levels programme"], "https://university.taylors.edu.my/en.html"],
-            ["2019", "SPM High Achiever Award 2018", "Malaysia Ministry of Education", ["Achieved All-As (6A+ 3A) in the Malaysian Certificate of Education (SPM)"], "https://www.moe.gov.my/en/"]
-        ]],
-        ["2018", [
-            ["2018", "Bronze Medalist - Kangaroo Mathematics Competition", "Kangaroo Mathematics Malaysia", ["Achieved a result of Top 10% among all participants"], "https://www.kangaroomath.com.my"],
-            ["2018", "Credit Award - UNSW ICAS English 2018", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) English", "Achieved Top 25% among all participants"], "https://www.icasassessments.com/products-icas/subjects/english/"],
-            ["2018", "Distinction Award - National Chemistry Quiz 2018", "Malaysian Institute of Chemistry", ["Achieved a result of Top 10% among all participants"], "https://ikm.org.my/about-ikm/introduction/"]
-        ]],
-        ["2017 and earlier", [
-            ["2017", "Distinction Award - UNSW ICAS Mathematics 2017", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 5% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
-            ["2015", "Distinction Award - UNSW ICAS Mathematics 2015", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 8% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
-            ["2014", "Distinction Award - UNSW ICAS Mathematics 2014", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 9% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"]
-        ]]
+        ["2020", "Top in the World Mathematics", "Cambridge GCSE A-Levels", ["Cambridge Outstanding Learner Award", "Achieved a percentile of 100% in the November 2019 AS papers"], "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/"],
+        ["2019", "Taylor's Excellence Award", "Taylor's College Malaysia", ["Partial tuition fee waiver for the GCSE A-Levels programme"], "https://university.taylors.edu.my/en.html"],
+        ["2019", "SPM High Achiever Award 2018", "Malaysia Ministry of Education", ["Achieved All-As (6A+ 3A) in the Malaysian Certificate of Education (SPM)"], "https://www.moe.gov.my/en/"],
+        ["2018", "Bronze Medalist - Kangaroo Mathematics Competition", "Kangaroo Mathematics Malaysia", ["Achieved a result of Top 10% among all participants"], "https://www.kangaroomath.com.my"],
+        ["2018", "Credit Award - UNSW ICAS English 2018", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) English", "Achieved Top 25% among all participants"], "https://www.icasassessments.com/products-icas/subjects/english/"],
+        ["2018", "Distinction Award - National Chemistry Quiz 2018", "Malaysian Institute of Chemistry", ["Achieved a result of Top 10% among all participants"], "https://ikm.org.my/about-ikm/introduction/"],
+        ["2017", "Distinction Award - UNSW ICAS Mathematics 2017", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 5% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
+        ["2015", "Distinction Award - UNSW ICAS Mathematics 2015", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 8% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"],
+        ["2014", "Distinction Award - UNSW ICAS Mathematics 2014", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 9% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"]
     ],
     "projects": [
-        ["2024", [
-            ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", 
-                [
-                    ["/static/gai_review.pdf", "Review", "Paper. Studied existing tech related to image and music generations, majority being text-conditioned."],
-                    ["/static/gai_overview.pdf", "Overview", "Paper. Developed POCs for Diffusion based Music-conditioned Image Generative AI and Transformer based Image-conditioned Music Generative AI."],
-                    "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"
-                ]],
-            ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["Applied PageRank and HITS for analysing key driver in the evolution network.", "Analysed the community structure of the network with modularity.", "Tech Stack: Python, NetworkX, NumPy, Matplotlib, Git"]]
-        ]],
-        ["2023", [
-            ["Multi-Agent Reinforcement Learning in Portfolio Management", "January 2023 - April 2023", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/marl-portfolio/report.pdf", ["Explored the effect of different RL algorithms in competitive vs. cooperative MARL settings.", "Algorithms: Advantaged Actor-Critic (A2C), Deep Deterministic Policy Gradient (DDPG), Proximal Policy Optimisation (PPO)", "Tech Stack: Python, OpenAI Gym, Stable Baselines 3, Pandas, Git"]]
-        ]],
-        ["2022", [
-            ["Machine Learning for Football Prediction", "October 2022 - December 2022", "UCL", "https://ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/mlnn-football-pred/final_COMP0036.ipynb", ["Explored custom training features and hyperparameters tuning for boosting inference accuracy.", "Algorithms: Logistic Regression, Kernel Support Vector Machine (SVM), Neural Network, Gradient Boosting, Random Forest, Ridge Classifier", "Tech Stack: Python, Tensorflow, Scikit-Learn, Pandas, Git"]],
-            ["QnA Chatbot for Medical Tabular Data", "October 2021 - April 2022", "Infosys", "https://www.infosys.com", "https://students.cs.ucl.ac.uk/2021/group2/", ["Explored transformer-based Machine Learning models for tabular Natural Language Processing (NLP).", "Full-stack development on chatbot interface, backend processing and documentation website.", "Tech Stack: Python, TAPAS, Rasa NLU/NLP, Django, React.js, HTML, CSS, Git, Transformers"]],
-            ["Bash-like Shell in Java", "October 2021 - April 2022", "UCL", "https://www.ucl.ac.uk", "https://asciinema.org/a/456644", ["Features: echo, cat, ls, command aliasing, real-time syntax highlighting, arrow keys for viewing history and command traversing", "Containerised application with Docker.", "Tech Stack: Java, Maven, ANTLR, Docker, Git"]]
-        ]],
-        ["2021 and earlier", [
-            ["Matrix Calculator Application", "January 2021 - March 2021", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/tree/main/scenarios-matrix-calculator/src", ["Implemented the feature of eigenvalues and eigenvectors computation.", "Other Features: Basic Mathematical Operations, Determinants, Inverse Matrix, Linear System of Equations, etc.", "Developed a minimal, user-friendly interface for straightforward usage.", "Tech Stack: Python, Tkinter, NumPy, Git"]],
-            ["Vaccine Bioreactor Simulator", "October 2020 - December 2020", "UCL", "https://www.ucl.ac.uk", "", ["Sensor Object Lead. PID control and calibration, Pulse-Width Modulation and Arduino coding.", "Developed user interface for adjusting pH, temperature and stirring speed.", "Tech Stack: Python, Tkinter, Arduino, C"]]
-        ]]
+        ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", 
+            [
+                ["/static/gai_review.pdf", "Review", "Paper. Studied existing tech related to image and music generations, majority being text-conditioned."],
+                ["/static/gai_overview.pdf", "Overview", "Paper. Developed POCs for Diffusion based Music-conditioned Image Generative AI and Transformer based Image-conditioned Music Generative AI."],
+                "Tech Stack: Python, Pillow, NumPy, SciPy, PyTorch, Transformers, Diffusers, Matplotlib, Git"
+            ], "research"],
+        ["Network Analysis of Programming Languages", "November 2023 - January 2024", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/analysis-plen/blob/main/paper.pdf", ["Applied PageRank and HITS for analysing key driver in the evolution network.", "Analysed the community structure of the network with modularity.", "Tech Stack: Python, NetworkX, NumPy, Matplotlib, Git"], "research"],
+        ["Multi-Agent Reinforcement Learning in Portfolio Management", "January 2023 - April 2023", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/marl-portfolio/report.pdf", ["Explored the effect of different RL algorithms in competitive vs. cooperative MARL settings.", "Algorithms: Advantaged Actor-Critic (A2C), Deep Deterministic Policy Gradient (DDPG), Proximal Policy Optimisation (PPO)", "Tech Stack: Python, OpenAI Gym, Stable Baselines 3, Pandas, Git"], "research"],
+        ["Machine Learning for Football Prediction", "October 2022 - December 2022", "UCL", "https://ucl.ac.uk", "https://github.com/juliagsy/cs-projects/blob/main/mlnn-football-pred/final_COMP0036.ipynb", ["Explored custom training features and hyperparameters tuning for boosting inference accuracy.", "Algorithms: Logistic Regression, Kernel Support Vector Machine (SVM), Neural Network, Gradient Boosting, Random Forest, Ridge Classifier", "Tech Stack: Python, Tensorflow, Scikit-Learn, Pandas, Git"], "research"],
+        ["QnA Chatbot for Medical Tabular Data", "October 2021 - April 2022", "Infosys", "https://www.infosys.com", "https://students.cs.ucl.ac.uk/2021/group2/", ["Explored transformer-based Machine Learning models for tabular Natural Language Processing (NLP).", "Full-stack development on chatbot interface, backend processing and documentation website.", "Tech Stack: Python, TAPAS, Rasa NLU/NLP, Django, React.js, HTML, CSS, Git, Transformers"], "coursework"],
+        ["Bash-like Shell in Java", "October 2021 - April 2022", "UCL", "https://www.ucl.ac.uk", "https://asciinema.org/a/456644", ["Features: echo, cat, ls, command aliasing, real-time syntax highlighting, arrow keys for viewing history and command traversing", "Containerised application with Docker.", "Tech Stack: Java, Maven, ANTLR, Docker, Git"], "coursework"],
+        ["Matrix Calculator Application", "January 2021 - March 2021", "UCL", "https://www.ucl.ac.uk", "https://github.com/juliagsy/cs-projects/tree/main/scenarios-matrix-calculator/src", ["Implemented the feature of eigenvalues and eigenvectors computation.", "Other Features: Basic Mathematical Operations, Determinants, Inverse Matrix, Linear System of Equations, etc.", "Developed a minimal, user-friendly interface for straightforward usage.", "Tech Stack: Python, Tkinter, NumPy, Git"], "coursework"],
+        ["Vaccine Bioreactor Simulator", "October 2020 - December 2020", "UCL", "https://www.ucl.ac.uk", "", ["Sensor Object Lead. PID control and calibration, Pulse-Width Modulation and Arduino coding.", "Developed user interface for adjusting pH, temperature and stirring speed.", "Tech Stack: Python, Tkinter, Arduino, C"], "coursework"]
     ]
 }
