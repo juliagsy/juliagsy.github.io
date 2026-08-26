@@ -21,7 +21,7 @@
                         "MMEB-v2",
                         "universal multimodal embedding models"
                     ],
-                    "upvotes": 25,
+                    "upvotes": 31,
                     "url": "https://arxiv.org/abs/2608.24053",
                     "pdf": "https://arxiv.org/pdf/2608.24053"
                 },
@@ -37,9 +37,25 @@
                         "structured patch generation",
                         "validation-based update selection"
                     ],
-                    "upvotes": 24,
+                    "upvotes": 28,
                     "url": "https://arxiv.org/abs/2608.23041",
                     "pdf": "https://arxiv.org/pdf/2608.23041"
+                },
+                {
+                    "id": "2608.24646",
+                    "title": "On-Policy Self-Distillation in Diffusion Models",
+                    "authors": "Wei Zhou, Xiongwei Zhu, Lingdong Kong, Bo Chen et al.",
+                    "summary": "DiffusionOPSD uses on-policy self-distillation to turn image-level rewards into explicit intermediate targets for diffusion models, improving alignment efficiency and enabling separate analysis of target construction and policy fitting.",
+                    "keywords": [
+                        "DiffusionOPSD",
+                        "on-policy self-distillation",
+                        "diffusion models",
+                        "reinforcement learning",
+                        "endpoint rewards"
+                    ],
+                    "upvotes": 24,
+                    "url": "https://arxiv.org/abs/2608.24646",
+                    "pdf": "https://arxiv.org/pdf/2608.24646"
                 },
                 {
                     "id": "2608.24876",
@@ -56,22 +72,6 @@
                     "upvotes": 14,
                     "url": "https://arxiv.org/abs/2608.24876",
                     "pdf": "https://arxiv.org/pdf/2608.24876"
-                },
-                {
-                    "id": "2608.24646",
-                    "title": "On-Policy Self-Distillation in Diffusion Models",
-                    "authors": "Wei Zhou, Xiongwei Zhu, Lingdong Kong, Bo Chen et al.",
-                    "summary": "DiffusionOPSD uses on-policy self-distillation to turn image-level rewards into explicit intermediate targets for diffusion models, improving alignment efficiency and enabling separate analysis of target construction and policy fitting.",
-                    "keywords": [
-                        "DiffusionOPSD",
-                        "on-policy self-distillation",
-                        "diffusion models",
-                        "reinforcement learning",
-                        "endpoint rewards"
-                    ],
-                    "upvotes": 10,
-                    "url": "https://arxiv.org/abs/2608.24646",
-                    "pdf": "https://arxiv.org/pdf/2608.24646"
                 },
                 {
                     "id": "2608.24877",
@@ -99,7 +99,7 @@
                         "implicit reward",
                         "ReLU gating"
                     ],
-                    "upvotes": 2,
+                    "upvotes": 3,
                     "url": "https://arxiv.org/abs/2608.24696",
                     "pdf": "https://arxiv.org/pdf/2608.24696"
                 },
@@ -185,7 +185,7 @@
                         "AgentOS",
                         "long-horizon task decomposition"
                     ],
-                    "upvotes": 175,
+                    "upvotes": 176,
                     "url": "https://arxiv.org/abs/2608.23283",
                     "pdf": "https://arxiv.org/pdf/2608.23283"
                 },
@@ -302,6 +302,22 @@
                     "pdf": "https://arxiv.org/pdf/2608.19567"
                 },
                 {
+                    "id": "2608.23392",
+                    "title": "Towards a Densing Law for User Representation Learning at Billion-Scale Capacity",
+                    "authors": "Bin Dou, Junru Zhang, Zhaoyi Yuan, Wuliang Huang et al.",
+                    "summary": "The study proposes a scaling law linking data size to tokenization capacity for user behavior modeling and introduces an adaptive tokenization method to improve efficiency.",
+                    "keywords": [
+                        "user representation learning",
+                        "tokenization",
+                        "User Behavioral Densing Law",
+                        "ALGN",
+                        "adaptive variable-length tokenization"
+                    ],
+                    "upvotes": 25,
+                    "url": "https://arxiv.org/abs/2608.23392",
+                    "pdf": "https://arxiv.org/pdf/2608.23392"
+                },
+                {
                     "id": "2608.20430",
                     "title": "RISE: Adaptive Imagination for World Action Models",
                     "authors": "Hongbo Lu, Liang Yao, Chenghao He, Hao Han et al.",
@@ -316,22 +332,6 @@
                     "upvotes": 24,
                     "url": "https://arxiv.org/abs/2608.20430",
                     "pdf": "https://arxiv.org/pdf/2608.20430"
-                },
-                {
-                    "id": "2608.23392",
-                    "title": "Towards a Densing Law for User Representation Learning at Billion-Scale Capacity",
-                    "authors": "Bin Dou, Junru Zhang, Zhaoyi Yuan, Wuliang Huang et al.",
-                    "summary": "The study proposes a scaling law linking data size to tokenization capacity for user behavior modeling and introduces an adaptive tokenization method to improve efficiency.",
-                    "keywords": [
-                        "user representation learning",
-                        "tokenization",
-                        "User Behavioral Densing Law",
-                        "ALGN",
-                        "adaptive variable-length tokenization"
-                    ],
-                    "upvotes": 22,
-                    "url": "https://arxiv.org/abs/2608.23392",
-                    "pdf": "https://arxiv.org/pdf/2608.23392"
                 }
             ]
         },
