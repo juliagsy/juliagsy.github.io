@@ -146,3 +146,16 @@ body {
 .resume-list li::before {
   content: "\2022  ";
 }
+
+/* papers gallery — 3 across on wide screens, stacking down to 1 on phones.
+   3 columns only from xl: at lg a third of the width leaves a 258px card, where
+   a median paper title runs to 5 lines. */
+
+.paper-gallery {
+  @apply grid grid-cols-1 gap-5 py-[3%] md:grid-cols-2 xl:grid-cols-3;
+}
+
+/* smaller than .cardTitle, which is sized for a full-width card */
+.paper-title {
+  @apply text-lg md:text-xl;
+}

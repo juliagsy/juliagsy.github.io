@@ -30,7 +30,7 @@ function Summary({ text }) {
 function PaperGroup({ item }) {
     return (
         <div className={styles.card}>
-            <div className={styles.cardTitle}>
+            <div className="paper-title">
                 {item.title}
             </div>
 
@@ -54,7 +54,7 @@ export default function Paper({ item }) {
         <div>
             <div id={item.date} className='item-anchor'></div>
             <div className='component-title'>{item.label}</div>
-            <div className="component-gallery">
+            <div className="paper-gallery">
                 {
                     item.papers.map((paper) => (
                         <PaperGroup key={paper.id} item={paper} />
