@@ -37,17 +37,6 @@ const FILE = /^(\d{4}-\d{2}-\d{2})-([a-z0-9-]+)\.md$/;
 const IDS = new Set(tags.map((tag) => tag[0]));
 const SEARCH = 5000;  // plain-text characters per post carried to the list page for search
 
-// marked emits a bare <table>, which has nowhere to scroll when a table is wider
-// than the column. Wrapping each one in a scroller here beats the usual
-// `display: block` hack on the table itself, which costs proper table layout.
-marked.use({
-    hooks: {
-        postprocess: (html: string) => html
-            .replace(/<table>/g, '<div class="post-table"><table>')
-            .replace(/<\/table>/g, "</table></div>"),
-    },
-});
-
 const MONTHS = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
@@ -68,6 +57,21 @@ function date(value: unknown, file: string) {
     if (value instanceof Date) return value.toISOString().slice(0, 10);
     if (typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value.trim())) return value.trim();
     throw new Error(`${file}: 'date' must be YYYY-MM-DD`);
+}
+
+// marked emits a bare <table>, which has nowhere to scroll when a table is wider
+// than the column. Wrapping each one in a scroller beats the usual `display: block`
+// hack on the table itself, which costs proper table layout.
+//
+// A plain transform of the output, NOT a `marked.use({ hooks })` postprocess:
+// `marked` is a shared singleton and `use` appends rather than replaces, so a hook
+// registered at module scope stacks up another copy every time this module is
+// re-evaluated — which the dev server does on each recompile, nesting one wrapper
+// per reload. This stays idempotent because nothing outside the call is touched.
+function scroll(html: string) {
+    return html
+        .replace(/<table>/g, '<div class="post-table"><table>')
+        .replace(/<\/table>/g, "</table></div>");
 }
 
 function read(file: string) {
@@ -91,7 +95,7 @@ function read(file: string) {
         if (tag === "all") throw new Error(`${file}: 'all' is the filter bar's catch-all, not a tag`);
     }
 
-    const html = marked.parse(content, { async: false });
+    const html = scroll(marked.parse(content, { async: false }));
 
     return {
         meta: {

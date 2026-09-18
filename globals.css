@@ -262,7 +262,7 @@ body {
 }
 
 .post-body thead {
-  @apply bg-violet-700 text-white;
+  @apply bg-violet-200;
 }
 
 .post-body th {
@@ -271,6 +271,12 @@ body {
 
 .post-body td {
   @apply px-4 py-2 text-left align-top border-t-[1px] border-black/10;
+}
+
+/* column separators — on the sibling rather than every cell, so the table keeps
+   no border down its outer edges, where .post-table already draws one */
+.post-body th + th, .post-body td + td {
+  @apply border-l-[1px] border-black/10;
 }
 
 /* zebra striping, kept faint so the violet header stays the loudest thing */
