@@ -9,7 +9,7 @@ import { Key, useState } from "react";
 const total = papers.days.reduce((count, day) => count + day.papers.length, 0);
 
 export default function Papers() {
-    // Deep links from the tools card (/tools/papers#robotics) open on that filter.
+    // Deep links from the Others page card (/others/papers#robotics) open on that filter.
     const [topic, selectTopic] = useTab(topics.map((item) => item[0] as string));
     const [query, setQuery] = useState("");
 

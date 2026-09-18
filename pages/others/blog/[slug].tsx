@@ -45,7 +45,7 @@ export default function PostPage({ meta, html }) {
                             meta.tags.map((tag, index) => (
                                 <span key={tag}>
                                     {index === 0 ? "" : ", "}
-                                    <Link className="underline hover:text-violet-700" href={`/tools/blog#${tag}`}>{LABELS[tag]}</Link>
+                                    <Link className="underline hover:text-violet-700" href={`/others/blog#${tag}`}>{LABELS[tag]}</Link>
                                 </span>
                             ))
                         }
@@ -57,7 +57,7 @@ export default function PostPage({ meta, html }) {
             <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
 
             <div className="post-back-bar">
-                <Link className="post-back" href="/tools/blog">
+                <Link className="post-back" href="/others/blog">
                     <FontAwesomeIcon icon={"fa-solid fa-chevron-left" as IconProp} /> All Posts
                 </Link>
             </div>

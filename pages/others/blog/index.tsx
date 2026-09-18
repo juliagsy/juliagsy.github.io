@@ -13,7 +13,7 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
-    // Deep links from the tools card and from a post's tags (/tools/blog#ml) open
+    // Deep links from the Others page card and from a post's tags (/others/blog#ml) open
     // on that filter.
     const [tag, selectTag] = useTab(tags.map((item) => item[0]));
     const [query, setQuery] = useState("");

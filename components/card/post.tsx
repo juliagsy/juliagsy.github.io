@@ -8,7 +8,7 @@ const LABELS = Object.fromEntries(tags as string[][]);
 
 
 export default function Post({ item, onTag }) {
-    const url = `/tools/blog/${item.slug}`;
+    const url = `/others/blog/${item.slug}`;
 
     return (
         <div className={styles.card}>

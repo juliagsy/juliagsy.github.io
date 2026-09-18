@@ -1,6 +1,6 @@
 # Scrapes the latest AI/ML papers once a day and redeploys the site.
 #
-# Writes components/papers.json (consumed at build time by pages/tools/papers.tsx),
+# Writes components/papers.json (consumed at build time by pages/others/papers.tsx),
 # commits it only when the papers actually changed, then reuses nextjs.yml to
 # build and deploy. The commit SHA is passed through explicitly because a
 # reusable workflow otherwise checks out the caller's SHA, which predates it.

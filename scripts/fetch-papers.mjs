@@ -2,13 +2,13 @@
 
 /**
  * Fetches the latest papers from the arXiv API and writes `components/papers.json`,
- * which `pages/tools/papers.tsx` imports at build time.
+ * which `pages/others/papers.tsx` imports at build time.
  *
  * `components/papers.json` is GENERATED — do not hand-edit it, the daily
  * `.github/workflows/papers.yml` run will overwrite any manual change.
  *
  * Topic groups live in `components/topics.json`, the single source of truth shared
- * with the papers page (filter chips) and the tools page (card preview).
+ * with the papers page (filter chips) and the Others page (card preview).
  *
  * Zero dependencies: built-in `fetch` from Node 20+, and arXiv's Atom feed is
  * regular enough to parse without an XML library.

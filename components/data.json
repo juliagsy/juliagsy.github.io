@@ -6,11 +6,11 @@
         ["Profile", "/profile"],
         ["Projects", "/projects"],
         ["Awards", "/awards"],
-        ["Tools", "/tools"]
+        ["Others", "/others"]
     ],
     "tools": [
-        ["Latest Papers", "/tools/papers", "fa-solid fa-newspaper"],
-        ["Blog", "/tools/blog", "fa-solid fa-pen-nib"]
+        ["Latest Papers", "/others/papers", "fa-solid fa-newspaper"],
+        ["Blog", "/others/blog", "fa-solid fa-pen-nib"]
     ],
     "referrals": [
         ["Petronas", "/static/pdsb_ref.pdf"],
