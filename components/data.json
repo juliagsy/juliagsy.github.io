@@ -9,8 +9,8 @@
         ["Others", "/others"]
     ],
     "tools": [
-        ["arXiv Papers", "/others/papers", "fa-solid fa-newspaper"],
-        ["Blog", "/others/blog", "fa-solid fa-pen-nib"]
+        ["Blog", "/others/blog", "fa-solid fa-pen-nib"],
+        ["arXiv Papers", "/others/papers", "fa-solid fa-newspaper"]
     ],
     "referrals": [
         ["Petronas", "/static/pdsb_ref.pdf"],
