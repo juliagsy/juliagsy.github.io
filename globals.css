@@ -170,6 +170,24 @@ body {
   @apply text-center py-[2%];
 }
 
+/* date and tags each get their own row */
+.post-meta p {
+  @apply py-1;
+}
+
+.post-back-bar {
+  @apply flex justify-center py-[4%];
+}
+
+.post-back {
+  @apply rounded-lg bg-white border-black border-solid border-[2px] px-5 py-2;
+}
+
+/* inverts to the accent, matching .filter-item-active */
+.post-back:hover {
+  @apply bg-violet-700 border-violet-700 text-white;
+}
+
 .post-body {
   @apply max-w-[70ch] mx-auto py-[2%];
 }
@@ -231,15 +249,36 @@ body {
   @apply h-[2px] my-[7%] border-0 bg-gradient-to-r from-violet-800 via-violet-300 to-violet-500;
 }
 
-/* tables can outgrow the column, so they scroll inside their own wrapper */
-.post-body table {
-  @apply w-[100%] my-[4%] block overflow-x-auto border-collapse;
+/* tables — the wrapper is added by the marked hook in components/blog.ts, and
+   carries the border and the horizontal scroll so a wide table never stretches
+   the column. The table itself keeps real table layout. */
+
+.post-table {
+  @apply my-[4%] overflow-x-auto rounded-lg border-black border-solid border-[2px] bg-white;
 }
 
-.post-body th, .post-body td {
-  @apply border-black border-solid border-[1px] px-[2%] py-[1%] text-left;
+.post-body table {
+  @apply w-[100%] border-collapse text-sm md:text-base;
+}
+
+.post-body thead {
+  @apply bg-violet-700 text-white;
 }
 
 .post-body th {
-  @apply bg-white;
+  @apply px-4 py-2 text-left font-bold whitespace-nowrap;
+}
+
+.post-body td {
+  @apply px-4 py-2 text-left align-top border-t-[1px] border-black/10;
+}
+
+/* zebra striping, kept faint so the violet header stays the loudest thing */
+.post-body tbody tr:nth-child(2n) {
+  @apply bg-sky-50;
+}
+
+/* the cells supply their own padding */
+.post-body table p {
+  @apply my-0;
 }

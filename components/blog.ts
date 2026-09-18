@@ -37,6 +37,17 @@ const FILE = /^(\d{4}-\d{2}-\d{2})-([a-z0-9-]+)\.md$/;
 const IDS = new Set(tags.map((tag) => tag[0]));
 const SEARCH = 5000;  // plain-text characters per post carried to the list page for search
 
+// marked emits a bare <table>, which has nowhere to scroll when a table is wider
+// than the column. Wrapping each one in a scroller here beats the usual
+// `display: block` hack on the table itself, which costs proper table layout.
+marked.use({
+    hooks: {
+        postprocess: (html: string) => html
+            .replace(/<table>/g, '<div class="post-table"><table>')
+            .replace(/<\/table>/g, "</table></div>"),
+    },
+});
+
 const MONTHS = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",

@@ -35,12 +35,11 @@ export default function PostPage({ meta, html }) {
                 <div className="main-partition-right ml-[7%] md:ml-[0%]"></div>
             </div>
 
-            <p className="post-meta">
-                <FontAwesomeIcon icon={"fa-solid fa-calendar-days" as IconProp} /> {meta.label}
+            <div className="post-meta">
+                <p><FontAwesomeIcon icon={"fa-solid fa-calendar-days" as IconProp} /> {meta.label}</p>
                 {
                     meta.tags.length === 0 ? null :
-                    <>
-                        {" · "}
+                    <p>
                         <FontAwesomeIcon icon={"fa-solid fa-tags" as IconProp} />{" "}
                         {
                             meta.tags.map((tag, index) => (
@@ -50,18 +49,18 @@ export default function PostPage({ meta, html }) {
                                 </span>
                             ))
                         }
-                    </>
+                    </p>
                 }
-            </p>
+            </div>
 
             {/* Written by hand in content/blog and rendered by marked at build time. */}
             <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
 
-            <p className="post-meta">
-                <Link className="underline hover:text-violet-700" href="/tools/blog">
-                    <FontAwesomeIcon icon={"fa-solid fa-chevron-left" as IconProp} /> all posts
+            <div className="post-back-bar">
+                <Link className="post-back" href="/tools/blog">
+                    <FontAwesomeIcon icon={"fa-solid fa-chevron-left" as IconProp} /> All Posts
                 </Link>
-            </p>
+            </div>
         </div>
     )
 }
