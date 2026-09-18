@@ -9,7 +9,7 @@
         ["Others", "/others"]
     ],
     "tools": [
-        ["Latest Papers", "/others/papers", "fa-solid fa-newspaper"],
+        ["arXiv Papers", "/others/papers", "fa-solid fa-newspaper"],
         ["Blog", "/others/blog", "fa-solid fa-pen-nib"]
     ],
     "referrals": [

@@ -28,11 +28,11 @@ export default function Papers() {
         <div className="content">
             <div className="grid grid-cols-3">
                 <div className="main-partition-left mr-[7%] md:mr-[0%]"></div>
-                <div className="main-title">Latest Papers</div>
+                <div className="main-title">arXiv Papers</div>
                 <div className="main-partition-right ml-[7%] md:ml-[0%]"></div>
             </div>
             <Head>
-                <title>{`${data.name} - Latest Papers`}</title>
+                <title>{`${data.name} - arXiv Papers`}</title>
             </Head>
             <p className="text-center py-[2%]">
                 Daily pick of latest papers for the past {papers.days.length} days. Updated {papers.updated}.
