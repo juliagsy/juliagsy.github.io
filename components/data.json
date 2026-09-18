@@ -42,7 +42,7 @@
     "experiences": [
         ["April 2025 - Present", "Founding Engineer (AI/ML & Full Stack)", "Unify", "https://unify.ai",
             [
-                ["https://github.com/unifyai/unity", "AI Assistant Communications", "Architected the omni-channel communications infrastructure powering the AI assistant — voice calls, multi-channel messaging (Slack, Microsoft Teams, Discord, WhatsApp), emails, and in-app chat/calls — integrating Twilio, LiveKit, platform bot frameworks and third-party APIs."],
+                "AI Assistant Communications: Architected the omni-channel communications infrastructure powering the AI assistant — voice calls, multi-channel messaging (Slack, Microsoft Teams, Discord, WhatsApp), emails, and in-app chat/calls — integrating Twilio, LiveKit, platform bot frameworks and third-party APIs.",
                 "Live Meeting Attendance: Built the assistant's ability to join Google Meet and Microsoft Teams calls as a real participant — participant tracking, two-way screenshare, in-meeting chat and auto-leave — via a Recall.ai bridge.",
                 "Voice Identity & Call Recording: Built speaker diarization with voice-fingerprint labelling, splitting co-located speakers sharing a single microphone through per-utterance embedding clustering, alongside call recording/egress and speech-aligned transcripts with in-app playback.",
                 "AI Desktop & Browser Control: Built a vision-based (VLM) computer-use agent that automates tasks across remote Ubuntu, Windows and macOS desktops, with CLI-installable clients for connecting a user's own machine.",
