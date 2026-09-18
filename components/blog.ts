@@ -16,9 +16,14 @@
  *     date: 2026-09-18
  *     tags: [ml, engineering]
  *     summary: One or two lines shown on the blog list and in the page metadata.
+ *     draft: true      # optional — keeps the file in the repo but off the site
  *     ---
  *
  *     Markdown body.
+ *
+ * A draft is skipped by `listPosts`, so it neither appears on the blog list nor gets
+ * a page of its own. It is still parsed and validated, so a draft cannot rot into
+ * something that breaks the build on the day it is published.
  *
  * Tags must exist in `components/tags.json`, the single source of truth shared
  * with the filter bar and the tools card — the same discipline `topics.json`
@@ -88,6 +93,8 @@ function read(file: string) {
     const day = date(data.date, file);
     if (day !== name[1]) throw new Error(`${file}: filename says ${name[1]}, frontmatter says ${day}`);
 
+    if (data.draft !== undefined && typeof data.draft !== "boolean") throw new Error(`${file}: 'draft' must be true or false`);
+
     const list = data.tags ?? [];
     if (!Array.isArray(list)) throw new Error(`${file}: 'tags' must be a list`);
     for (const tag of list) {
@@ -105,6 +112,7 @@ function read(file: string) {
             title: data.title.trim(),
             summary: data.summary.trim(),
             tags: list as string[],
+            draft: data.draft === true,
         },
         html,
         // Plain text purely so the list page can search post bodies. It travels in the
@@ -126,9 +134,9 @@ function all() {
     return posts.sort((a, b) => b.meta.date.localeCompare(a.meta.date));
 }
 
-/** Every post, newest first, without its rendered body. */
+/** Every published post, newest first, without its rendered body. Drafts are omitted. */
 export function listPosts() {
-    return all().map((post) => ({ ...post.meta, text: post.text }));
+    return all().filter((post) => !post.meta.draft).map((post) => ({ ...post.meta, text: post.text }));
 }
 
 /** One post, rendered. Throws for an unknown slug, which getStaticPaths prevents. */

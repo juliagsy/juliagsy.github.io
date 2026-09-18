@@ -166,6 +166,10 @@ body {
    markers, and tailwind.config.ts does not scan content/, so a class written
    inside a post would be purged: styling lives in these descendant rules. */
 
+.post-soon {
+  @apply text-center py-[10%] text-xl md:text-2xl lg:text-3xl;
+}
+
 .post-meta {
   @apply text-center py-[2%];
 }

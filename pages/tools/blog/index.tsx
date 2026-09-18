@@ -40,6 +40,11 @@ export default function Blog({ posts }) {
                 Notes on machine learning, engineering and whatever else held my attention.
             </p>
 
+            {
+                // Nothing published yet: the filter bar, the search box and the count all
+                // describe an empty set, so none of them earn their place on the page.
+                posts.length === 0 ? <p className="post-soon">Coming soon.</p> :
+                <>
             <div className="filter-bar">
                 {
                     tags.map((item) => (
@@ -79,6 +84,8 @@ export default function Blog({ posts }) {
                         ))
                     }
                   </div>
+            }
+                </>
             }
         </div>
     )
