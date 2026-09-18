@@ -9,7 +9,8 @@
         ["Tools", "/tools"]
     ],
     "tools": [
-        ["Latest Papers", "/tools/papers", "fa-solid fa-newspaper"]
+        ["Latest Papers", "/tools/papers", "fa-solid fa-newspaper"],
+        ["Blog", "/tools/blog", "fa-solid fa-pen-nib"]
     ],
     "referrals": [
         ["Petronas", "/static/pdsb_ref.pdf"],

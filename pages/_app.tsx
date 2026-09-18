@@ -1,8 +1,8 @@
 import '@/globals.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {
-    faAward, faBriefcase, faBuildingColumns, faC, faCalendarDays, faChevronRight, faEnvelope,
-    faEnvelopeOpenText, faLocationDot, faNewspaper, faTags, faUserGroup,
+    faAward, faBriefcase, faBuildingColumns, faC, faCalendarDays, faChevronLeft, faChevronRight, faEnvelope,
+    faEnvelopeOpenText, faLocationDot, faNewspaper, faPenNib, faTags, faUserGroup,
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faBuilding, faFile,
@@ -25,8 +25,8 @@ const { library } = require('@fortawesome/fontawesome-svg-core');
 // Adding a new icon={"fa-solid fa-whatever"} string anywhere means adding its
 // import here too, or it silently renders nothing.
 library.add(
-    faAward, faBriefcase, faBuildingColumns, faC, faCalendarDays, faChevronRight, faEnvelope,
-    faEnvelopeOpenText, faLocationDot, faNewspaper, faTags, faUserGroup, faBuilding, faFile,
+    faAward, faBriefcase, faBuildingColumns, faC, faCalendarDays, faChevronLeft, faChevronRight, faEnvelope,
+    faEnvelopeOpenText, faLocationDot, faNewspaper, faPenNib, faTags, faUserGroup, faBuilding, faFile,
     faApple, faAws, faDocker, faGit, faGithub, faGithubAlt, faGoogle, faJava, faJs,
     faLinkedinIn, faLinux, faMicrosoft, faNode, faPython, faReact, faUbuntu, faWindows,
 );

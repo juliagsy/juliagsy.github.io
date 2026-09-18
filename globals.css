@@ -159,3 +159,87 @@ body {
 .paper-title {
   @apply text-lg md:text-xl;
 }
+
+
+/* blog — the only place the site renders raw HTML, so every element markdown can
+   emit needs a rule here. Tailwind's preflight strips heading sizes and list
+   markers, and tailwind.config.ts does not scan content/, so a class written
+   inside a post would be purged: styling lives in these descendant rules. */
+
+.post-meta {
+  @apply text-center py-[2%];
+}
+
+.post-body {
+  @apply max-w-[70ch] mx-auto py-[2%];
+}
+
+.post-body h2 {
+  @apply text-xl md:text-2xl lg:text-3xl mt-[7%] mb-[2%];
+}
+
+.post-body h3 {
+  @apply text-lg md:text-xl lg:text-2xl mt-[5%] mb-[2%];
+}
+
+.post-body p {
+  @apply my-[3%];
+}
+
+.post-body ul {
+  @apply list-disc pl-[6%] my-[3%];
+}
+
+.post-body ol {
+  @apply list-decimal pl-[6%] my-[3%];
+}
+
+.post-body li {
+  @apply my-[1%];
+}
+
+.post-body a {
+  @apply underline;
+}
+
+.post-body a:hover {
+  @apply text-violet-700;
+}
+
+.post-body code {
+  @apply bg-white rounded px-[0.4em] py-[0.1em] font-mono text-sm md:text-base;
+}
+
+.post-body pre {
+  @apply bg-white border-black border-solid border-[3px] rounded-lg p-[3%] my-[4%] overflow-x-auto;
+}
+
+/* the <pre> already supplies the box, so the nested <code> must not draw a second one */
+.post-body pre code {
+  @apply bg-transparent p-0;
+}
+
+.post-body blockquote {
+  @apply border-l-[3px] border-violet-700 pl-[4%] my-[4%] italic;
+}
+
+.post-body img {
+  @apply max-w-full rounded-lg my-[4%];
+}
+
+.post-body hr {
+  @apply h-[2px] my-[7%] border-0 bg-gradient-to-r from-violet-800 via-violet-300 to-violet-500;
+}
+
+/* tables can outgrow the column, so they scroll inside their own wrapper */
+.post-body table {
+  @apply w-[100%] my-[4%] block overflow-x-auto border-collapse;
+}
+
+.post-body th, .post-body td {
+  @apply border-black border-solid border-[1px] px-[2%] py-[1%] text-left;
+}
+
+.post-body th {
+  @apply bg-white;
+}
