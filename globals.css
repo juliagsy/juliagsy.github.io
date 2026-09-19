@@ -158,6 +158,19 @@ body {
   content: "\2022  ";
 }
 
+/* Chinese sheet, layered over .resume. Century Gothic carries no CJK glyphs, so
+   Noto Sans SC sits behind it and the browser falls through per glyph — Latin in
+   Century Gothic, Chinese in Noto Sans SC, the mix the 2024 CV PDF had. The
+   looser leading is for the CJK glyphs: 1.35 is cramped at this size. */
+.resume-zh {
+  font-family: 'Century Gothic', 'Noto Sans SC', ui-sans-serif, sans-serif;
+  line-height: 1.55;
+}
+
+.resume-zh .resume-list li {
+  margin-bottom: 0.9mm;
+}
+
 /* papers gallery — 3 across on wide screens, stacking down to 1 on phones.
    3 columns only from xl: at lg a third of the width leaves a 258px card, where
    a median paper title runs to 5 lines. */
