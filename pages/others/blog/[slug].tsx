@@ -29,11 +29,11 @@ export default function PostPage({ meta, html }) {
                 <meta name="description" content={meta.summary} />
             </Head>
 
-            <div className="grid grid-cols-3">
-                <div className="main-partition-left mr-[7%] md:mr-[0%]"></div>
-                <div className="main-title">{meta.title}</div>
-                <div className="main-partition-right ml-[7%] md:ml-[0%]"></div>
-            </div>
+            {/* No flanking partitions here, unlike every other page title: a post title is
+                long and wraps, and the gradient rules sit at its vertical centre rather than
+                against a single line. Full width also stops a three-line title from being
+                squeezed into the middle third of the grid. */}
+            <div className="main-title">{meta.title}</div>
 
             <div className="post-meta">
                 <p><FontAwesomeIcon icon={"fa-solid fa-calendar-days" as IconProp} /> {meta.label}</p>
