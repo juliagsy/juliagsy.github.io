@@ -12,18 +12,26 @@ export default function Profile() {
             <div className="flex flex-row">
                 <Links />
             </div>
-            <div className="flex flex-row flex-wrap gap-3">
+            {/* Below sm the label sits on its own line with the links grouped beneath
+                it, rather than everything wrapping as one run — at phone widths that
+                stranded the last link alone on a second line. The inner flex keeps the
+                links together so they wrap as a group, not one per line. */}
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-1 sm:gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Resume/CV: </p>
-                <p className={`${style.item}`}><Link href="/resume" target="_blank">English</Link></p>
-                <p className={`${style.item}`}><Link href="/resume/zh" target="_blank">中文</Link></p>
+                <div className="flex flex-row flex-wrap gap-3">
+                    <p className={`${style.item}`}><Link href="/resume" target="_blank">English</Link></p>
+                    <p className={`${style.item}`}><Link href="/resume/zh" target="_blank">中文</Link></p>
+                </div>
             </div>
-            <div className="flex flex-row flex-wrap gap-3">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-1 sm:gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Referrals:</p>
-                {
-                    data.referrals.map((item) => (
-                        <p key={item[0]} className={`${style.item}`}><a href={item[1]} target="_blank">{item[0]}</a></p>
-                    ))
-                }
+                <div className="flex flex-row flex-wrap gap-3">
+                    {
+                        data.referrals.map((item) => (
+                            <p key={item[0]} className={`${style.item}`}><a href={item[1]} target="_blank">{item[0]}</a></p>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )
