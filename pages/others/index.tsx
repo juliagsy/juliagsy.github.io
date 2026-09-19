@@ -1,15 +1,7 @@
 import Head from "next/head";
 import data from "@/components/data.json";
-import topics from "@/components/topics.json";
-import tags from "@/components/tags.json";
 import Tool from "@/components/card/tool";
 import { Key } from "react";
-
-// Entries that preview a set of labels on their card instead of a description.
-const chips: Record<string, string[][]> = {
-    "/others/papers": topics.map((item) => [item[0] as string, item[1] as string]),
-    "/others/blog": tags,
-};
 
 export default function Others() {
     return (
@@ -25,7 +17,7 @@ export default function Others() {
             <div className="main-gallery">
                 {
                     data.tools.map((item) => (
-                        <Tool key={item[0] as Key} item={item} chips={chips[item[1]]} />
+                        <Tool key={item[0] as Key} item={item} />
                     ))
                 }
             </div>

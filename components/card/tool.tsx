@@ -1,36 +1,17 @@
-import styles from '@/components/card/card.module.css';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 
-function ToolLinks({ item, chips }) {
+// Not a card, unlike everything else that sits in a .main-gallery. The Others page is a
+// menu of two destinations, and a bordered box around a single line of text was more
+// chrome than it earned. Topics and tags live on the destination pages, where the filter
+// bar can act on a click; the deep links they used (/others/blog#ml) still work, because
+// useTab reads the hash on mount.
+export default function Tool({ item }) {
     return (
-        <div className={styles.cardDesc}>
-            {
-                chips.map((chip) => (
-                    <p key={chip[0]}>
-                        <a href={chip[0] === "all" ? item[1] : `${item[1]}#${chip[0]}`}>{chip[1]}</a>
-                    </p>
-                ))
-            }
-        </div>
-    )
-}
-
-
-export default function Tool({ item, chips }) { 
-    return (
-        <div className={styles.card}>
-            <div className={styles.cardTitle}>
-                <FontAwesomeIcon icon={item[2] as IconProp} /> {item[0]}
-            </div>
-
-            <div className={styles.cardPartition}></div>
-            {
-                chips
-                ? <ToolLinks item={item} chips={chips} />
-                : <p><FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> {item[3]}</p>
-            }
-        </div>
+        <Link className="tool-link" href={item[1]}>
+            <FontAwesomeIcon icon={item[2] as IconProp} /> {item[0]}
+        </Link>
     )
 }

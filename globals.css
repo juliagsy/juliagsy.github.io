@@ -32,6 +32,17 @@ body {
   @apply align-middle my-auto h-[2px] bg-gradient-to-r from-violet-700;
 }
 
+/* The Others page: icon and label only, no card around them. Block so the link fills its
+   grid cell rather than making only the text clickable, sized to match .cardTitle so the
+   menu reads at the same weight the cards did. */
+.tool-link {
+  @apply block text-xl md:text-2xl lg:text-3xl underline;
+}
+
+.tool-link:hover {
+  @apply text-violet-700;
+}
+
 .item-anchor {
   display: block;
   position: relative;
