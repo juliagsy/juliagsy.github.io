@@ -20,7 +20,7 @@
     "contacts": [
         ["Email", "fa-solid fa-envelope", "mailto:juliagsy@gmail.com"],
         ["GitHub", "fa-brands fa-github-alt", "https://github.com/juliagsy"],
-        ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/julia-goh-3750b11b9/"]
+        ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/juliagsy"]
     ],
     "tech": [
         ["os", [["apple", "macOS"], ["linux", "Linux"], ["ubuntu", "Ubuntu"], ["windows", "Windows"]], [], []],
