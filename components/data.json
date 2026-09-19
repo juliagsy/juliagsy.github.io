@@ -23,7 +23,7 @@
         ["LinkedIn", "fa-brands fa-linkedin-in", "https://www.linkedin.com/in/juliagsy"]
     ],
     "tech": [
-        ["os", [["apple", "macOS"], ["linux", "Linux"], ["ubuntu", "Ubuntu"], ["windows", "Windows"]], [], []],
+        ["OS", [["apple", "macOS"], ["linux", "Linux"], ["ubuntu", "Ubuntu"], ["windows", "Windows"]], [], []],
         ["programming", [["python", "Python"], ["js", "JavaScript"], ["java", "Java"], ["golang", "Go"]], [["c", "C / C++"]], [["typescript", "TypeScript"]]],
         ["ML/data", [], [], [["pytorch", "PyTorch"], ["tensorflow", "TensorFlow"], ["scikitlearn", "scikit-learn"], ["numpy", "NumPy"], ["pandas", "pandas"], ["huggingface", "Hugging Face"], ["mlflow", "MLflow"]]],
         ["web", [["react", "React"], ["node", "Node.js"]], [], [["nextdotjs", "Next.js"], ["fastapi", "FastAPI"], ["django", "Django"], ["flask", "Flask"], ["tailwindcss", "Tailwind CSS"]]],
