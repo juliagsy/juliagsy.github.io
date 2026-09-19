@@ -179,6 +179,14 @@ body {
   @apply py-1;
 }
 
+/* Separates the meta block from the article, standing in for the rules that used to
+   flank the title. Matched to .post-body's column rather than the page width so it
+   reads as the article's top edge, and to .cardPartition's gradient so a post and its
+   card on the blog list agree. */
+.post-partition {
+  @apply h-[2px] max-w-[70ch] mx-auto bg-gradient-to-r from-violet-800 via-violet-300 to-violet-500;
+}
+
 .post-back-bar {
   @apply flex justify-center py-[4%];
 }

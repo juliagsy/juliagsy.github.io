@@ -53,6 +53,8 @@ export default function PostPage({ meta, html }) {
                 }
             </div>
 
+            <div className="post-partition"></div>
+
             {/* Written by hand in content/blog and rendered by marked at build time. */}
             <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
 
