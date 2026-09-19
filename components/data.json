@@ -24,7 +24,7 @@
     ],
     "tech": [
         ["os", [["apple", "macOS"], ["linux", "Linux"], ["ubuntu", "Ubuntu"], ["windows", "Windows"]], [], []],
-        ["programming", [["python", "Python"], ["js", "JavaScript"], ["java", "Java"]], [["c", "C / C++"]], [["typescript", "TypeScript"]]],
+        ["programming", [["python", "Python"], ["js", "JavaScript"], ["java", "Java"], ["golang", "Go"]], [["c", "C / C++"]], [["typescript", "TypeScript"]]],
         ["ML/data", [], [], [["pytorch", "PyTorch"], ["tensorflow", "TensorFlow"], ["scikitlearn", "scikit-learn"], ["numpy", "NumPy"], ["pandas", "pandas"], ["huggingface", "Hugging Face"], ["mlflow", "MLflow"]]],
         ["web", [["react", "React"], ["node", "Node.js"]], [], [["nextdotjs", "Next.js"], ["fastapi", "FastAPI"], ["django", "Django"], ["flask", "Flask"], ["tailwindcss", "Tailwind CSS"]]],
         ["cloud/infra", [["aws", "AWS"], ["google", "Google Cloud"], ["microsoft", "Azure"], ["docker", "Docker"]], [], [["kubernetes", "Kubernetes"], ["postgresql", "PostgreSQL"]]],

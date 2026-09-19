@@ -8,7 +8,7 @@ import {
     faBuilding, faFile,
 } from '@fortawesome/free-regular-svg-icons';
 import {
-    faApple, faAws, faDocker, faGit, faGithub, faGithubAlt, faGoogle, faJava, faJs,
+    faApple, faAws, faDocker, faGit, faGithub, faGithubAlt, faGolang, faGoogle, faJava, faJs,
     faLinkedinIn, faLinux, faMicrosoft, faNode, faPython, faReact, faUbuntu, faWindows,
 } from '@fortawesome/free-brands-svg-icons';
 import Head from 'next/head';
@@ -27,7 +27,7 @@ const { library } = require('@fortawesome/fontawesome-svg-core');
 library.add(
     faAward, faBriefcase, faBuildingColumns, faC, faCalendarDays, faChevronLeft, faChevronRight, faEnvelope,
     faEnvelopeOpenText, faLocationDot, faNewspaper, faPenNib, faTags, faUserGroup, faBuilding, faFile,
-    faApple, faAws, faDocker, faGit, faGithub, faGithubAlt, faGoogle, faJava, faJs,
+    faApple, faAws, faDocker, faGit, faGithub, faGithubAlt, faGolang, faGoogle, faJava, faJs,
     faLinkedinIn, faLinux, faMicrosoft, faNode, faPython, faReact, faUbuntu, faWindows,
 );
 
