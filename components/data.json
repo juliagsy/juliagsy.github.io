@@ -112,6 +112,7 @@
         ["2014", "Distinction Award - UNSW ICAS Mathematics 2014", "UNSW Global ICAS", ["University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics", "Achieved Top 9% among all participants"], "https://www.icasassessments.com/products-icas/subjects/mathematics/"]
     ],
     "projects": [
+        ["Harness Decay Without Authority Creep", "September 2026", "Independent", "https://juliagsy.github.io", "https://github.com/juliagsy/harness-thsm/blob/main/paper/decay-without-creep.pdf", ["Proposed a typed harness state model with integrity labels, so decay and consolidation apply only to knowledge and skills, while permissions, denies and revocations change only through provenance-backed events.", "Built a dual benchmark and plugin layer that scores any LLM and memory backend (including Mem0) on utility under decay and authority-state fidelity over long horizons.", "Ran 27 live experiments across four model families and two domains: type-blind memory executed revoked skills 39-97% of the time, versus zero false authority under the typed model at comparable utility (±0.05).", "Tech Stack: Python, OpenRouter, HuggingFace, Git"], "research"],
         ["Generative AI for Music", "September 2023 - April 2024", "UCL", "https://www.ucl.ac.uk", "", 
             [
                 ["/static/gai_review.pdf", "Review", "Paper. Studied existing tech related to image and music generations, majority being text-conditioned."],
