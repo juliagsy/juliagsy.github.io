@@ -129,6 +129,20 @@
     ],
     "projects": [
         [
+            "无权限蔓延的智能体 Harness 衰减",
+            "September 2026",
+            "独立研究",
+            "https://juliagsy.github.io",
+            "https://github.com/juliagsy/harness-thsm/blob/main/paper/decay-without-creep.pdf",
+            [
+                "提出带完整性标签的类型化 Harness 状态模型：衰减与整合仅作用于知识和技能，而权限的授予、禁止与撤销只能通过有来源可溯的事件来改变。",
+                "构建双重基准测试与插件层，可在任意大语言模型和记忆后端（包括 Mem0）上，同时评估衰减下的效用与长时间跨度内的权限状态保真度。",
+                "在四个模型家族、两个领域中开展 27 项在线实验：不区分类型的记忆有 39-97% 的情况下会执行已撤销的技能，而类型化模型在效用相当（±0.05）的情况下，虚假授权为零。",
+                "Tech Stack: Python, OpenRouter, HuggingFace, Git"
+            ],
+            "research"
+        ],
+        [
             "音乐用生成性人工智能",
             "September 2023 - April 2024",
             "UCL",
