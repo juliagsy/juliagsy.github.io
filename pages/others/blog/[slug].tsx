@@ -51,6 +51,13 @@ export default function PostPage({ meta, html }) {
                         }
                     </p>
                 }
+                {
+                    meta.project.length === 0 ? null :
+                    <p>
+                        <FontAwesomeIcon icon={"fa-solid fa-tags" as IconProp} />{" "}
+                        <Link className="underline hover:text-violet-700" href={meta.project}>Related Project</Link>
+                    </p>
+                }
             </div>
 
             <div className="post-partition"></div>

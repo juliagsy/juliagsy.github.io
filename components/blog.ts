@@ -113,6 +113,7 @@ function read(file: string) {
             summary: data.summary.trim(),
             tags: list as string[],
             draft: data.draft === true,
+            project: data.project !== undefined ? data.project.trim() : "",
         },
         html,
         // Plain text purely so the list page can search post bodies. It travels in the
