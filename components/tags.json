@@ -1,7 +1,7 @@
 [
     ["all", "All"],
-    ["ml", "Machine Learning"],
-    ["engineering", "Engineering"],
+    ["aiml", "AI & ML"],
+    ["agents", "Agentic"],
     ["research", "Research"],
     ["notes", "Notes"]
 ]

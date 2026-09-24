@@ -1,7 +1,7 @@
 ---
 title: Agents that rewrite their own scaffolding
 date: 2026-09-17
-tags: [engineering, research]
+tags: [aiml, agents, notes]
 summary: Prime Agent puts the entire harness — prompt, skills, memory, sub-agents — behind a CRUD surface the agent edits mid-task. The benchmark numbers are striking. So is what it did in Factorio.
 ---
 

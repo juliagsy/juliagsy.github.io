@@ -1,7 +1,7 @@
 ---
 title: When AI Memory Forgets the Wrong Thing
 date: 2026-09-22
-tags: [research, ml]
+tags: [aiml, agents, research]
 summary: Why long-running AI agents need to forget some information without forgetting the authority constraints that govern what they are allowed to do.
 project: https://github.com/juliagsy/harness-thsm/blob/main/paper/decay-without-creep.pdf
 ---
