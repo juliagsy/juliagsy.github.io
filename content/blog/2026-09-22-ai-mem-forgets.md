@@ -6,7 +6,9 @@ summary: Why long-running AI agents need to forget some information without forg
 project: https://github.com/juliagsy/harness-thsm/blob/main/paper/decay-without-creep.pdf
 ---
 
-### Long-running AI agents need memory.
+*Decay Without Creep, Part 1 of 4*
+
+## Long-running AI agents need memory
 
 A coding agent may need to remember how a repository is structured. An assistant may need to remember facts established several conversations ago. An autonomous workflow may need to retain procedures that it has learned to execute repeatedly.
 
@@ -22,7 +24,7 @@ At first glance, this sounds like a straightforward optimization problem. Keep i
 
 That category is **authority**.
 
-### Memory is not all the same
+## Memory is not all the same
 
 Consider three things an agent might store.
 
@@ -50,7 +52,7 @@ The first two can reasonably participate in a memory lifecycle based on relevanc
 
 This distinction is the starting point of our work, “Decay Without Creep.”
 
-### The problem with treating authority as ordinary memory
+## The problem with treating authority as ordinary memory
 
 Suppose a principal gives an agent permission to run a deployment command. The agent stores that permission.
 
@@ -79,15 +81,15 @@ What happens next depends on the memory architecture.
 
 None of these problems require an attacker to break into the system. The failure can emerge from the normal operation of a memory system.
 
-Recent work has made this broader issue increasingly visible. Memory systems are being studied not only as mechanisms for improving recall, but also as potential sources of safety drift and authorization errors. For example, work on endogenous authorization laundering studies cases where persistent memory can create spurious permissions, while research on governance decay shows that context-management mechanisms such as compaction can cause safety constraints to disappear from the active context.
+Recent work has made this broader issue increasingly visible. Memory systems are being studied not only as mechanisms for improving recall, but also as potential sources of safety drift and authorization errors. [Agent Memory Is a Surface for Endogenous Authorization Laundering](https://arxiv.org/abs/2609.01836) studies cases where persistent memory can create spurious permissions, while [Governance Decay](https://arxiv.org/abs/2606.22528) shows how context compaction can remove safety constraints from active context.
 
 The important observation is that memory and authority have different failure modes.
 
-### Forgetting can be useful
+## Forgetting can be useful
 
 Forgetting itself is not the problem. In fact, selective forgetting is useful.
 
-MemoryBank, for example, uses an Ebbinghaus-inspired forgetting mechanism to selectively retain and reinforce memories. More recent systems such as FadeMem explicitly study adaptive forgetting based on factors including relevance, access frequency, and temporal patterns.
+[MemoryBank](https://arxiv.org/abs/2305.10250), for example, uses an Ebbinghaus-inspired forgetting mechanism to selectively retain and reinforce memories. [FadeMem](https://arxiv.org/abs/2601.18642) studies adaptive forgetting based on relevance, access frequency, and temporal patterns.
 
 These mechanisms address a real problem.
 
@@ -105,7 +107,7 @@ The problem appears when the same machinery is applied indiscriminately to autho
 
 Age alone does not tell us which of these is safe to forget.
 
-### A prohibition can be old because it worked
+## A prohibition can be old because it worked
 
 There is a subtle inversion here.
 
@@ -126,7 +128,7 @@ This is why we describe the problem as **decay without creep**.
 
 We want an agent to forget knowledge when forgetting improves the system. We do not want the process of forgetting knowledge to accidentally change what the agent is authorized to do.
 
-### The grant–revocation lifecycle
+## The grant–revocation lifecycle
 
 The simplest way to see the distinction is as a lifecycle:
 
@@ -166,7 +168,7 @@ The central architectural question therefore becomes:
 
 Our answer is no.
 
-### Separating the memory plane from the control plane
+## Separating the memory plane from the control plane
 
 The approach we investigate is to separate these two responsibilities.
 
@@ -203,7 +205,7 @@ DEON  deontic state
 
 The first three can participate in ordinary memory operations. The fourth cannot.
 
-### The model can talk about authority without controlling it
+## The model can talk about authority without controlling it
 
 An agent should be able to reason about permissions.
 
@@ -229,7 +231,7 @@ In THSM, authorization is resolved at the tool boundary. The harness computes th
 
 - But the model's belief is not the final authorization decision.
 
-### What we tested
+## What we tested
 
 Our evaluation was designed around this distinction.
 
@@ -246,7 +248,7 @@ The authority metric was deliberately based on what the agent actually did. If t
 
 That distinction turned out to matter.
 
-### What we found
+## What we found
 
 Across the main THSM configurations, the authorization gate recorded zero unauthorized executions in the tested scenarios.
 
@@ -258,7 +260,11 @@ The empirical question is therefore different:
 
 In the tested configurations, we did not observe a measurable utility penalty at the resolution of the experiment.
 
-The matched type-blind stores had false-authority rates between 27% and 84% across the main model/domain rows, depending on the configuration.
+The matched type-blind stores had false-authority rates between 27% and 62% across the main model/domain ablations. Under the separate aggressive-decay sweep, false authority reached 84%.
+
+![False-authority rate rises as decay becomes more aggressive in type-blind memory, while THSM remains at zero.](/static/blog/fig2-decay-sweep.svg)
+
+*False authority under three type-blind decay policies and THSM. The sweep uses gpt-4o-mini; type-blind points use 15 seeds.*
 
 Pinning authority information into context helped in some cases, but it did not provide the same guarantee. In the no-gate condition, unauthorized tool calls still occurred.
 
@@ -266,7 +272,7 @@ This is the distinction that matters most:
 
 > Remembering a rule is not the same thing as enforcing a rule.
 
-### The broader lesson
+## The broader lesson
 
 The goal is not to build agents that never forget. It is to build agents that forget the right things.
 
@@ -276,7 +282,7 @@ The goal is not to build agents that never forget. It is to build agents that fo
 
 But neither operation should silently modify the authority model.
 
-That suggests a general design principle for persistent agents:
+For me, the durable design principle is:
 
 > **State should have a lifecycle appropriate to its meaning.**
 
@@ -291,3 +297,7 @@ The rest of our work explores what that separation looks like in detail, how to 
 In the next post, we will look more closely at the question underneath all of this:
 
 **What should an AI agent actually be allowed to forget?**
+
+---
+
+*Next: [Part 2 — What Should an AI Agent Be Allowed to Forget?](/others/blog/ai-what-to-forget)*

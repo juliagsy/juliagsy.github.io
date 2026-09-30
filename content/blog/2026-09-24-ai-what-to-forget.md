@@ -7,9 +7,11 @@ project: https://github.com/juliagsy/harness-thsm/blob/main/paper/decay-without-
 
 ---
 
+*Decay Without Creep, Part 2 of 4*
+
 Forgetting sounds like the opposite of memory.
 
-For an AI agent, it may actually be part of having a good memory.
+For an AI agent, it may instead be part of having a good memory.
 
 A long-running agent cannot indefinitely accumulate every observation, intermediate result, old instruction, failed attempt, tool output, and generated note without eventually facing practical problems. Retrieval becomes harder. Context becomes larger. Old information can conflict with newer information. Storage grows.
 
@@ -184,7 +186,7 @@ The answer is not:
 
 That would throw away the advantages of selective memory.
 
-Systems such as MemoryBank and FadeMem explicitly investigate mechanisms for retaining useful memories while allowing less useful information to fade. Other recent work studies selective forgetting as a way to control memory growth and improve efficiency.
+Systems such as [MemoryBank](https://arxiv.org/abs/2305.10250) and [FadeMem](https://arxiv.org/abs/2601.18642) investigate mechanisms for retaining useful memories while allowing less useful information to fade. [FSFM](https://arxiv.org/abs/2604.20300) and [Selective Forgetting](https://arxiv.org/abs/2608.28978) approach the same pressure with selective and graph-based retention.
 
 The architectural lesson is narrower:
 
@@ -265,7 +267,7 @@ This does not mean that everything written by a model is useless.
 
 Model-generated information can still be valuable as knowledge. It simply cannot become a trusted authorization event merely because it is stored in a memory database.
 
-This distinction is particularly important because recent research has shown that persistent memory can itself become a source of authorization errors. In the authorization-laundering setting, a memory writer can produce spurious permission information that later influences an executor.
+This distinction is particularly important because persistent memory can itself become a source of authorization errors. In [the authorization-laundering setting](https://arxiv.org/abs/2609.01836), a memory writer can produce spurious permission information that later influences an executor.
 
 ## Consolidation creates another risk
 
@@ -289,15 +291,7 @@ The agent has permission to deploy.
 
 The summary is shorter. It is also wrong. Nothing malicious had to happen. The summarizer simply compressed a sequence of events while losing a state transition.
 
-This is why our architecture excludes DEON entries from ordinary consolidation.
-
-The system may summarize the history.
-
-- It may summarize the procedure.
-
-- It may summarize knowledge derived from the history.
-
-But the current authorization state is resolved separately.
+This is why our architecture excludes DEON entries from ordinary consolidation. The system may summarize history, procedures, and derived knowledge, but it resolves current authorization separately.
 
 ## Skills need the same distinction
 
@@ -439,3 +433,11 @@ That is the distinction we explore in the next post.
 Because once authority is separated from ordinary memory, a surprising question remains:
 
 > What happens when the model knows the rule perfectly — and still breaks it?
+
+---
+
+*Previous: [Part 1 — When AI Memory Forgets the Wrong Thing](/others/blog/ai-mem-forgets)*
+
+· 
+ 
+*Next: [Part 3 — When an AI Agent Knows the Rule but Breaks It Anyway](/others/blog/dual-benchmark)*
