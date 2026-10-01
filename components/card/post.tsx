@@ -42,8 +42,10 @@ export default function Post({ item, onTag }) {
             <div className={styles.cardPartition}></div>
             <p>
                 {item.summary}{" "}
+            </p>
+            <p>
                 <Link className="underline hover:text-violet-700" href={url}>
-                    read more <FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} />
+                    <FontAwesomeIcon icon={"fa-solid fa-chevron-right" as IconProp} /> read more
                 </Link>
             </p>
         </div>
