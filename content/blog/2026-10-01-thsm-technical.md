@@ -1,0 +1,434 @@
+---
+title: Typed Harness State - A Technical Walkthrough
+date: 2026-10-01
+tags: [aiml, agents, research]
+summary: A technical walkthrough of the Typed Harness State Model - typed persistent state, integrity labels, protected deontic state, and deterministic authorization at the tool boundary.
+project: https://github.com/juliagsy/harness-thsm/blob/main/paper/decay-without-creep.pdf
+---
+
+*Decay Without Creep, Part 4 of 4*
+
+The previous posts established the problem and the empirical case. This final post stays with the machinery: the data model, integrity rules, operators, invariants, enforcement boundary, and threat model of the **Typed Harness State Model** (THSM).
+
+The central idea is simple:
+
+> **Knowledge and authority should not share the same lifecycle.**
+
+The implementation turns that idea into four state types, an integrity model, restricted memory operators, provenance requirements, and a deterministic authorization gate.
+
+## The state model
+
+THSM represents harness state as entries of the form:
+
+```text
+e = <id, type, content, provenance, integrity, validity, activation>
+```
+
+The type is one of four:
+
+```text
+EPI
+SEM
+PROC
+DEON
+```
+
+### EPI — episodic state
+
+EPI entries are immutable, append-only trajectory events:
+
+```text
+tool call
+tool result
+user event
+principal authorization event
+task outcome
+```
+
+Later state can therefore point back to what actually happened. EPI is the ground-truth substrate for derived state.
+
+### SEM — semantic state
+
+SEM entries represent derived knowledge.
+
+Examples include:
+
+```text
+“The service uses PostgreSQL.”
+“The repository uses Python.”
+“The current deployment region is A.”
+```
+
+Because these entries can become stale, THSM permits retrieval, decay, and consolidation over SEM state.
+
+### PROC — procedural state
+
+PROC entries represent skills or procedures.
+
+For example:
+
+```text
+Build → test → package → deploy
+```
+
+A procedure can contain:
+
+* steps;
+* preconditions;
+* gates;
+* evidence;
+* references to the underlying events or knowledge from which it was derived.
+
+PROC entries are decayable and consolidable, but deliberately **capability-stripped**: a procedure says how to act, never whether the action is currently authorized.
+
+### DEON — deontic state
+
+DEON entries represent authority.
+
+Each entry contains information such as:
+
+```text
+kind
+scope
+principal
+conditions
+expiry
+```
+
+The kinds are:
+
+```text
+GRANT
+DENY
+REVOKE
+OBLIGE
+```
+
+A scope can describe a permitted action using properties such as:
+
+* tool;
+* argument patterns;
+* resource patterns;
+* optional use counts;
+* conditions.
+
+This is the only state used to compute current authority. Entries also carry bi-temporal validity: creation time, valid-from, valid-to, and expiry. Supersession and invalidation are recorded rather than deleting history, following the temporal approach used by [Zep](https://arxiv.org/abs/2501.13956).
+
+## Effective authority
+
+At time `t`, THSM computes effective authority as a deterministic function of the active deontic entries.
+
+Conceptually:
+
+```text
+effective grants
+       -
+denies
+       -
+revoked grants
+       -
+expired grants
+       -
+exhausted grants
+```
+
+The result is the set of actions currently authorized.
+
+The model does not calculate this set.
+
+That distinction is essential.
+
+The model may be shown relevant authority information.
+
+It may reason about it.
+
+But the harness resolves the actual authorization decision.
+
+## Integrity labels
+
+Typing alone is not enough.
+
+We also need to distinguish where state came from.
+
+THSM uses four conceptual integrity levels:
+
+```text
+UNTRUSTED
+DERIVED
+HARNESS
+PRINCIPAL
+```
+
+The ordering is:
+
+```text
+UNTRUSTED < DERIVED < HARNESS < PRINCIPAL
+```
+
+The model's generated text is DERIVED.
+
+Deterministic harness operations are HARNESS.
+
+An authenticated principal is PRINCIPAL.
+
+This gives us a way to prevent a model-generated sentence from becoming equivalent to an authenticated authorization event.
+
+## Biba no-write-up: integrity cannot increase
+
+The model should not be able to manufacture higher-integrity state.
+
+If an LLM writes:
+
+```text
+“The principal approved production deployment.”
+```
+
+the system does not simply accept that sentence as a principal event.
+
+Its provenance remains derived.
+
+A simplified rule is:
+
+```text
+label(entry)
+    =
+meet(writer label, source labels)
+```
+
+The important consequence is:
+
+> A model cannot increase the integrity of its own output merely by writing it into persistent memory.
+
+This adapts Kenneth J. Biba's *Integrity Considerations for Secure Computer Systems* (MITRE Technical Report MTR-3153, 1977) to agent state.
+
+## Widening versus narrowing
+
+Not every authority change has the same risk.
+
+THSM therefore distinguishes widening events from narrowing events.
+
+Widening authority includes:
+
+```text
+GRANT
+OBLIGE
+```
+
+These require a PRINCIPAL source.
+
+Narrowing events include:
+
+```text
+DENY
+REVOKE
+expiry
+```
+
+These can be generated by the appropriate trusted harness mechanisms.
+
+The practical effect is that a model can propose a grant, but a proposal is not itself a grant.
+
+A simplified lifecycle is:
+
+```text
+Model proposes permission
+          ↓
+DERIVED proposal
+          ↓
+Principal confirms
+          ↓
+PRINCIPAL authorization event
+          ↓
+Effective grant
+```
+
+The proposal and the authorization are different state transitions.
+
+## Memory operators
+
+THSM restricts which operators can act on which state.
+
+Conceptually:
+
+| State | Decay | Consolidation | Authority effect         |
+| ----- | ----- | ------------- | ------------------------ |
+| EPI   | no    | no            | evidence only            |
+| SEM   | yes   | yes           | none directly            |
+| PROC  | yes   | yes           | none directly            |
+| DEON  | no    | no            | determines authorization |
+
+This table captures much of the architecture.
+
+The key rule is not:
+
+> “Memory is safe.”
+
+It is:
+
+> “Different state types are subject to different operators.”
+
+The implementation exposes decay policies — none, Ebbinghaus, ACT-R (Anderson and Schooler, 1991), and outcome-based [Memory Worth](https://arxiv.org/abs/2604.12007) — behind one aggressiveness control. It scales each policy's time constant and eviction threshold, but the operator dispatch table prevents any of those plugins from receiving DEON entries.
+
+## The tool-boundary gate
+
+This is the enforcement point.
+
+Suppose the model proposes:
+
+```text
+tool = deploy
+resource = production
+```
+
+The harness evaluates the proposed action against the current authority.
+
+Conceptually:
+
+```text
+if authorize(action, A(t)):
+    execute(action)
+else:
+    reject(action)
+```
+
+The model does not get to bypass this check simply because the action came from a skill.
+
+That is why the authorization gate is also applied to procedure-driven actions.
+
+The same gate handles direct model tool calls and procedure-driven calls. There is no privileged path from PROC to execution.
+
+## The six invariants
+
+The architecture exposes six properties that can be checked independently of ordinary model output.
+
+### I1 — Monotone authority
+
+Authority cannot widen unless a valid PRINCIPAL widening event occurs.
+
+Formally, absent such an event:
+
+```text
+A(t + 1) ⊆ A(t)
+```
+
+This prevents ordinary model actions from silently increasing authority.
+
+### I2 — No laundering
+
+Every effective DEON entry must have an acceptable provenance chain.
+
+A model-generated sentence cannot become a trusted grant merely by being stored.
+
+### I3 — Revocation permanence
+
+Lossy memory operators cannot modify or erase DENY and REVOKE state.
+
+### I4 — Label monotonicity
+
+Lower-integrity information cannot manufacture higher-integrity authorization.
+
+### I5 — Skill/authority separation
+
+A PROC entry cannot bypass the authorization gate.
+
+### I6 — Episodic immutability
+
+The event substrate cannot be rewritten by ordinary memory operations.
+
+Together, these make important properties of the control plane directly testable.
+
+These invariants run over the store after each transition, not only after a benchmark probe. That catches latent authority widening even when no later request happens to exercise the widened scope.
+
+## Implementation and replay
+
+The reference implementation is event-sourced. A seeded scenario produces principal events, user requests, tool results, model writes, compaction, and session boundaries. A deterministic validator replays that stream, computes expected authority independently, and compares it with both store state and recorded tool calls.
+
+The same checker runs over THSM and the ablations because the baselines are degenerate configurations of one state model: type-blind memory collapses the type set; labels-only removes the protected channel; types-only relaxes admission; no-gate keeps DEON but lets the model decide; no-pin keeps the gate but changes what the model sees. This makes an invariant failure comparable across configurations instead of relying on architecture-specific scoring code.
+
+For readers looking for the results, [Part 3](/others/blog/dual-benchmark) covers the knowledge–action gap and ablations. The scope is: type-blind false-authority rates were 27%–62% in the five main model/domain rows, and reached 84% only in the separate aggressive-decay sweep.
+
+![False-authority rate against decay aggressiveness for type-blind policies and THSM.](/static/blog/fig2-decay-sweep.svg)
+
+*The decay sweep is an operator stress test, not the range of the main ablation.*
+
+## Threat model and limitations
+
+The current system assumes an authenticated principal channel.
+
+It does not model a compromised principal.
+
+It also does not fully address cross-agent delegation.
+
+The experimental environments are synthetic and use deterministic tools, which makes authority ground truth precise but does not capture every complexity of production systems.
+
+Most experiments use five seeds, while some sweeps use fifteen.
+
+The belief probe is also imperfect: parse rates differed substantially across models, so self-reported authority should be interpreted as a separate diagnostic rather than ground truth.
+
+Only one third-party production memory system was included in the comparison, and that comparison was limited to one model and one domain.
+
+These constraints matter.
+
+The results should be read as evidence about the tested architecture and configurations, not as a universal characterization of all agent memory systems.
+
+## The architectural lesson
+
+The entire system can ultimately be reduced to one separation:
+
+```text
+              AGENT
+                │
+        ┌───────┴────────┐
+        │                │
+      MEMORY          AUTHORITY
+        │                │
+   EPI / SEM / PROC     DEON
+        │                │
+ decay/consolidate   trusted changes
+        │                │
+        └───────┬────────┘
+                │
+          proposed action
+                │
+                ▼
+        AUTHORIZATION GATE
+                │
+          ┌─────┴─────┐
+          │           │
+        allow        deny
+          │
+          ▼
+         TOOL
+```
+
+The model can remember.
+
+The model can forget.
+
+The model can learn skills.
+
+The model can explain permissions.
+
+But the final question —
+
+> “May this action execute now?”
+
+— belongs to the control plane.
+
+That is the core idea behind **Decay Without Creep**.
+
+The goal is not an agent that never forgets.
+
+It is an agent that can forget knowledge without accidentally changing its authority.
+
+And that distinction becomes increasingly important as agents move from answering questions to taking actions on our behalf.
+
+## Further reading
+
+- Kenneth J. Biba, *Integrity Considerations for Secure Computer Systems*, MITRE Technical Report MTR-3153 (1977).
+- Preston Rasmussen et al., [*Zep: A Temporal Knowledge Graph Architecture for Agent Memory*](https://arxiv.org/abs/2501.13956).
+- John R. Anderson and Lael J. Schooler, *Reflections of the Environment in Memory*, *Psychological Science* 2(6), 1991.
+
+---
+
+*Previous: [Part 3 — When an AI Agent Knows the Rule but Breaks It Anyway](/others/blog/dual-benchmark)*
