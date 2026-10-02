@@ -1,7 +1,7 @@
-import Link from "next/link";
 import data from "@/components/data.json";
 import Links from "@/components/about/links";
 import style from "@/components/about/about.module.css";
+import { EN_CV_PDF, ZH_CV_PDF } from "@/components/resume/paths";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
@@ -19,8 +19,8 @@ export default function Profile() {
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-1 sm:gap-3">
                 <p><FontAwesomeIcon icon={"fa-solid fa-envelope-open-text" as IconProp} /> Resume/CV: </p>
                 <div className="flex flex-row flex-wrap gap-3">
-                    <p className={`${style.item}`}><Link href="/resume" target="_blank">English</Link></p>
-                    <p className={`${style.item}`}><Link href="/resume/zh" target="_blank">中文</Link></p>
+                    <p className={`${style.item}`}><a href={EN_CV_PDF} target="_blank">English</a></p>
+                    <p className={`${style.item}`}><a href={ZH_CV_PDF} target="_blank">中文</a></p>
                 </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-1 sm:gap-3">

@@ -1,7 +1,12 @@
-import data from "@/components/data.zh.json";
-import ResumeSheet from "@/components/resume/sheet";
-import { ZH } from "@/components/resume/lang";
+import PdfRedirect from "@/components/resume/pdf-redirect";
+import { ZH_CV_PDF } from "@/components/resume/paths";
 
 export default function ResumeZh() {
-    return <ResumeSheet data={data} lang={ZH} />
+    return (
+        <PdfRedirect
+            pdf={ZH_CV_PDF}
+            title="Julia Goh - 简历"
+            linkLabel="Julia Goh - 简历 (PDF)"
+        />
+    );
 }

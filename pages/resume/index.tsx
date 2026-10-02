@@ -1,7 +1,12 @@
-import data from "@/components/data.json";
-import ResumeSheet from "@/components/resume/sheet";
-import { EN } from "@/components/resume/lang";
+import PdfRedirect from "@/components/resume/pdf-redirect";
+import { EN_CV_PDF } from "@/components/resume/paths";
 
 export default function Resume() {
-    return <ResumeSheet data={data} lang={EN} />
+    return (
+        <PdfRedirect
+            pdf={EN_CV_PDF}
+            title="Julia Goh - Resume"
+            linkLabel="Julia Goh - Resume (PDF)"
+        />
+    );
 }
