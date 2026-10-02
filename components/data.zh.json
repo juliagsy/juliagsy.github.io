@@ -89,31 +89,11 @@
             "Unify",
             "https://unify.ai",
             [
-                [
-                    "https://github.com/ivy-llc/models",
-                    "Ivy ML Models",
-                    "应用组长. 带领团队在4个月内将ML模型库从零扩展至15+，涵盖用于业务展示的计算机视觉与NLP基础模型。"
-                ],
-                [
-                    "https://unify.ai/docs/ivy/overview/one_liners.html",
-                    "Ivy Transpiler",
-                    "引入了原生编译功能，用于优化ML模型性能。"
-                ],
-                [
-                    "https://unify.ai/modelhub",
-                    "Model Hub",
-                    "全栈. 负责构建客户端应用与 API 密钥身份验证。"
-                ],
-                [
-                    "https://console.unify.ai/",
-                    "Console Application",
-                    "云开发. 参与 v0 开发与 API 网关授权。"
-                ],
-                [
-                    "https://github.com/ivy-llc/ivy",
-                    "Ivy Framework",
-                    "软件工程. 统一了 PyTorch、TensorFlow、JAX 与 NumPy 的函数接口，使其可通过单一库调用；所有代码亦可直接兼容原生库。"
-                ],
+                "Ivy ML Models: 应用组长. 带领团队在4个月内将ML模型库从零扩展至15+，涵盖用于业务展示的计算机视觉与NLP基础模型。",
+                "Ivy Transpiler: 引入了原生编译功能，用于优化ML模型性能。",
+                "Model Hub: 全栈. 负责构建客户端应用与 API 密钥身份验证。",
+                "Console Application: 云开发. 参与 v0 开发与 API 网关授权。",
+                "Ivy Framework: 软件工程. 统一了 PyTorch、TensorFlow、JAX 与 NumPy 的函数接口，使其可通过单一库调用；所有代码亦可直接兼容原生库。",
                 "Tech Stack: Python, C++, Nvidia CUDA, AMD RocM, Tailwind CSS, Node.js, React.js, Next.js, TypeScript, Fast API, Flask, Prisma, Alembic, SQL, Docker, GCP, AWS, Git, Transformers, Linux"
             ],
             "London, United Kingdom"

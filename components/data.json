@@ -63,11 +63,11 @@
             ], "Kuala Lumpur, Malaysia"],
         ["June 2022 - February 2024", "Machine Learning Engineer (Full Stack)", "Unify", "https://unify.ai", 
             [
-                ["https://github.com/ivy-llc/models", "Ivy ML Models", "Applied Lead. Led the team to expand ML model collection from scratch to 15+ within 4 months, including computer vision and NLP base models for business showcase."], 
-                ["https://unify.ai/docs/ivy/overview/one_liners.html", "Ivy Transpiler", "Introduced the native compilation feature for optimising performance of ML models."],
-                ["https://unify.ai/modelhub", "Model Hub", "Full stack. Responsible in building client applications and API key authentication."],
-                ["https://console.unify.ai/", "Console Application", "Cloud. Involved in v0 development and API gateway authorisation."],
-                ["https://github.com/ivy-llc/ivy", "Ivy Framework", "Software Engineering. Unified PyTorch, Tensorflow, JAX and NumPy functions, making them easily accessible through a single library. All codes are also readily compatible with the native libraries."],
+                "Ivy ML Models: Applied Lead. Led the team to expand ML model collection from scratch to 15+ within 4 months, including computer vision and NLP base models for business showcase.", 
+                "Ivy Transpiler: Introduced the native compilation feature for optimising performance of ML models.",
+                "Model Hub: Full stack. Responsible in building client applications and API key authentication.",
+                "Console Application: Cloud. Involved in v0 development and API gateway authorisation.",
+                "Ivy Framework: Software Engineering. Unified PyTorch, Tensorflow, JAX and NumPy functions, making them easily accessible through a single library. All codes are also readily compatible with the native libraries.",
                 "Tech Stack: Python, C++, Nvidia CUDA, AMD RocM, Tailwind CSS, Node.js, React.js, Next.js, TypeScript, Fast API, Flask, Prisma, Alembic, SQL, Docker, GCP, AWS, Git, Transformers, Linux"
             ], "London, United Kingdom"],
         ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com", 
