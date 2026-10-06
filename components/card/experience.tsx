@@ -12,7 +12,7 @@ export default function Experience({ item }) {
 
             <div className={styles.cardDesc}>
                 <p><FontAwesomeIcon icon={"fa-solid fa-calendar-days" as IconProp} /> {item[0]}</p>
-                <p><FontAwesomeIcon icon={"fa-solid fa-briefcase" as IconProp} /> <a href={item[3]} target="_blank">{item[2]}</a></p>
+                <p><FontAwesomeIcon icon={"fa-solid fa-briefcase" as IconProp} /> <a href={item[3]} target="_blank">{item[2]}</a> {item[6] ? <span> | <a href={item[6]} target="_blank">Reference Letter</a></span> : null} </p>
                 <p><FontAwesomeIcon icon={"fa-solid fa-location-dot" as IconProp} /> {item[5]}</p>
             </div>
             

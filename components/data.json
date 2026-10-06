@@ -13,8 +13,8 @@
         ["arXiv Papers", "/others/papers", "fa-solid fa-newspaper"]
     ],
     "referrals": [
+        ["Unify", "/static/unify_ref_2026.pdf"],
         ["Petronas", "/static/pdsb_ref.pdf"],
-        ["Unify", "/static/unify_ref.pdf"],
         ["UCL", "/static/ucl_ref.pdf"]
     ],
     "contacts": [
@@ -49,7 +49,7 @@
                 "AI Desktop & Browser Control: Built a vision-based (VLM) computer-use agent that automates tasks across remote Ubuntu, Windows and macOS desktops, with CLI-installable clients for connecting a user's own machine.",
                 "Organisation Support: Built multi-tenant organisation features on top of personal workspaces — member management and invites, role-based access control with custom roles, ownership transfer, and project/resource sharing.",
                 "Tech Stack: Python, TypeScript, Node.js, React.js, Next.js, FastAPI, PostgreSQL, Docker, Kubernetes, GCP, LiveKit, Playwright, Git"
-            ], "London, United Kingdom (Remote)"
+            ], "London, United Kingdom (Remote)", "/static/unify_ref_2026.pdf"
         ],
         ["September 2024 - March 2025", "Machine Learning Engineer (Data Science)", "Petronas", "https://www.petronas.com", 
             [
@@ -59,7 +59,7 @@
                 "Pipeline Freespan Formulation: ML. Built subsea pipeline height & length prediction models of >70% accuracy.", 
                 "HIP: Computer Vision. Worked on working person detection through object detection with YOLO, pose estimation and vLLM with GPT4o. Involved prompt engineering for better inference performance.", 
                 "Tech Stack: Python, MLFlow, Docker, SQL, Azure, SonarCloud, DevOps, Git"
-            ], "Kuala Lumpur, Malaysia"],
+            ], "Kuala Lumpur, Malaysia", "/static/pdsb_ref.pdf"],
         ["June 2022 - February 2024", "Machine Learning Engineer (Full Stack)", "Unify", "https://unify.ai", 
             [
                 "Ivy ML Models: Applied Lead. Led the team to expand ML model collection from scratch to 15+ within 4 months, including computer vision and NLP base models for business showcase.", 
@@ -68,7 +68,7 @@
                 "Console Application: Cloud. Involved in v0 development and API gateway authorisation.",
                 "Ivy Framework: Software Engineering. Unified PyTorch, Tensorflow, JAX and NumPy functions, making them easily accessible through a single library. All codes are also readily compatible with the native libraries.",
                 "Tech Stack: Python, C++, Nvidia CUDA, AMD RocM, Tailwind CSS, Node.js, React.js, Next.js, TypeScript, Fast API, Flask, Prisma, Alembic, SQL, Docker, GCP, AWS, Git, Transformers, Linux"
-            ], "London, United Kingdom"],
+            ], "London, United Kingdom", "/static/unify_ref.pdf"],
         ["October 2021 - April 2022", "Systems Engineer Intern", "Infosys", "https://www.infosys.com", 
             [
                 "QnA Chatbot for Clinical Tabular Data: ML systems engineering. Full stack development.", 
