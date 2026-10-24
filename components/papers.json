@@ -1,5 +1,5 @@
 {
-    "updated": "23 October 2026",
+    "updated": "24 October 2026",
     "source": [
         "arXiv",
         "https://arxiv.org"
@@ -2223,6 +2223,23 @@
                     ]
                 },
                 {
+                    "id": "2610.27403",
+                    "title": "Steering intonational tunes in text-to-speech synthesis",
+                    "authors": "Juan Pablo Vigneaux, Jennifer Cole",
+                    "summary": "Text-to-speech systems built on residual vector quantization often generate audio in two stages: a transformer backbone emits the first level of each frame's token stack, and a smaller depth model generates the rest autoregressively. We ask which components of such a model are responsible for prosodic intonation, more precisely for generating the English nuclear tune (for instance, the falling pitch melody that distinguishes an assertion from a question's rising melody), and whether interventions on those components can be used to control intonation. Prompt-based control mostly fails; only a final question mark is a reliable lever. Interchange interventions in CSM and S2 locate the tune: the backbone's hidden state carries it to the waveform through the depth model, and the first level of the stack carries little or none of it. Steering the backbone state with a difference-of-means vector computed on new material generated with a final period or question mark moves the tune, but the push toward an assertion degrades the voice. Steering vectors computed instead from the backbone states associated with human imitations of theoretically-specified tunes, whose text carries no punctuation, and applied inside the generation loop, move most recordings to the other condition in both systems (even when fitted without the speaker being steered), at a small cost in predicted naturalness. These imitation-derived vectors are aligned with the one obtained from the two punctuated conditions far beyond a shuffled-label null, so the backbone state of a punctuated prompt already represents intonation. The steered recordings broadly become falling or rising, according to the intent, but the edge tone moves more coherently than the pitch accent, and the target tune cannot be selected precisely beyond this broad tendency.",
+                    "cats": [
+                        "cs.SD",
+                        "cs.CL",
+                        "cs.LG"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27403",
+                    "pdf": "https://arxiv.org/pdf/2610.27403",
+                    "topics": [
+                        "ai-ml",
+                        "audio"
+                    ]
+                },
+                {
                     "id": "2610.27402",
                     "title": "Communication Complexity of Universal Features",
                     "authors": "Lunjia Hu, Anish Jayant, Peter Li, Princewill Okoroafor et al.",
@@ -2292,6 +2309,22 @@
                     "pdf": "https://arxiv.org/pdf/2610.27393",
                     "topics": [
                         "ai-ml"
+                    ]
+                },
+                {
+                    "id": "2610.27387",
+                    "title": "Training Controllable World Models via Action Influence Maximization",
+                    "authors": "Samuel M. Bateman, Tenny Yin, Chongyi Zheng, Lei Huang et al.",
+                    "summary": "Action-conditioned video generative models trained on successful, goal-directed demonstrations tend to ignore the commanded action, rendering a plausible expert-like future regardless of what is asked of them. We trace this failure to training data that lack sufficient action influence. We analyze this metric and prove that it upper bounds the action influence that any model trained on that data can express. Expert demonstrations, whose narrow action distributions let next states be predicted without attending to the action, set a low ceiling that no amount of model capacity alone can raise. Raising it requires collecting different data. We introduce Action Influence Maximization (AIM), an algorithm for actively collecting training data for improving dataset action influence. We compare the performance and data-efficiency of AIM against exploration heuristics and intrinsic-motivation methods on simulated navigation and manipulation tasks. In pixel-based manipulation, AIM is the only method that consistently improves controllability: 500 actively collected episodes added to 3k demonstrations match a world model trained on 300k expert episodes on end-effector controllability, an 85× reduction in data.",
+                    "cats": [
+                        "cs.RO",
+                        "cs.LG"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27387",
+                    "pdf": "https://arxiv.org/pdf/2610.27387",
+                    "topics": [
+                        "ai-ml",
+                        "robotics"
                     ]
                 },
                 {
@@ -2371,6 +2404,52 @@
                     ]
                 },
                 {
+                    "id": "2610.27350",
+                    "title": "Refuses When Asked, Complies When Acting: A Runtime Safety Check for Robot Control Loops",
+                    "authors": "Arnav Grover",
+                    "summary": "Frontier models can control robots through agent harnesses that loop on one question: what motion comes next toward the user's goal? We show that this default loop carries out harmful instructions. With GPT-6 Astra controlling a low-cost SO-101 arm through the Inspect Robots harness on three household tasks whose hazard is common knowledge, such as \"put the knife in the toy basket\", the policy refused 0% of 15 trials, attempted the harm every time, and completed it in 27%. Its one exit, giveup, is meant for goals that cannot be achieved, and it never cited the hazard. We add an optional runtime safety check to the loop: before the first motion, the model is asked whether it would carry out the instruction, given the same camera frames. The check would have stopped all 15 hazardous instructions, including the 4 that completed the harm, and flagged none of the 15 harmless controls. Code and data: https://github.com/Arnav-Gr0ver/Refuses-When-Asked-Complies-When-Acting.",
+                    "cats": [
+                        "cs.RO",
+                        "cs.AI"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27350",
+                    "pdf": "https://arxiv.org/pdf/2610.27350",
+                    "topics": [
+                        "ai-ml",
+                        "robotics"
+                    ]
+                },
+                {
+                    "id": "2610.27336",
+                    "title": "Determination of the Human-Robot Interaction Workspace for Robot Assisted Head Stabilization Control",
+                    "authors": "Xinmin Liu, Alexander L. Van Slyke, Destinee Holloman, Ahmad Sakaamini et al.",
+                    "summary": "Accurate head immobilization is critical for medical procedures such as neuroimaging and intracranial radiation therapy, where even minor motion can compromise precision. Traditional methods, such as rigid stereotactic frames and thermoplastic face masks, are invasive, uncomfortable for patients, and require a time-consuming setup. To overcome these limitations, a novel approach employs a 6-degree-of-freedom (6DoF) robotic head holder that is integrated with real-time optical motion tracking, enabling dynamic compensation for head movements without physical restraint. However, implementing this system requires a detailed biomechanical understanding of skull-cervical spine interactions to define safe and effective motion limits. In this study, we conduct a human volunteer investigation using a 6DoF Stewart platform robot to characterize biokinematic workspace of the head-neck system and establish foundational data for human-robot interaction in precision head stabilization.",
+                    "cats": [
+                        "cs.RO",
+                        "physics.bio-ph",
+                        "physics.med-ph"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27336",
+                    "pdf": "https://arxiv.org/pdf/2610.27336",
+                    "topics": [
+                        "robotics"
+                    ]
+                },
+                {
+                    "id": "2610.27333",
+                    "title": "Inspectable LLM-Simulated Participants for Qualitative Interview Rehearsal",
+                    "authors": "Hangyue Zhang, Qiran Hu, Ziyi Zhang, Hyanghee Park et al.",
+                    "summary": "LLMs are increasingly used across research workflows, including research ideation, qualitative analysis, and participant simulation. Within work on participant simulation, prior studies have largely evaluated simulated participants by how realistic or human-like their responses appear, leaving less known about how researchers use and critique these materials when revising interview protocols before fieldwork. We present Rehearsim, an inspectable research probe that treats LLM-simulated participants as materials for methodological rehearsal rather than substitutes for human participants. Rehearsim combines literature-grounded participant construction, interactive interview rehearsal, and traceable thematic review while keeping protocol decisions under researcher control. In a study with 21 qualitative researchers, participants used simulated materials to surface assumptions and gaps, reconsider participant populations, revise target populations, and develop follow-up probes. They also identified risks, including the concealment of weak questions, dismissal of unexpected synthetic details, and interpretive anchoring from generated themes. We derive an inspectable-rehearsal framework emphasizing traceability, contestability, researcher control, and epistemic boundaries.",
+                    "cats": [
+                        "cs.HC"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27333",
+                    "pdf": "https://arxiv.org/pdf/2610.27333",
+                    "topics": [
+                        "hci"
+                    ]
+                },
+                {
                     "id": "2610.27332",
                     "title": "Orchestrating Key Scarcity: Global Capacity Allocation in Hybrid QKD-PQC Networks",
                     "authors": "Pablo P. Rejo, Manuel Fernández-Veiga, Ana Fernández-Vilas, Diego Cajaraville-Aboy et al.",
@@ -2447,6 +2526,21 @@
                     ]
                 },
                 {
+                    "id": "2610.27315",
+                    "title": "Design and Control of a Multimodal Legged-Aerial Robot Through Separate Control Contraction Metrics",
+                    "authors": "Kaushik Venkatesh Krishnamurthy, Eric Sihite, Alireza Ramezani, Morteza Gharib",
+                    "summary": "The integration of dynamic legged locomotion and aerial mobility offers versatility that is deterred by challenges in payload distribution, actuation, and the contrasting requirements of both domains. In this paper, we present the design and operation of a multimodal quadrupedal aerial-legged robot. The presence of legged aerial systems also allows for thruster-assisted legged locomotion, which we make possible with a unified control framework using Control Contraction Metrics (CCM). We search for separate domain-specific contraction metrics for walking and flight independently offline and unify them using an online energy-based Control Lyapunov Function Quadratic Program (CLF QP). This enables optimal, cross-domain control allocation, which we show using simulations. We also show experimental results that validate the mechanical viability of our hardware and the paradigm of thruster-assisted trotting. The stability of said experiments motivates the deployment of the control framework for multimodal operations.",
+                    "cats": [
+                        "cs.RO",
+                        "eess.SY"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27315",
+                    "pdf": "https://arxiv.org/pdf/2610.27315",
+                    "topics": [
+                        "robotics"
+                    ]
+                },
+                {
                     "id": "2610.27313",
                     "title": "Scrambled Multiply-with-Carry Pseudorandom Number Generators",
                     "authors": "Sebastiano Vigna",
@@ -2459,6 +2553,20 @@
                     "pdf": "https://arxiv.org/pdf/2610.27313",
                     "topics": [
                         "security"
+                    ]
+                },
+                {
+                    "id": "2610.27310",
+                    "title": "RadGeoLoc: Radar Geolocalization via Particle Filtering",
+                    "authors": "Shaunak Kolhe, Peng Jiang, Kasi Viswanath, Srikanth Saripalli",
+                    "summary": "In real-time autonomous field applications, GNSS is often unreliable and inaccurate. A possible solution is localizing against a prebuilt map like a satellite image, as it is georeferenced and already surveyed. In this work, we localize a spinning radar measurement against overhead RGB imagery with a learned observation model. We use a radar representation pretrained by masked reconstruction and align it to features from a satellite image. A particle filter propagated by radar odometry proposes candidate poses, and our observation model provides a likelihood over these poses. We evaluate our method over 31 distinct routes, over 8 datasets spanning both urban and offroad conditions using only ground radar and a coarse local prior. We also examine the robustness over changing weather using repeated traversals over the same route over 13 months, in both urban and offroad conditions.",
+                    "cats": [
+                        "cs.RO"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27310",
+                    "pdf": "https://arxiv.org/pdf/2610.27310",
+                    "topics": [
+                        "robotics"
                     ]
                 },
                 {
@@ -2478,6 +2586,22 @@
                     ]
                 },
                 {
+                    "id": "2610.27277",
+                    "title": "What Would Removing This Corruption Change? Failure Attribution for Vision-Language-Action Models",
+                    "authors": "Carson Sobolewski, Anjali Parashar, Fei Chen, Yingke Li et al.",
+                    "summary": "Vision-language-action (VLA) models are sensitive to visual corruptions, but knowing that a corruption is typically harmful does not establish whether removing it would benefit the current episode. Furthermore, when several corruptions co-occur, deciding what to correct requires understanding which ones contribute to failure risk and how much their removal would help. We define this problem as failure attribution. Detecting corruption presence alone cannot answer this question, as corruptions can be present but relatively harmless, while directly measuring removal benefits requires costly paired policy rollouts with and without the corruption present. To address this, we introduce a factorized risk model that learns separate representations of the scene and corruptions, allowing us to estimate removal benefits through latent intervention from the current image and task instruction, without paired clean images or additional counterfactual rollouts. We evaluate our approach on OpenVLA and π0.5 in simulation and π0.5-DROID on a Franka robot. Our method outperforms monolithic and vision-language-model (VLM) baselines, including achieving approximately 3x lower attribution error than frontier VLMs. We also demonstrate our method adapts to execution context and corruption intensity, and can be used for online failure monitoring on hardware.",
+                    "cats": [
+                        "cs.RO",
+                        "cs.LG"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27277",
+                    "pdf": "https://arxiv.org/pdf/2610.27277",
+                    "topics": [
+                        "ai-ml",
+                        "robotics"
+                    ]
+                },
+                {
                     "id": "2610.27272",
                     "title": "Certifying Repeatable Entry-Replay Witnesses for COBOL-to-Java Migration",
                     "authors": "Andras L. Ferenczi, Mariya Bessonov, Allwyn Ponnudurai, Chandrakanth R. Mamillapalli et al.",
@@ -2491,6 +2615,79 @@
                     "topics": [
                         "ai-ml",
                         "software"
+                    ]
+                },
+                {
+                    "id": "2610.27258",
+                    "title": "The Differential Effects of AI Abstention on Advice Acceptance",
+                    "authors": "Nicholas Wolczynski, Yotam Liel, Maytal Saar-Tsechansky, Lior Zalmanson",
+                    "summary": "AI advising systems are typically designed to always provide a response. Recent work has focused on developing systems that withhold advice in some instances, such as when advice quality is questionable, to improve the overall quality of guidance when it is given; a design paradigm we refer to as AI abstention. While substantial work has focused on optimizing when models should abstain, little is known about how users respond to systems that abstain. In a preregistered experiment, participants made repeated financial decisions, assisted by one of two advising regimes: an AI that advises selectively or one that advises on every decision. We find that the same AI abstention regime produces differential effects depending on the user: it increases advice acceptance among users with high perceived expertise and tends to decrease it among users with low perceived expertise. This differential effect is accounted for by the cognitive burden users face when repeatedly reconciling AI recommendations with their own judgment; AI abstention appears to relieve this burden among users with high perceived expertise, and in doing so increases their receptivity to advice. Further, AI abstention mitigates the decline in advice acceptance observed among expert users over repeated interactions. Exploratory evidence also suggests it increases appropriate acceptance where advice would improve the decision, increasing the downstream accuracy of perceived experts. The AI abstention regime is thus a first-order design property of AI advisory systems, and one that must be calibrated to the users a system serves.",
+                    "cats": [
+                        "cs.HC"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27258",
+                    "pdf": "https://arxiv.org/pdf/2610.27258",
+                    "topics": [
+                        "hci"
+                    ]
+                },
+                {
+                    "id": "2610.27253",
+                    "title": "Neural Controlled Directional Frame Generation for Sprite Animation",
+                    "authors": "Kenneth Alonso, Gustavo Patow",
+                    "summary": "Sprite-based animation remains prevalent in video game development, but production workflows require capabilities beyond traditional in-betweening. While existing neural interpolation methods can generate intermediate frames, animators also need forward extrapolation to predict motion continuations and backward extrapolation for editing and reverse-engineering existing sprite sheets. Current video generation models either operate on natural video content with stochastic diffusion sampling incompatible with production requirements, or focus exclusively on interpolation without addressing extrapolation tasks. We present a deep learning approach for controlled directional frame generation in sprite animation using three specialized expert models that share identical U-Net encoder-decoder architectures and several domain-specific modifications, including RGBA-aware processing, multi-scale flow refinement, pixel-shuffle upsampling, and alpha-gated blending. Each model is trained on different temporal orderings of the same curated dataset: previous (frames 2,3>1), middle (frames 1,3>2), and next (frames 1,2>3). We demonstrate that only 280 carefully curated sprite triplets enable effective training for all three directional tasks without requiring massive generic datasets. Evaluation on 42 test triplets using the FLIP metric shows that all three models achieve comparable quality–previous (0.26), middle (0.26), and next (0.27)–with no significant degradation for extrapolation versus interpolation, outperforming general-purpose baselines by 17-57%. With deterministic single-pass generation and compact model, our method provides the first practical solution for controllable any-position frame generation specifically tailored for pixel art sprite animation workflows, validating that quality-over-quantity data curation enables specialized deep learning for niche visual domains.",
+                    "cats": [
+                        "cs.GR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27253",
+                    "pdf": "https://arxiv.org/pdf/2610.27253",
+                    "topics": [
+                        "graphics"
+                    ]
+                },
+                {
+                    "id": "2610.27248",
+                    "title": "ValiAssist: Scaling LLM-generated Programming Feedback Validation by Demonstration",
+                    "authors": "Xiaohang Tang, Rehema Abulikemu, Peng Gao, Yan Chen",
+                    "summary": "Generative AI can create programming feedback at scale, but validating its alignment with instructors' pedagogical goals and strategies remains challenging. Instructors may struggle to fully specify validation criteria upfront, as these often emerge through inspecting concrete examples and revising misaligned feedback. We present ValiAssist, a validation-by-demonstration system that infers reusable validation logic from instructors' revisions of AI-generated feedback and allows instructors to inspect and refine that logic as it is applied across other student submissions. In a comparative study with 16 instructors, ValiAssist helped instructors create and refine validation criteria, producing feedback that better aligned with their pedagogical intent (91% vs. 57%) and more than doubling the accuracy of correcting problematic criteria (77% vs. 32%). Our findings suggest that validation by demonstration can help instructors turn judgments they know how to make on individual cases into explicit, reusable logic, while progressively clarifying where those judgments do and do not generalize.",
+                    "cats": [
+                        "cs.HC",
+                        "cs.AI",
+                        "cs.CY"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27248",
+                    "pdf": "https://arxiv.org/pdf/2610.27248",
+                    "topics": [
+                        "ai-ml",
+                        "hci"
+                    ]
+                },
+                {
+                    "id": "2610.27238",
+                    "title": "\"It Wouldn't Have Been So Apparent to Me\": Evaluating How Thought-Level Progress Tracking Supports Psychosocial Goals",
+                    "authors": "Shiyu Xu, Ruishi Zou, Anna R. Van Meter, Addie Weaver et al.",
+                    "summary": "We pursue psychosocial goals every day, from coping with anxiety, to pursuing personal growth. While prior research has designed systems for tracking progress towards behavioral goals, fewer studies have focused on progress towards psychosocial goals - and the thinking changes people make to address them. As a first step, we present Thought-GPS, a system that visualizes potential markers of such thought-level progress in-the-moment as users interact with an AI-supported cognitive restructuring intervention. We evaluated Thought-GPS through a mixed-methods single-session study with 30 participants, comparing Thought-GPS with an active control condition without progress markers. We found preliminary evidence that participants using Thought-GPS reported greater clarity about how they might change to pursue their goals, stronger motivation to reflect on goal progress, and greater engagement in that reflection. Participants also reported that progress markers made subtle progress visible, helped them engage in deeper reflection, and connect conversational insights to their personal goals.",
+                    "cats": [
+                        "cs.HC"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27238",
+                    "pdf": "https://arxiv.org/pdf/2610.27238",
+                    "topics": [
+                        "hci"
+                    ]
+                },
+                {
+                    "id": "2610.27217",
+                    "title": "pyFDN: A Python Toolbox for Feedback Delay Network Design, Analysis, and Optimization",
+                    "authors": "Sebastian J. Schlecht, Facundo Franchino, Jeremy B. Bai",
+                    "summary": "Feedback delay networks (FDNs) provide a compact representation of recursive audio systems for artificial reverberation and decorrelation. Their practical use spans structured matrix design, acoustic decay shaping, numerical simulation, and modal analysis, increasingly combined with differentiable optimization. We present pyFDN, an open-source Python toolbox that brings these operations into a common workflow. The library combines numerical design and analysis routines with block-based time-domain processing and integration with FLAMO for frequency-domain differentiable processing. Explicit network builds and JSON presets connect design, optimization, rendering, and reuse. This paper describes the software architecture, representative capabilities, and reproducibility mechanisms of version 0.5.0, providing a reference for research and teaching that use the toolbox.",
+                    "cats": [
+                        "eess.AS"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27217",
+                    "pdf": "https://arxiv.org/pdf/2610.27217",
+                    "topics": [
+                        "audio"
                     ]
                 },
                 {
@@ -2508,6 +2705,34 @@
                     ]
                 },
                 {
+                    "id": "2610.27176",
+                    "title": "CanvasObs: Structured Spatial Observation for Agent Editing on 2D Infinite Canvases",
+                    "authors": "Jiahao Xu, Haohui Wang, Rebecca Faust, Dawei Zhou et al.",
+                    "summary": "Editing agents on 2D infinite canvases must reason about application state that pixels may not reveal. Targets may be offscreen or covered, while visual containment and touching arrows may disagree with recorded frame membership or connector bindings. We ask how a structured observation layer can support accurate object selection during agentic editing on 2D infinite canvases. We present CanvasObs, which augments visual context with a structured payload and guidance for reading four components: Identity & State, Visibility & Structure, Relations, and Offscreen Object bounds in action coordinates. A Remote Team Handoff case study illustrates retrieving an editable offscreen copy, choosing a covered chart by color, separating cards by frame membership, and preserving an evidence connection. We turn these cases into ten controlled configurations and compare CanvasObs with the baseline agent in 1,200 browser trials across three models. CanvasObs improves Correct target for every model. Combined across models, it raises Correct target from 16.5% to 48.3%, an increase of 31.8 percentage points (95% confidence interval [29.0, 34.7]), and Full task success from 4.3% to 25.0%. These results show that compact structured observation can improve object choice on 2D infinite canvases without redesigning the editing pipeline.",
+                    "cats": [
+                        "cs.HC"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27176",
+                    "pdf": "https://arxiv.org/pdf/2610.27176",
+                    "topics": [
+                        "hci"
+                    ]
+                },
+                {
+                    "id": "2610.27170",
+                    "title": "Too Long to Watch, Too Short to Leave: Designing for Agent Micro-Waits",
+                    "authors": "Kevin Pu, Anh Truong, Michael Terry, Carrie J. Cai et al.",
+                    "summary": "Agentic systems increasingly carry out complex work, where a single turn routinely runs for minutes. This produces a micro-wait that is too long to watch and too short to leave. In a formative study with 12 daily agent users, we found that staying felt like wasted time, while switching away fragmented attention and forfeited the context needed to re-engage. We introduce Sidecar, a parallel assistant situated in the same interface as the agent, which reads the run and surfaces implicit decisions the agent made, along with task directions worth exploring. In a within-subjects study (N=16), Sidecar helped participants stay focused on their main task, freely workshop unfinished ideas without fear of unwanted action, and recognize under-specification in their own prompts. Together, these findings contribute to designs that help users stay context-aware and engaged during agent micro-waits.",
+                    "cats": [
+                        "cs.HC"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27170",
+                    "pdf": "https://arxiv.org/pdf/2610.27170",
+                    "topics": [
+                        "hci"
+                    ]
+                },
+                {
                     "id": "2610.27125",
                     "title": "Disjoint in Name Only: Illusory Resilience in the Internet",
                     "authors": "Subhadeep Sahoo, Hrishikesh B Acharya",
@@ -2522,6 +2747,72 @@
                     ]
                 },
                 {
+                    "id": "2610.27109",
+                    "title": "Beyond Two Tracks: Speaker-Anchored Full-Duplex Dialogue Recovery",
+                    "authors": "Yuxuan Chen, Yang Xiao, Jack Sun, Chak Sun et al.",
+                    "summary": "Spoken interaction is moving from alternating turns to full-duplex conversation, where an agent listens while speaking. Learning this coordination requires natural dialogue with persistent speaker-resolved tracks, a data requirement that remains difficult to satisfy at scale. Generative recovery offers a route from ordinary recordings, but recovering two voices is not enough: their track assignments can drift as the conversation unfolds. We address this missing link with speaker-anchored routing before diffusion: a 1.84M-parameter module matches the separator's coarse streams to fixed enrollment identities and orders them before a frozen generator reconstructs the speech, without retraining the generator or altering the reconstructed audio. On 25-minute remote conversations, routing cuts wrong-track time from 43.9% to 4.1%, below the 6.2% of matched-enrollment waveform re-identification, with its largest advantage when one participant holds the floor (17.8% versus 28.6%), and raises fixed-track activity F1 from 0.46 to 0.84 while per-chunk reconstruction quality is unchanged. The same router transfers to unseen face-to-face and telephone recordings, and a margin-gated verification step brings their wrong-track time to 0.9-1.7% while embedding 20-36% of the output, where full re-identification embeds all of it. Recovered voices thus become the participant-consistent tracks that full-duplex dialogue modeling needs. Audio examples: https://elpsykongloo.github.io/beyond-two-tracks/",
+                    "cats": [
+                        "cs.SD",
+                        "cs.CL",
+                        "eess.AS"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27109",
+                    "pdf": "https://arxiv.org/pdf/2610.27109",
+                    "topics": [
+                        "ai-ml",
+                        "audio"
+                    ]
+                },
+                {
+                    "id": "2610.27108",
+                    "title": "Counting Contributions, Not Views: Occlusion-Aware Densification for 3D Gaussian Splatting",
+                    "authors": "Marcel Rogge, René Schuster, Didier Stricker",
+                    "summary": "3D Gaussian Splatting grows a dense scene from a sparse initialization through adaptive density control (ADC), driven by per-Gaussian statistics gathered during rendering. These statistics pass a frustum-based visibility filter blind to occlusion: fully occluded Gaussians still count as observed, diluting the averaged gradient signal and suppressing densification precisely where geometry is occluded. We correct this with an occlusion-aware filter that restricts densification statistics to views in which a Gaussian actually contributes, and replace the criterion's raw view-count normalizer with an average-contribution one. Integrated into a StopThePop-based framework, the two together improve every image-quality metric over the occlusion-blind baseline on occlusion-heavy scenes (up to 6% lower LPIPS), at less than half the Gaussians a view-count normalizer requires. Under the longer schedules these large scenes require, the count stays bounded where most criteria diverge, and on smaller benchmarks our method stays competitive at a fraction of the competitors' count.",
+                    "cats": [
+                        "cs.CV",
+                        "cs.GR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27108",
+                    "pdf": "https://arxiv.org/pdf/2610.27108",
+                    "topics": [
+                        "ai-ml",
+                        "graphics"
+                    ]
+                },
+                {
+                    "id": "2610.26861",
+                    "title": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
+                    "authors": "Wenqian Zhang, Yangyi Huang, Zigeng Xu, Weiyang Liu et al.",
+                    "summary": "While LLM agents can generate visually plausible CAD assemblies, these designs often fail to fulfill their intended physical functions. We study functional CAD design, a setting where agents interpret underspecified requests to construct and iteratively revise mechanisms that satisfy functional requirements in physical simulation. Verifying these requirements is nontrivial: different candidate mechanisms may realize the same function through entirely different components, controls, and operating sequences. To bridge this gap, we propose FunCAD-Harness, a framework that translates abstract requirements into candidate-specific physical tests and uses simulation feedback to guide design revisions. To systematically evaluate this capability, we introduce FunCADBench, a benchmark spanning 46 mechanism families with interdependent and multi-step operations. Experiments across frontier LLM agents show that FunCAD-Harness exposes subtle mechanical failures invisible to visual inspection, substantially improving functional success rates over standard simulation-augmented baselines. Ultimately, our work marks a step toward CAD agents capable of translating human intent into working mechanisms.",
+                    "cats": [
+                        "cs.CV",
+                        "cs.CL",
+                        "cs.GR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.26861",
+                    "pdf": "https://arxiv.org/pdf/2610.26861",
+                    "topics": [
+                        "ai-ml",
+                        "graphics"
+                    ]
+                },
+                {
+                    "id": "2610.26820",
+                    "title": "Open-Form Geometric Style Transfer",
+                    "authors": "Adar Elad, Gal Metzer, Omer Dahary, Min Lu et al.",
+                    "summary": "A geometric style learned from one family of shapes is typically applied to new shapes from the same family. We consider a more challenging setting: learning the geometric design language of a stylized Latin alphabet and applying it to new forms, from Greek glyphs to entirely different structures such as human poses. We introduce Open-Form Geometric Style Transfer, where the forms to which a learned geometric style can be applied are not restricted to the shape family in which that style was observed. This setting is deceptively challenging: the difficulty is not merely learning a style, but learning the style without learning the shape family in which it was observed. We represent target forms by structural sketches and disentangle structural adherence from style realization using a Geometry LoRA and a style-specific LoRA. Critically, open-form transfer requires the Geometry LoRA to be universal. To achieve this, we devise a geometry-enrichment strategy that constructs a large and purposefully diverse collection of synthetic structural sketches spanning a broad range of unfamiliar geometries. Our experiments and ablations demonstrate the importance of both disentanglement and this universal geometry prior, enabling geometric styles learned from glyphs, pictograms, and other shape families to be transferred to substantially different, unseen forms.",
+                    "cats": [
+                        "cs.CV",
+                        "cs.GR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.26820",
+                    "pdf": "https://arxiv.org/pdf/2610.26820",
+                    "topics": [
+                        "ai-ml",
+                        "graphics"
+                    ]
+                },
+                {
                     "id": "2610.26709",
                     "title": "FaaSpot: Fault-Tolerant Serverless Workflow Execution on Spot Instances",
                     "authors": "Bandhan Patel, Sushruth Harsha, Kwangsung Oh, In Kee Kim",
@@ -2533,6 +2824,21 @@
                     "pdf": "https://arxiv.org/pdf/2610.26709",
                     "topics": [
                         "systems"
+                    ]
+                },
+                {
+                    "id": "2610.26684",
+                    "title": "MuLaCover: Flexible Cover Song Generation via Symbolic Tonal Control",
+                    "authors": "Lynn Yi, Zihan Xiong, Junjie Cao, Xiaolong Weng et al.",
+                    "summary": "A cover song re-renders an existing piece, most commonly by preserving its tonal content – melody and chord progression – while reshaping other musical attributes. This suggests a natural formulation for generative cover synthesis with pretrained music language models: explicitly control tonal content, while specifying lyrics and style through text. Existing approaches condition on frame-level features, tightly coupling generation to the reference's timing and structure, and limiting flexibility such as tempo variation, structural rearrangement, or partial conditioning. To this end, we present MuLaCover, a cover generation model that conditions a pretrained text-to-song foundation model on an editable symbolic lead sheet. Our design enables alignment-free control: generated outputs preserve the tonal signature of the source without frame-level alignment, allowing flexible timing, structure, and segment-level generation. We further introduce a training curriculum with partially mismatched audio-symbolic pairs, improving diversity and robustness. We evaluate MuLaCover with objective metrics, standard subjective ratings, and in-depth expert interviews that provide fine-grained diagnostic insights. Experiments show that MuLaCover achieves state-of-the-art performance among open-source systems and is competitive with leading commercial models such as Suno-v5.5. Audio samples and code are available at our project page: https://mulalabs.ai/mulacover/",
+                    "cats": [
+                        "cs.SD",
+                        "eess.AS"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.26684",
+                    "pdf": "https://arxiv.org/pdf/2610.26684",
+                    "topics": [
+                        "audio"
                     ]
                 },
                 {
@@ -2564,6 +2870,68 @@
                     "topics": [
                         "ai-ml",
                         "systems"
+                    ]
+                },
+                {
+                    "id": "2610.27023",
+                    "title": "Point2Acoustic: Efficient Room Acoustic Parameter Estimation from 3D Geometry and Material Properties",
+                    "authors": "Xun Gao, Raksha Ramakrishna, Tommy Falk, Werner de Bruijn",
+                    "summary": "Scene-adaptive immersive audio rendering requires rapid estimation of acoustic parameters that reflect the surrounding environment. For repeated runtime scene updates, performing a detailed geometric-acoustic simulation for every update can be computationally costly. We present Point2Acoustic, a learning-based framework for direct estimation of six-band reverberation time (RT₆₀) and reverberant-to-direct ratio (RDR) from 3D scene geometry and acoustic material properties. Each scene is represented by a surface-sampled point cloud with spatial coordinates and frequency-dependent absorption and scattering coefficients, and encoded using PointNet or PointNet++. We train and evaluate the framework on a synthetic furnished-room dataset with varied geometry and acoustic materials, using geometric-acoustic simulation to obtain reference targets. Point2Acoustic achieves accurate multi-band prediction with millisecond-scale inference, and ablation results indicate that explicit global room descriptors and semantic surface labels provide no consistent benefit. The proposed formulation supports efficient scene-adaptive acoustic rendering in extended reality (XR).",
+                    "cats": [
+                        "eess.AS",
+                        "cs.SD"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.27023",
+                    "pdf": "https://arxiv.org/pdf/2610.27023",
+                    "topics": [
+                        "audio"
+                    ]
+                },
+                {
+                    "id": "2610.26446",
+                    "title": "Label Authority in Speech Emotion Recognition: Intended and Perceived Ground Truth in Emozionalmente",
+                    "authors": "Marco Giordano, Stefano Giacomelli, Claudia Rinaldi, Fabio Graziosi",
+                    "summary": "Ground truth in Speech Emotion Recognition (SER) is often presented as a single categorical fact, yet an acted emotion and the emotion heard by listeners describe different aspects of the same recording. We examine this distinction in Emozionalmente, an acted Italian corpus that provides both an elicited production label and five listener judgements for every clip. Using frozen XLS-R, HuBERT, and WavLM representations with matched probes, we compare three label authorities: the expressed condition, the listeners' hard plurality, and their complete vote distribution. The results tell a consistent story. Recovering the expressed condition is easier than predicting a tie-broken listener plurality, but that gap compares two different questions rather than revealing a general loss of SER ability. As listener agreement weakens, the plurality becomes an increasingly brittle hard target. Training on the full vote distribution does not substantially change which class wins the model's hard decision, but it produces probability assignments that more closely follow the alternatives selected by listeners, especially for ambiguous clips. No authority therefore replaces the others. Expressed labels describe how speech was produced, pluralities provide an operational single-class decision, and vote distributions preserve perceptual uncertainty. For human-facing Internet of Sounds applications, evaluations should state which authority is being predicted, retain its aggregation rule and agreement information, and use distributional scores when disagreement is part of the target.",
+                    "cats": [
+                        "cs.SD",
+                        "cs.CL",
+                        "eess.AS"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.26446",
+                    "pdf": "https://arxiv.org/pdf/2610.26446",
+                    "topics": [
+                        "ai-ml",
+                        "audio"
+                    ]
+                },
+                {
+                    "id": "2610.26247",
+                    "title": "Bridging In-Situ Visualization to Game Engines: From ParaView Catalyst via ANARI to Unreal Engine",
+                    "authors": "Thomas George, Severin A. T. Klapproth, Jens Henrik Göbbert, Jonathan Windgassen et al.",
+                    "summary": "In-situ high-performance computing (HPC) simulations produce massive datasets that remain difficult to stream into game engines for interactive visualization. We present an in-situ, disk-free pipeline that couples simulation data to Unreal Engine 5 through ParaView's ANARI rendering API. A modified ANARI-USD device captures Universal Scene Description (USD) scene graphs in memory at the ANARI layer and streams the engine-agnostic USD format through an embedded ZeroMQ broker to visualization clients, where JuSync, middleware with a companion Unreal Engine 5 plugin, parses the geometry as it arrives and routes it to engine rendering components at runtime, producing scenes that are camera-navigable once received. The decoupled design keeps simulation execution independent of visualization load, and clients may connect or disconnect at any time. The pipeline is demonstrated on the JURECA-DC supercomputer at Forschungszentrum Jülich, streaming Free Electron Laser (FEL) simulation data with point clouds of tens of millions of particles.",
+                    "cats": [
+                        "cs.DC"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.26247",
+                    "pdf": "https://arxiv.org/pdf/2610.26247",
+                    "topics": [
+                        "graphics",
+                        "systems"
+                    ]
+                },
+                {
+                    "id": "2610.26098",
+                    "title": "From Code to Playable Systems: CEGame-Bench for Long-Horizon Game Creation Agents",
+                    "authors": "Zixuan Dong, Yanghai Wang, Hanyan Bian, Jiaxi Tao et al.",
+                    "summary": "A game ships when a player can launch it, finish it, and return to a saved world, none of which a successful build guarantees, yet game-creation agents are mostly tested on one engine or on one-prompt browser games. We present CEGame-Bench, the first long-horizon benchmark for complete-game creation across five production engines: Defold, Godot, Roblox Studio, Unity, and Unreal Engine. Agents build each game from an empty project and a design document in runs averaging up to 295 steps and 65M tokens; the document doubles as a contract, and a hidden evaluator accepts a game only by real-input play. Under four scaffolds, agents earn most integration points but usually under half the gameplay points, and their games reach the ending in only 16% of runs, while references built by engineers with coding agents score near the maximum, which places this artifact-to-play gap in the agents. No two engines rank configurations alike (Kendall's tau 0.14-0.62), and the same game usually scores higher on Unity and Unreal Engine, which check more before play. We release Game Completion Boost, an agent skill for requirement-driven playtesting and repair that raises the execution-based score of three models by 14.1-24.3 points.",
+                    "cats": [
+                        "cs.AI"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.26098",
+                    "pdf": "https://arxiv.org/pdf/2610.26098",
+                    "topics": [
+                        "ai-ml",
+                        "graphics"
                     ]
                 }
             ]
@@ -2807,6 +3175,34 @@
                     ]
                 },
                 {
+                    "id": "2610.25420",
+                    "title": "Adaptive Cyber-Defense for Evolving Attacker Capabilities using Reinforcement Learning and Behavior Trees",
+                    "authors": "Nicholas Potteiger, Ankita Samaddar, Xenofon Koutsoukos",
+                    "summary": "Autonomous cyber-defense agents trained using reinforcement learning (RL) are increasingly adopted for defending enterprise computer networks. However, existing approaches may become brittle as attacker capabilities evolve and enable new attack strategies. In this work, we study the problem of adapting defender policies learned in CAGE Challenge Scenario 2 (CC2), a benchmark enterprise network defense scenario, to an extended network scenario with new attacker capabilities represented by new attacker actions. Effective attack strategies that leverage new actions are initially unknown, and therefore attacker policies must be learned before defender adaptation can occur. To address this challenge, we develop adversarial RL (ARL) with behavior trees (ARLBT), which uses reward behavior trees (RBTs) to define progression-based reward functions and condition attacker policies on RBT execution. The proposed RBT incorporates the new attacker actions into structured attack strategies while leveraging parallel execution to generate rewards across multiple network nodes simultaneously. We evaluate ARLBT for learning attacker policies against two baseline defender policies across network scenarios with different sets of new attacker actions and compare against multiple attacker baselines. The results demonstrate that ARLBT improves attacker success compared to ARL using the original CC2 reward function and that conditioning policies on RBT execution can improve sample efficiency. We further show that defender policies can be adapted against the learned attackers, improving robustness to attacks that leverage new attacker actions.",
+                    "cats": [
+                        "cs.CR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.25420",
+                    "pdf": "https://arxiv.org/pdf/2610.25420",
+                    "topics": [
+                        "security"
+                    ]
+                },
+                {
+                    "id": "2610.25411",
+                    "title": "Spectrum of Liability: Forensically Sound Acquisition of Wireless Evidence for the Reconstruction of Maritime Cyber-Physical Incidents",
+                    "authors": "Giacomo Longo, Alessandro Cantelli-Forti, Alessio Merlo, Enrico Russo",
+                    "summary": "Modern maritime navigation depends on mandatory wireless inputs, most notably GNSS and AIS, whose reception can be spoofed or jammed. When groundings or collisions occur, liability and safety investigations often turn on whether RF interference corrupted bridge instruments, yet the artifacts typically available (VDR outputs, IBS logs, screenshots, decoded messages) are downstream, lossy, and easy to contest in adversarial proceedings. We introduce a forensically sound acquisition methodology that preserves upstream wireless evidence together with the minimal contemporaneous context needed to interpret it. Our system records coherent, multichannel IQ across relevant bands while simultaneously collecting time-aligned receiver and instrument-state metadata (e.g., decoded AIS/GNSS outputs and NMEA sentences), enabling later re-decoding and physical-layer reanalysis tied to what the onboard stack indicated at the time. To make the record independently auditable, we package samples and metadata into a single append-only forensic envelope that cryptographically binds per-stream hash chains with trusted-time anchors and periodic checkpoints, allowing third parties to detect tampering (modification, truncation, splicing, cross-case substitution) and to verify the claimed recording window. A prototype implementation shows the approach is practical: integrity mechanisms add negligible storage overhead and modest compute cost at operationally relevant multiband capture rates.",
+                    "cats": [
+                        "cs.CR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.25411",
+                    "pdf": "https://arxiv.org/pdf/2610.25411",
+                    "topics": [
+                        "security"
+                    ]
+                },
+                {
                     "id": "2610.25394",
                     "title": "MixiSpeech: Progressive State Distillation for One-Step Vietnamese TTS",
                     "authors": "Tran Quoc Bao Le, Binh Mai, Hung Dinh, Lam Nguyen et al.",
@@ -2840,6 +3236,20 @@
                     ]
                 },
                 {
+                    "id": "2610.25372",
+                    "title": "SEAL: Towards Persistent Tool Poisoning Attack against LLM Agents via Prefix-Eliciting Trigger",
+                    "authors": "Nanjun Zhou, Yiming Li, Yukun Chen, Ting Qiao et al.",
+                    "summary": "Tool poisoning has emerged as a critical security threat to LLM agents, where adversaries embed malicious instructions in tool descriptions or external resources that enter the agent's context, allowing adversaries to manipulate agent's tool selection process. However, existing tool poisoning attacks primarily rely on an idealized assumption that the attacks task effect within a single interaction round. We show that their effectiveness degrades sharply in realistic multi-round agentic settings. We further reveal that this degradation stems from the fact that agents do not consistently surface attack-relevant signals in their reasoning as the planning context evolves, thereby weakening the attack's influence across rounds. To investigate whether tool poisoning remains a practical threat in such realistic settings, we propose SEAL, a two-stage method for persistent tool poisoning. Specifically, SEAL first performs Prefix-Eliciting Trigger Optimization (PETO) to optimize context-specific triggers that elicit attack-relevant reasoning prefixes, improving effectiveness within individual contexts. It then applies Local-to-Universal Trigger Aggregation (L2U) to combine these local triggers into a single universal trigger, improving generalization across different contexts and execution rounds. Extensive experiments across seven representative multi-round scenarios and different models demonstrate the attack effectiveness of SEAL, its transferability across target models, and its resistance to potential defenses.",
+                    "cats": [
+                        "cs.CR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.25372",
+                    "pdf": "https://arxiv.org/pdf/2610.25372",
+                    "topics": [
+                        "security"
+                    ]
+                },
+                {
                     "id": "2610.25371",
                     "title": "Whistle and Wrong Lyrics: Synthetic Queries Are Not Enough for Real-World Query-by-Melody",
                     "authors": "Luigi Rivolta",
@@ -2857,6 +3267,22 @@
                     ]
                 },
                 {
+                    "id": "2610.25366",
+                    "title": "GreenNIDS: A Benchmark Workflow and Analysis Dataset for NetFlow Intrusion Detection Experiments",
+                    "authors": "Lilia-Eliana Popescu-Apreutesei, Sabina-Cristiana Necula",
+                    "summary": "Comparing the predictive performance and computational cost of flow-based intrusion detection experiments requires both quantities to be available for each run. GreenNIDS connects benchmark execution on public NetFlow datasets to a reusable analysis dataset. Model implementations write a common set of outputs, which are ingested into a run-level table with companion tables for model configuration, feature importance, and training history. The run-level table combines predictive metrics with timing, throughput, memory use, and energy estimates based on thermal design power. A CPU-only demonstration comprises 216 runs across four dataset families, three versions, and binary and multiclass tasks. Ingestion produces a 216 x 96 analysis table with no duplicate run identifiers and complete Matthews correlation coefficient (MCC) and F1 coverage. Multiclass ROC-AUC is missing for 36 PyTorch runs, making metric availability an explicit part of subsequent comparisons. The stored records support grouped performance and training-time plots, as well as resource screening after execution. Combining task-specific MCC thresholds with limits on training time, peak RAM, and estimated training energy retains 25.0% of the full run collection. These results establish compatibility within the evaluated collection and support comparisons after execution, subject to the recorded preprocessing, execution profile, and approximate energy accounting.",
+                    "cats": [
+                        "cs.CR",
+                        "cs.LG"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.25366",
+                    "pdf": "https://arxiv.org/pdf/2610.25366",
+                    "topics": [
+                        "ai-ml",
+                        "security"
+                    ]
+                },
+                {
                     "id": "2610.25351",
                     "title": "Probing and Mitigating Hallucinations in Speech-augmented Language Models for Automatic Speech Recognition via Small Language Models",
                     "authors": "Bi-Cheng Yan, Jhih-Rong Guo, Fu-An Chao, Berlin Chen",
@@ -2868,6 +3294,35 @@
                     "pdf": "https://arxiv.org/pdf/2610.25351",
                     "topics": [
                         "audio"
+                    ]
+                },
+                {
+                    "id": "2610.25347",
+                    "title": "On Pearl Blockchain's Proof of Useful Work: Systematization and Flexibility",
+                    "authors": "Youlong Ding",
+                    "summary": "We revisit the proof-of-useful-work (PoUW) scheme in Pearl blockchain's white paper (Pearl Research Team), giving a systematic sensitivity characterization as an alternative to its Jackpot policy, along with efficient algorithm for verifying the sensitivity condition. Beyond its independent interest, our characterization yields a more flexible PoUW scheme that eenables miner autonomy: each miner can independently choose its noise magnitude to tailor the trade-off between computational accuracy and mining efficiency to its own needs.",
+                    "cats": [
+                        "cs.CR",
+                        "cs.ET"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.25347",
+                    "pdf": "https://arxiv.org/pdf/2610.25347",
+                    "topics": [
+                        "security"
+                    ]
+                },
+                {
+                    "id": "2610.25346",
+                    "title": "Equivalent Non-linear Shift Register Transformations and Espresso",
+                    "authors": "Anirban Ghatak, Kaushik Sarkar, Anupam Chattopadhyay, Ambrish Awasthi et al.",
+                    "summary": "The stream cipher Espresso was designed by E. Dubrova and M. Hell as a hardware-efficient candidate for 5G security. It has two components - a 256-bit binary non-linear feedback shift register (NFSR), with 14 feedback taps, and a 20-variable non-linear output function. However, the security of Espresso with regard to several standard cryptanalytic attacks are estimated using an alternate NFSR, which has only two feedback taps. The above analysis is based on the claim that this alternate NFSR is obtained using a transformation algorithm which preserves the output sequence of the original NFSR. This issue has become all the more significant in the light of recent results on hardware performance evaluations, which assume that the stated equivalence holds. This article presents the first successful attempt in settling the above question of Espresso NFSR equivalence. We arrive at our main result by a careful analysis of existing transformation methods relevant to the question. In doing so, we first identify and correct a critical flaw in the proof of a foundational result of E. Dubrova. Next, in the context of Espresso equivalence, we analyze and unify the transformation framework of Dubrova and the one proposed by Yao and Parampalli. Based on our analysis, we have succeeded in transforming the LFSR in an Espresso-equivalent design reported by Yao and Parampalli to the Espresso alternate NFSR. Further, we have obtained a corresponding non-linear output function which achieves output-equivalence with the LFSR design, and hence, with Espresso.",
+                    "cats": [
+                        "cs.CR"
+                    ],
+                    "url": "https://arxiv.org/abs/2610.25346",
+                    "pdf": "https://arxiv.org/pdf/2610.25346",
+                    "topics": [
+                        "security"
                     ]
                 },
                 {
