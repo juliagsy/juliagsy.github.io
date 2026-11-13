@@ -1,6 +1,6 @@
 {
     "name": "Julia Goh",
-    "about": "Experienced Machine Learning (ML) Engineer (Generative AI, Applications and Software/Full-Stack). MEng Computer Science graduate at University College London.  Fluent in English, Chinese and Malay. Open to roles in ML/AI Engineering, Software Engineering and Full Stack. Acquired Microsoft certifications of AI-900, AI-102 and DP-900.",
+    "about": "Experienced AI Engineer (Generative AI, Applications and Software/Full-Stack). MEng Computer Science graduate at University College London.  Fluent in English, Chinese and Malay. Open to senior/lead roles in ML/AI Engineering, Software Engineering and Full Stack. Acquired Microsoft certifications of AI-900, AI-102 and DP-900.",
     "nav": [
         ["Home", "/"],
         ["Profile", "/profile"],
@@ -9,7 +9,6 @@
         ["Others", "/others"]
     ],
     "tools": [
-        ["Blog", "/others/blog", "fa-solid fa-pen-nib"],
         ["arXiv Papers", "/others/papers", "fa-solid fa-newspaper"]
     ],
     "referrals": [
@@ -40,11 +39,11 @@
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
     "experiences": [
-        ["April 2025 - Present", "Founding Engineer (AI/ML & Full Stack)", "Unify", "https://unify.ai",
+        ["April 2025 - Present", "Founding AI Engineer (Full Stack)", "Unify", "https://unify.ai",
             [
                 "Agentic AI Systems: Developed LLM agentic systems, leveraging harness and context engineering for enabling tools, loops and various task executions. Introduced knowledge and skills modules as memory for agents to reference on task execution. Also involved RAG by wiring up relevant integrations and searches (including web) to further widen agent's awareness where relevant.",
                 "AI Assistant Communications: Enabled the omni-channel communications infrastructure powering the AI assistant — voice calls, multi-channel messaging (Slack, Microsoft Teams, Discord, WhatsApp), emails, and in-app chat/calls — integrating Twilio, LiveKit, platform bot frameworks and third-party APIs.",
-                "Live Meeting Attendance: Built the assistant's ability to join Google Meet and Microsoft Teams calls as a real participant — participant tracking, two-way screenshare, in-meeting chat and auto-leave — via a Recall.ai bridge.",
+                "Live Meeting Attendance: Built the assistant's ability to join Google Meet and Microsoft Teams calls as a real participant, with two-way screenshare, in-meeting chat and auto-leave — via a Recall.ai bridge.",
                 "Voice Identity & Call Recording: Built speaker diarization with voice-fingerprint labelling, splitting co-located speakers sharing a single microphone through per-utterance embedding clustering, alongside call recording/egress and speech-aligned transcripts with in-app playback.",
                 "AI Desktop & Browser Control: Built a vision-based (VLM) computer-use agent that automates tasks across remote Ubuntu, Windows and macOS desktops, with CLI-installable clients for connecting a user's own machine.",
                 "Organisation Support: Built multi-tenant organisation features on top of personal workspaces — member management and invites, role-based access control with custom roles, ownership transfer, and project/resource sharing.",
