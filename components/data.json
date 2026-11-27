@@ -39,7 +39,7 @@
         ["Microsoft DP-900: Azure Data Fundamentals", "https://www.credly.com/badges/e7a1c3d1-69cb-49c7-88e2-c4e102a97198/public_url", "2021"]
     ],
     "experiences": [
-        ["April 2025 - Present", "Founding AI Engineer (Full Stack)", "Unify", "https://unify.ai",
+        ["April 2025 - November 2026", "Founding AI Engineer (Full Stack)", "Unify", "https://unify.ai",
             [
                 "Agentic AI Systems: Developed LLM agentic systems, leveraging harness and context engineering for enabling tools, loops and various task executions. Introduced knowledge and skills modules as memory for agents to reference on task execution. Also involved RAG by wiring up relevant integrations and searches (including web) to further widen agent's awareness where relevant.",
                 "AI Assistant Communications: Enabled the omni-channel communications infrastructure powering the AI assistant — voice calls, multi-channel messaging (Slack, Microsoft Teams, Discord, WhatsApp), emails, and in-app chat/calls — integrating Twilio, LiveKit, platform bot frameworks and third-party APIs.",
